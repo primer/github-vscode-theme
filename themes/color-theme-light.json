@@ -1,6 +1,35 @@
 {
   "name": "GitHub light",
   "colors": {
+    "focusBorder": "#0366d6",
+    "foreground": "#586069",
+
+    "titleBar.activeForeground": "#24292e",
+    "titleBar.activeBackground": "#f6f8fa",
+    "titleBar.inactiveForeground": "#6a737d",
+    "titleBar.inactiveBackground": "#fff",
+
+    "activityBar.foreground": "#24292e",
+    "activityBar.background": "#f6f8fa",
+    "activityBarBadge.foreground": "#fff",
+    "activityBarBadge.background": "#0366d6",
+    "activityBar.activeBorder": "#f9826c",
+    "activityBar.activeBackground": "#fff2f0",
+
+    "sideBar.foreground": "#24292e",
+    "sideBar.background": "#fff",
+    "sideBarTitle.foreground": "#24292e",
+    "sideBarSectionHeader.foreground": "#24292e",
+    "sideBarSectionHeader.background": "#f6f8fa",
+    
+    "list.hoverBackground": "#f1f8ff",
+    "list.inactiveSelectionBackground": "#dbedff",
+    "list.activeSelectionForeground": "#24292e",
+    "list.activeSelectionBackground": "#c8e1ff",
+
+    "statusBar.foreground": "#24292e",
+    "statusBar.background": "#f6f8fa",
+
     "editor.selectionBackground": "#c8c8fa",
     "editor.lineHighlightBackground": "#fafbfc",
     "editor.background": "#fff",
