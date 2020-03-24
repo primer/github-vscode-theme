@@ -16,7 +16,8 @@
 
 ## Make changes
 
-* Changes to the theme file are automatically applied to the Extension Development Host window.
+* Changes to the theme file are automatically applied to the Extension Development Host window. 
+* Take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
 
 ## Adopt your theme to Visual Studio Code
 
