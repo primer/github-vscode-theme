@@ -1,0 +1,21 @@
+{
+  "name": "github-vscode-theme",
+  "displayName": "GitHub VSCode Theme",
+  "description": "GitHub theme for VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "GitHub light",
+        "uiTheme": "vs",
+        "path": "./themes/color-theme-light.json"
+      }
+    ]
+  }
+}
