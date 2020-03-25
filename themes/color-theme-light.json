@@ -54,14 +54,19 @@
     "editor.foldBackground": "#fafbfc",
     "editor.lineHighlightBackground": "#f6f8fa",
     "editorLineNumber.foreground": "#1b1f234d",
+    "editorLineNumber.activeForeground": "#24292e",
+
+    "editorIndentGuide.background": "#f6f8fa",
+    "editorIndentGuide.activeBackground": "#d1d5da",
+    "editorWhitespace.foreground": "#d1d5da",
 
     "editorCursor.foreground": "#044289",
     "editor.inactiveSelectionBackground": "#0366d611",
     "editor.selectionBackground": "#0366d625",
     "editor.wordHighlightBackground": "#0366d622",
 
-    "editorWhitespace.foreground": "#d1d5da",
-    "editorIndentGuide.background": "#e1e4e8",
+    "editor.findMatchBackground": "#ffdf5d",
+    "editor.findMatchHighlightBackground": "#ffdf5d66",
 
     "editorBracketMatch.background": "#c8e1ff",
     "editorBracketMatch.border": "#c8e1ff",
@@ -69,6 +74,8 @@
     "editorGutter.modifiedBackground": "#2188ff",
     "editorGutter.addedBackground": "#28a745",
     "editorGutter.deletedBackground": "#f6f8fa",
+    "diffEditor.insertedTextBackground": "#34d05822",
+    "diffEditor.removedTextBackground": "#d73a4922",
 
     "editorOverviewRuler.border": "#fff",
     "scrollbar.shadow": "#6a737d33",
@@ -88,31 +95,6 @@
     "focusBorder": "#2188ff"
   },
   "tokenColors": [
-    {
-      "settings": {
-        "background": "#fff",
-        "foreground": "#24292e",
-        "diffRenamed": "#fafbfc",
-        "diffModified": "#f9c513",
-        "diffDeleted": "#d73a49",
-        "diffAdded": "#34d058",
-        "markdown": "#f7f7f7",
-        "selectionBorder": "#fafbfc",
-        "findHighlight": "#e36209",
-        "findHighlightForeground": "#fff8f2",
-        "activeGuide": "#24292e",
-        "stackGuide": "#959da5",
-        "highlight": "#444d56",
-        "popupCss": "<![CDATA[html { background-color: #e0e0e0; } h1, h2, h3, h4, h5, h6 { color: #005cc5; margin-top: 0.2em; margin-bottom: 0.2em; } h1 { font-size: 1.5em; } h2 { font-size: 1.4em; } h3 { font-size: 1.3em; } h4 { font-size: 1.2em; } h5 { font-size: 1.1em; } h6 { font-size: 1em; } blockquote { color: #22863a; display: block; font-style: italic; } pre { display: block; } a { color: #032f62; font-style: underline; } body { color: #24292e; background-color: #fff; margin: 1px; font-size: 1em; padding: 0.2em; } .danger { color: #b31d28; } .important, .attention { color: #6f42c1; } .caution, .warning { color: #e36209; } .note { color: #735c0f; }]]>",
-        "highlightForeground": "#444d56",
-        "tagsOptions": "underline",
-        "bracketContentsOptions": "underline",
-        "bracketContentsForeground": "#24292e",
-        "bracketsOptions": "underline",
-        "bracketsForeground": "#24292e",
-        "gutterForeground": "#24292e"
-      }
-    },
     {
       "scope": [
         "comment",
