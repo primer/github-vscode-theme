@@ -14,7 +14,6 @@
     "activityBarBadge.foreground": "#fff",
     "activityBarBadge.background": "#0366d6",
     "activityBar.activeBorder": "#f9826c",
-    "activityBar.activeBackground": "#fff2f0",
 
     "sideBar.foreground": "#24292e",
     "sideBar.background": "#fff",
@@ -30,14 +29,20 @@
     "statusBar.foreground": "#24292e",
     "statusBar.background": "#f6f8fa",
 
-    "editor.selectionBackground": "#c8c8fa",
-    "editor.lineHighlightBackground": "#fafbfc",
-    "editor.background": "#fff",
     "editor.foreground": "#24292e",
-    "editorWhitespace.foreground": "#959da5",
+    "editor.background": "#fff",
+    "editorLineNumber.foreground": "#1b1f234d",
     "editorCursor.foreground": "#24292e",
-    "editor.inactiveSelectionBackground": "#fafbfc",
-    "editorIndentGuide.background": "#959da5"
+    "editor.lineHighlightBackground": "#f6f8fa",
+    "editor.selectionBackground": "#c8c8fa99",
+    "editor.inactiveSelectionBackground": "#c8c8fa44",
+    "editorWhitespace.foreground": "#d1d5da",
+    "editorIndentGuide.background": "#e1e4e8",
+    "editor.wordHighlightBackground": "#ffd33d33",
+
+    "editorGutter.modifiedBackground": "#2188ff",
+    "editorGutter.addedBackground": "#28a745",
+    "editorGutter.deletedBackground": "#d73a49"
   },
   "tokenColors": [
     {
