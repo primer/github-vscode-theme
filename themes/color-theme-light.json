@@ -1,7 +1,6 @@
 {
   "name": "GitHub light",
   "colors": {
-    "focusBorder": "#0366d6",
     "foreground": "#586069",
 
     "titleBar.activeForeground": "#24292e",
@@ -14,7 +13,7 @@
     "activityBar.inactiveForeground": "#959da5",
     "activityBar.background": "#f6f8fa",
     "activityBarBadge.foreground": "#fff",
-    "activityBarBadge.background": "#0366d6",
+    "activityBarBadge.background": "#2188ff",
     "activityBar.activeBorder": "#f9826c",
     "activityBar.border": "#e1e4e8",
 
@@ -25,18 +24,21 @@
     "sideBarSectionHeader.foreground": "#24292e",
     "sideBarSectionHeader.background": "#f6f8fa",
     "sideBarSectionHeader.border": "#e1e4e8",
-    
+
     "list.hoverForeground": "#24292e",
-    "list.hoverBackground": "#e1e4e8",
+    "list.hoverBackground": "#ebf0f4",
     "list.inactiveSelectionForeground": "#24292e",
-    "list.inactiveSelectionBackground": "#dbedff",
+    "list.inactiveSelectionBackground": "#e1e4e8",
     "list.activeSelectionForeground": "#24292e",
-    "list.activeSelectionBackground": "#c8e1ff",
+    "list.activeSelectionBackground": "#d7dbdf",
+
+    "badge.foreground": "#005cc5",
+    "badge.background": "#dbedff",
 
     "statusBar.foreground": "#586069",
     "statusBar.background": "#f6f8fa",
     "statusBar.border": "#e1e4e8",
-    
+
     "editorGroup.border": "#e1e4e8",
     "editorGroupHeader.tabsBackground": "#f6f8fa",
     "editorGroupHeader.tabsBorder": "#e1e4e8",
@@ -57,10 +59,28 @@
     "editorWhitespace.foreground": "#d1d5da",
     "editorIndentGuide.background": "#e1e4e8",
     "editor.wordHighlightBackground": "#ffd33d33",
+    "editor.foldBackground": "#fafbfc",
 
     "editorGutter.modifiedBackground": "#2188ff",
     "editorGutter.addedBackground": "#28a745",
-    "editorGutter.deletedBackground": "#d73a49"
+    "editorGutter.deletedBackground": "#f6f8fa",
+
+    "editorOverviewRuler.border": "#fff",
+    "scrollbar.shadow": "#6a737d33",
+    "scrollbarSlider.background": "#959da533",
+    "scrollbarSlider.hoverBackground": "#959da544",
+    "scrollbarSlider.activeBackground": "#959da588",
+
+    "panel.background": "#f6f8fa",
+    "panel.border": "#e1e4e8",
+    "panelTitle.activeBorder": "#f9826c",
+    "panelTitle.activeForeground": "#24292e",
+    "panelTitle.inactiveForeground": "#6a737d",
+    "panelInput.border": "#e1e4e8",
+
+    "terminal.foreground": "#586069",
+
+    "focusBorder": "#2188ff"
   },
   "tokenColors": [
     {
