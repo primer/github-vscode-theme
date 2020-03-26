@@ -2,6 +2,8 @@
 
 > 🚧 WIP
 
+![GitHubVSCode theme](https://user-images.githubusercontent.com/378023/77629260-968aba00-6f8c-11ea-997d-c68548c41e1d.jpg) 
+
 ## What's in the folder
 
 * This folder contains all of the files necessary for your color theme extension.
