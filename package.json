@@ -12,9 +12,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "GitHub light",
+        "label": "GitHub light I",
         "uiTheme": "vs",
-        "path": "./themes/color-theme-light.json"
+        "path": "./themes/color-theme-light-1.json"
+      },
+      {
+        "label": "GitHub light II",
+        "uiTheme": "vs",
+        "path": "./themes/color-theme-light-2.json"
       }
     ]
   }
