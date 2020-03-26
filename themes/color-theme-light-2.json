@@ -76,6 +76,7 @@
     "scrollbarSlider.activeBackground": "#959da588",
 
     "panel.background": "#f6f8fa",
+    "panel.border": "#e1e4e800",
     "panelTitle.activeBorder": "#f9826c",
     "panelTitle.activeForeground": "#24292e",
     "panelTitle.inactiveForeground": "#6a737d",
