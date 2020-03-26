@@ -7,7 +7,6 @@
     "titleBar.activeBackground": "#f6f8fa",
     "titleBar.inactiveForeground": "#6a737d",
     "titleBar.inactiveBackground": "#fff",
-    "titleBar.border": "#e1e4e8",
 
     "activityBar.foreground": "#24292e",
     "activityBar.inactiveForeground": "#959da5",
@@ -15,15 +14,12 @@
     "activityBarBadge.foreground": "#fff",
     "activityBarBadge.background": "#2188ff",
     "activityBar.activeBorder": "#f9826c",
-    "activityBar.border": "#e1e4e8",
 
     "sideBar.foreground": "#586069",
     "sideBar.background": "#f6f8fa",
-    "sideBar.border": "#e1e4e8",
     "sideBarTitle.foreground": "#24292e",
     "sideBarSectionHeader.foreground": "#24292e",
     "sideBarSectionHeader.background": "#f6f8fa",
-    "sideBarSectionHeader.border": "#e1e4e8",
 
     "list.hoverForeground": "#24292e",
     "list.hoverBackground": "#ebf0f4",
@@ -37,14 +33,10 @@
 
     "statusBar.foreground": "#586069",
     "statusBar.background": "#f6f8fa",
-    "statusBar.border": "#e1e4e8",
 
-    "editorGroup.border": "#e1e4e8",
     "editorGroupHeader.tabsBackground": "#f6f8fa",
-    "editorGroupHeader.tabsBorder": "#e1e4e8",
     "tab.inactiveBackground": "#f6f8fa",
     "tab.activeBackground": "#fff",
-    "tab.border": "#e1e4e8",
     "tab.activeBorder": "#fff",
     "tab.unfocusedActiveBorder": "#fff",
     "tab.hoverBackground": "#fff",
@@ -84,11 +76,9 @@
     "scrollbarSlider.activeBackground": "#959da588",
 
     "panel.background": "#f6f8fa",
-    "panel.border": "#e1e4e8",
     "panelTitle.activeBorder": "#f9826c",
     "panelTitle.activeForeground": "#24292e",
     "panelTitle.inactiveForeground": "#6a737d",
-    "panelInput.border": "#e1e4e8",
 
     "terminal.foreground": "#586069",
 
