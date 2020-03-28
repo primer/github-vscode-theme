@@ -4,7 +4,7 @@
   "include": "./syntax-theme-light.json",
   "colors": {
     "focusBorder": "#2188ff",
-    "foreground": "#586069",
+    "foreground": "#444d56",
     "descriptionForeground": "#6a737d",
     "errorForeground": "#cb2431",
 
@@ -51,7 +51,7 @@
     "activityBar.activeBorder": "#f9826c",
     "activityBar.border": "#e1e4e8",
 
-    "sideBar.foreground": "#586069",
+    "sideBar.foreground": "#444d56",
     "sideBar.background": "#f6f8fa",
     "sideBar.border": "#e1e4e8",
     "sideBarTitle.foreground": "#24292e",
@@ -60,11 +60,12 @@
     "sideBarSectionHeader.border": "#e1e4e8",
 
     "list.hoverForeground": "#24292e",
-    "list.hoverBackground": "#ebf0f4",
     "list.inactiveSelectionForeground": "#24292e",
-    "list.inactiveSelectionBackground": "#e1e4e8",
     "list.activeSelectionForeground": "#24292e",
-    "list.activeSelectionBackground": "#d7dbdf",
+    "list.hoverBackground": "#ebf0f4",
+    "list.inactiveSelectionBackground": "#e8eaed",
+    "list.activeSelectionBackground": "#e2e5e9",
+
     "tree.indentGuidesStroke": "#e1e4e8",
 
     "notificationCenterHeader.background": "#fafbfc",
@@ -81,13 +82,15 @@
     "editorGroupHeader.tabsBackground": "#fff",
     "tab.inactiveBackground": "#fff",
     "tab.activeBackground": "#fff",
+    "tab.activeForeground": "#24292e",
+    "tab.inactiveForeground": "#6a737d",
     "tab.border": "#fff",
     "tab.activeBorder": "#f9826c",
     "tab.unfocusedActiveBorder": "#e1e4e8",
     "tab.hoverBackground": "#fff",
     "tab.hoverBorder": "#e1e4e8",
 
-    "breadcrumb.foreground": "#959da5",
+    "breadcrumb.foreground": "#6a737d",
     "breadcrumb.focusForeground": "#24292e",
     "breadcrumb.activeSelectionForeground": "#586069",
     "breadcrumbPicker.background": "#fafbfc",
