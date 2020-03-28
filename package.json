@@ -25,6 +25,11 @@
         "label": "GitHub light III",
         "uiTheme": "vs",
         "path": "./themes/color-theme-light-3.json"
+      },
+      {
+        "label": "GitHub light IV",
+        "uiTheme": "vs",
+        "path": "./themes/color-theme-light-4.json"
       }
     ]
   }
