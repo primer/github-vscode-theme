@@ -116,7 +116,8 @@
 
     "editorGutter.modifiedBackground": "#2188ff",
     "editorGutter.addedBackground": "#28a745",
-    "editorGutter.deletedBackground": "#f6f8fa",
+    "editorGutter.deletedBackground": "#d73a49",
+
     "diffEditor.insertedTextBackground": "#34d05822",
     "diffEditor.removedTextBackground": "#d73a4922",
 
@@ -134,6 +135,14 @@
     "panelInput.border": "#e1e4e8",
 
     "terminal.foreground": "#586069",
+
+    "gitDecoration.addedResourceForeground": "#28a745",
+    "gitDecoration.modifiedResourceForeground": "#005cc5",
+    "gitDecoration.deletedResourceForeground": "#d73a49",
+    "gitDecoration.untrackedResourceForeground": "#28a745",
+    "gitDecoration.ignoredResourceForeground": "#959da5",
+    "gitDecoration.conflictingResourceForeground": "#e36209",
+    "gitDecoration.submoduleResourceForeground": "#959da5",
 
     "debugToolBar.background": "#fff",
     "editor.stackFrameHighlightBackground": "#fffbdd",
