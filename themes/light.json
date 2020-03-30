@@ -80,6 +80,7 @@
     "statusBar.border": "#e1e4e8",
 
     "editorGroupHeader.tabsBackground": "#fff",
+
     "tab.inactiveBackground": "#fff",
     "tab.activeBackground": "#fff",
     "tab.activeForeground": "#24292e",
@@ -102,8 +103,8 @@
     "editorLineNumber.foreground": "#1b1f234d",
     "editorLineNumber.activeForeground": "#24292e",
 
-    "editorIndentGuide.background": "#f6f8fa",
-    "editorIndentGuide.activeBackground": "#d1d5da",
+    "editorIndentGuide.background": "#eff2f6",
+    "editorIndentGuide.activeBackground": "#d7dbe0",
     "editorWhitespace.foreground": "#d1d5da",
 
     "editorCursor.foreground": "#044289",
