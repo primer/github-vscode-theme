@@ -1,33 +1,29 @@
-# GitHub VS Code theme
+# GitHub VSCode theme
 
-> 🚧 WIP
+![GitHub VSCode theme](https://user-images.githubusercontent.com/378023/77890406-5ee08280-72aa-11ea-9ce0-3ee7d59bbe41.png)
 
-![GitHubVSCode theme](https://user-images.githubusercontent.com/378023/77629260-968aba00-6f8c-11ea-997d-c68548c41e1d.jpg) 
+## Install
 
-## What's in the folder
+1. [Download](https://github.com/primer/github-vscode-theme/archive/master.zip) the theme
+2. Unzip and move it into the `<user home>/.vscode/extensions` folder
+3. Restart VSCode
+4. Open `Code > Preferences > Color Theme` [`⌘k ⌘t`] and pick the "GitHub Light" theme
 
-* This folder contains all of the files necessary for your color theme extension.
-* `package.json` - this is the manifest file that defines the location of the theme file and specifies the base theme of the theme.
-* `themes/color-theme-light.json` - the color theme definition file.
+## Contribute
 
-## Get up and running straight away
+1. Clone and open this repo in VSCode
+2. Press `F5` to open a new window with your extension loaded
+3. Open `Code > Preferences > Color Theme` [`⌘k ⌘t`] and pick the "GitHub Light" theme
+4. Make changes to the...
+	- **UI**: Edit `[/themes/light.json](https://github.com/primer/github-vscode-theme/blob/master/themes/light.json)`. Take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
+  - **syntax**: Edit `[/themes/syntax-light.json](https://github.com/primer/github-vscode-theme/blob/master/themes/syntax-light.json)`. To examine the syntax scopes, invoke the `Inspect TM Scopes` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) in the Extension Development Host window.
+5. Commit your changes and open a PR.
 
-* Press `F5` to open a new window with your extension loaded.
-* Open `File > Preferences > Color Themes` and pick your color theme.
-* Open a file that has a language associated. The languages' configured grammar will tokenize the text and assign 'scopes' to the tokens. To examine these scopes, invoke the `Inspect TM Scopes` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) .
+Note:
 
-## Make changes
+- If possible use colors that [Primer's color system](https://primer.style/css/support/color-system).
+- Changes to the theme files are automatically applied to the Extension Development Host window.
 
-* Changes to the theme file are automatically applied to the Extension Development Host window. 
-* Take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
+## Override this theme
 
-## Adopt your theme to Visual Studio Code
-
-* The token colorization is done based on standard TextMate themes. Colors are matched against one or more scopes.
-
-To learn more about scopes and how they're used, check out the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
-
-## Install your extension
-
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+You can also override this (or any other) theme. Please follow the guide in the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
