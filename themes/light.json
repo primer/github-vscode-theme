@@ -1,7 +1,7 @@
 {
-  "name": "GitHub light 4",
+  "name": "GitHub Light",
   "$schema": "vscode://schemas/color-theme",
-  "include": "./syntax-theme-light.json",
+  "include": "./syntax-light.json",
   "colors": {
     "focusBorder": "#2188ff",
     "foreground": "#444d56",

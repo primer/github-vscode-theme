@@ -1,5 +1,5 @@
 {
-  "name": "Syntax light",
+  "name": "Syntax Light",
   "$schema": "vscode://schemas/color-theme",
   "tokenColors": [
     {
