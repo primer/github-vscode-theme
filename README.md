@@ -14,16 +14,16 @@
 1. Clone and open this repo in VSCode
 2. Press `F5` to open a new window with your extension loaded
 3. Open `Code > Preferences > Color Theme` [`⌘k ⌘t`] and pick the "GitHub Light" theme
-4. Make changes to the...
-    - **UI**: Edit [`/themes/light.json`](https://github.com/primer/github-vscode-theme/blob/master/themes/light.json). Take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
-    - **Syntax**: Edit [`/themes/syntax-light.json`](https://github.com/primer/github-vscode-theme/blob/master/themes/syntax-light.json). To examine the syntax scopes, invoke the `Inspect TM Scopes` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) in the Extension Development Host window.
+4. Make changes...
+    - **UI**: For all changes to the "outer UI", like (status bar, file navigation etc.), edit [`/themes/light.json`](https://github.com/primer/github-vscode-theme/blob/master/themes/light.json). Take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
+    - **Syntax**: For changes to the "code highlighting", edit [`/themes/syntax-light.json`](https://github.com/primer/github-vscode-theme/blob/master/themes/syntax-light.json). To examine the syntax scopes, invoke the `Inspect TM Scopes` command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) in the Extension Development Host window.
 5. Commit your changes and open a PR.
 
 Note:
 
-- If possible use colors that [Primer's color system](https://primer.style/css/support/color-system).
-- Changes to the theme files are automatically applied to the Extension Development Host window.
+- If possible use colors from [Primer's color system](https://primer.style/css/support/color-system).
+- Changes to the theme files are automatically applied to the Extension Development Host window, so no reloading should be necessary.
 
 ## Override this theme
 
-You can also override this (or any other) theme. Please follow the guide in the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
+To quickly test something, you can also override this (or any other) theme in your personal config file. Please follow the guide in the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
