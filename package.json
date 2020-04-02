@@ -1,13 +1,28 @@
 {
   "name": "github-vscode-theme",
-  "displayName": "GitHub VSCode Theme",
+  "displayName": "GitHub Theme",
   "description": "GitHub theme for VS Code",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "preview": true,
+  "publisher": "GitHub",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/primer/github-vscode-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/primer/github-vscode-theme/issues"
+  },
   "engines": {
     "vscode": "^1.43.0"
   },
   "categories": [
     "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "github",
+    "light"
   ],
   "contributes": {
     "themes": [
@@ -17,5 +32,6 @@
         "path": "./themes/light.json"
       }
     ]
-  }
+  },
+  "license": "MIT"
 }
