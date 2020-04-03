@@ -1,6 +1,6 @@
 # GitHub VS Code theme
 
-![GitHub VS Code theme](https://user-images.githubusercontent.com/378023/77890406-5ee08280-72aa-11ea-9ce0-3ee7d59bbe41.png)
+![GitHub VS Code theme](https://user-images.githubusercontent.com/378023/78366757-ef48fb00-75fb-11ea-8d00-a8e61dbb9115.png)
 
 ## Install
 
