@@ -6,6 +6,10 @@
   "preview": true,
   "publisher": "GitHub",
   "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1b1f23",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/primer/github-vscode-theme"
