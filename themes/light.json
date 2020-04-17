@@ -77,17 +77,23 @@
     "statusBar.background": "#fff",
     "statusBar.border": "#e1e4e8",
 
-    "editorGroupHeader.tabsBackground": "#fff",
+    "editorGroupHeader.tabsBackground": "#f6f8fa",
+    "editorGroupHeader.tabsBorder": "#e1e4e8",
+    "editorGroup.border": "#e1e4e8",
 
-    "tab.inactiveBackground": "#fff",
-    "tab.activeBackground": "#fff",
     "tab.activeForeground": "#24292e",
     "tab.inactiveForeground": "#6a737d",
-    "tab.border": "#fff",
-    "tab.activeBorder": "#f9826c",
-    "tab.unfocusedActiveBorder": "#e1e4e8",
+
+    "tab.inactiveBackground": "#f6f8fa",
+    "tab.activeBackground": "#fff",
     "tab.hoverBackground": "#fff",
-    "tab.hoverBorder": "#e1e4e8",
+    "tab.unfocusedHoverBackground": "#fff",
+
+    "tab.border": "#e1e4e8",
+    "tab.unfocusedActiveBorderTop": "#e1e4e8",
+    "tab.activeBorder": "#fff",
+    "tab.unfocusedActiveBorder": "#fff",
+    "tab.activeBorderTop": "#f9826c",
 
     "breadcrumb.foreground": "#6a737d",
     "breadcrumb.focusForeground": "#24292e",
