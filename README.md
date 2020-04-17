@@ -4,14 +4,12 @@
 
 ## Install
 
-1. [Download](https://github.com/primer/github-vscode-theme/archive/master.zip) the theme
-2. Unzip and move it into the `<user home>/.vscode/extensions` folder
-3. Restart VS Code
-4. Open `Code > Preferences > Color Theme` [`⌘k ⌘t`] and pick the "GitHub Light" theme
+1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
+2. Click on the "Install" button
 
 ## Contribute
 
-1. Clone and open this repo in VS Code
+1. Clone and open this [repo](https://github.com/primer/github-vscode-theme) in VS Code
 2. Press `F5` to open a new window with your extension loaded
 3. Open `Code > Preferences > Color Theme` [`⌘k ⌘t`] and pick the "GitHub Light" theme
 4. Make changes...
