@@ -268,23 +268,29 @@
     {
       "scope": "invalid.broken",
       "settings": {
-        "fontStyle": "bold italic underline",
+        "fontStyle": "italic",
         "foreground": "#b31d28"
       }
     },
     {
       "scope": "invalid.deprecated",
       "settings": {
-        "fontStyle": "bold italic underline",
+        "fontStyle": "italic",
         "foreground": "#b31d28"
       }
     },
     {
       "scope": "invalid.illegal",
       "settings": {
-        "fontStyle": "italic underline",
-        "background": "#b31d28",
-        "foreground": "#fafbfc"
+        "fontStyle": "italic",
+        "foreground": "#b31d28"
+      }
+    },
+    {
+      "scope": "invalid.unimplemented",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#b31d28"
       }
     },
     {
@@ -294,13 +300,6 @@
         "background": "#d73a49",
         "foreground": "#fafbfc",
         "content": "^M"
-      }
-    },
-    {
-      "scope": "invalid.unimplemented",
-      "settings": {
-        "fontStyle": "bold italic underline",
-        "foreground": "#b31d28"
       }
     },
     {
