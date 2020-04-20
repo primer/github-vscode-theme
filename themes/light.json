@@ -287,19 +287,19 @@
       }
     },
     {
+      "scope": "invalid.unimplemented",
+      "settings": {
+        "fontStyle": "bold italic underline",
+        "foreground": "#b31d28"
+      }
+    },
+    {
       "scope": "carriage-return",
       "settings": {
         "fontStyle": "italic underline",
         "background": "#d73a49",
         "foreground": "#fafbfc",
         "content": "^M"
-      }
-    },
-    {
-      "scope": "invalid.unimplemented",
-      "settings": {
-        "fontStyle": "bold italic underline",
-        "foreground": "#b31d28"
       }
     },
     {
