@@ -282,9 +282,8 @@
     {
       "scope": "invalid.illegal",
       "settings": {
-        "fontStyle": "italic underline",
-        "background": "#b31d28",
-        "foreground": "#fafbfc"
+        "fontStyle": "italic",
+        "foreground": "#b31d28"
       }
     },
     {
