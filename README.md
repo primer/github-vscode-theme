@@ -12,9 +12,9 @@
 1. Clone and open this [repo](https://github.com/primer/github-vscode-theme) in VS Code
 2. Press `F5` to open a new window with your extension loaded
 3. Open `Code > Preferences > Color Theme` [`⌘k ⌘t`] and pick the "GitHub Light" theme
-4. Make changes...
-    - **UI**: For all changes to the "outer UI", like (status bar, file navigation etc.), edit [`/themes/light.json`](https://github.com/primer/github-vscode-theme/blob/master/themes/light.json). Take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
-    - **Syntax**: For changes to the "code highlighting", edit [`/themes/syntax-light.json`](https://github.com/primer/github-vscode-theme/blob/master/themes/syntax-light.json). To examine the syntax scopes, invoke the [`Developer: Inspect Editor Tokens and Scopes`](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector) command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) in the Extension Development Host window.
+4. Make changes to the [`/themes/light.json`](https://github.com/primer/github-vscode-theme/blob/master/themes/light.json) file.
+    - **UI**: For all changes to the "outer UI", like (status bar, file navigation etc.), take a look at the [Theme Color](https://code.visualstudio.com/api/references/theme-color) reference.
+    - **Syntax**: For changes to the "code highlighting", examine the syntax scopes by invoking the [`Developer: Inspect Editor Tokens and Scopes`](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector) command from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) in the Extension Development Host window.
 5. Commit your changes and open a PR.
 
 Note:
