@@ -2,7 +2,7 @@
 	"name": "github-vscode-theme",
 	"displayName": "GitHub Theme",
 	"description": "GitHub theme for VS Code",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"preview": true,
 	"publisher": "GitHub",
 	"icon": "icon.png",
