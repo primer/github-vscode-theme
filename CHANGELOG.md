@@ -1,3 +1,7 @@
+## 0.2.2
+
+- Fix invalid scope
+
 ## 0.2.1
 
 - Update README
