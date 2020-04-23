@@ -78,7 +78,7 @@
     "statusBar.border": "#e1e4e8",
     "statusBar.noFolderBackground": "#fff",
     "statusBar.debuggingBackground": "#f9826c",
-    "statusBar.debuggingForeground": "#ffffff",
+    "statusBar.debuggingForeground": "#fff",
 
     "editorGroupHeader.tabsBackground": "#f6f8fa",
     "editorGroupHeader.tabsBorder": "#e1e4e8",
