@@ -37,7 +37,7 @@
 			},
 			{
 				"label": "GitHub Dark",
-				"uiTheme": "vs",
+				"uiTheme": "vs-dark",
 				"path": "./themes/dark.json"
 			}
 		]
