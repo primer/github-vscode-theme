@@ -15,8 +15,16 @@ Object.entries(colors).forEach(([name, val]) => {
   }
 });
 
-const lightTheme = getTheme({ colors, name: "GitHub Light" });
+const lightTheme = getTheme({
+  colors,
+  style: "light",
+  name: "GitHub Light",
+});
 fs.writeFileSync("./themes/light.json", JSON.stringify(lightTheme, null, 2));
 
-const darkTheme = getTheme({ colors: darkColors, name: "GitHub Dark" });
+const darkTheme = getTheme({
+  colors: darkColors,
+  style: "dark",
+  name: "GitHub Dark",
+});
 fs.writeFileSync("./themes/dark.json", JSON.stringify(darkTheme, null, 2));

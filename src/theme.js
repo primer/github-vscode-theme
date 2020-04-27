@@ -1,4 +1,6 @@
-function getTheme({ colors, name }) {
+function getTheme({ colors, style, name }) {
+  const pick = (options) => options[style];
+
   return {
     name: name,
     colors: {
@@ -89,7 +91,10 @@ function getTheme({ colors, name }) {
       "editor.lineHighlightBackground": colors.gray[1],
       "editorLineNumber.foreground": "#1b1f234d",
       "editorLineNumber.activeForeground": colors.gray[9],
-      "editorIndentGuide.background": "#eff2f6",
+      "editorIndentGuide.background": pick({
+        light: "#eff2f6",
+        dark: "#1c2531",
+      }),
       "editorIndentGuide.activeBackground": "#d7dbe0",
       "editorWhitespace.foreground": colors.gray[3],
       "editorCursor.foreground": colors.blue[7],

@@ -88,7 +88,7 @@
     "editor.lineHighlightBackground": "#2f363d",
     "editorLineNumber.foreground": "#1b1f234d",
     "editorLineNumber.activeForeground": "#fafbfc",
-    "editorIndentGuide.background": "#eff2f6",
+    "editorIndentGuide.background": "#1c2531",
     "editorIndentGuide.activeBackground": "#d7dbe0",
     "editorWhitespace.foreground": "#586069",
     "editorCursor.foreground": "#c8e1ff",
