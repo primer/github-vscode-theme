@@ -1,54 +1,14 @@
-const Color = require("color");
-const { colors } = require("@primer/primitives");
-
-function getColorMap(style) {
-  if (style === "dark") {
-    /* The array of light to dark colors are reversed to auto-generate dark theme */
-    const darkColors = {};
-    Object.entries(colors).forEach(([name, val]) => {
-      if (name === "black") {
-        darkColors.white = val;
-      } else if (name === "white") {
-        darkColors.black = val;
-      } else {
-        darkColors[name] = [...val].reverse();
-      }
-    });
-    return darkColors;
-  } else {
-    return colors;
-  }
-}
+const { getVariant } = require("./process");
+const { getColors } = require("./primer");
 
 function getTheme({ style, name }) {
-  /*
-   * Auto generate color variants based on color math
-   * Usage: `auto('pink')`
-   * Takes the HSL representation and inverts the luminance factor.
-   */
-  function auto(hex) {
-    if (style === "dark") {
-      let c = Color(hex);
-      return c
-        .hsl()
-        .lightness(100 - c.lightness())
-        .hex()
-        .toLowerCase();
-    } else {
-      return hex;
-    }
-  }
+  // Usage: `auto('pink')`
+  const auto = (hex) => getVariant(hex, style);
 
-  /*
-   * Pick color variant based on current style
-   * Usage: `pick({ light: "lightblue", dark: "darkblue" })`
-   * Takes the specified color value against the current style
-   */
-  function pick(options) {
-    return options[style];
-  }
+  // Usage: `pick({ light: "lightblue", dark: "darkblue" })`
+  const pick = (options) => options[style];
 
-  const primer = getColorMap(style);
+  const primer = getColors(style);
   return {
     name: name,
     colors: {
