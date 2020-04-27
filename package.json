@@ -49,9 +49,11 @@
 		"publisherId": "7c1c19cd-78eb-4dfb-8999-99caf7679002"
 	},
 	"devDependencies": {
-		"@primer/primitives": "^2.0.1"
+		"@primer/primitives": "^2.0.1",
+		"nodemon": "^2.0.3"
 	},
 	"scripts": {
+		"start": "nodemon --watch src src/index.js",
 		"build": "node src/index.js"
 	}
 }
