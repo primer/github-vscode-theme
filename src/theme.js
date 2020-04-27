@@ -57,7 +57,7 @@ function getTheme({ style, name }) {
       "activityBar.background": primer.white,
       "activityBarBadge.foreground": primer.white,
       "activityBarBadge.background": primer.blue[4],
-      "activityBar.activeBorder": auto("#f9826c"),
+      "activityBar.activeBorder": "#f9826c",
       "activityBar.border": primer.gray[2],
 
       "sideBar.foreground": primer.gray[7],
@@ -103,7 +103,7 @@ function getTheme({ style, name }) {
       "tab.unfocusedActiveBorderTop": primer.gray[2],
       "tab.activeBorder": primer.white,
       "tab.unfocusedActiveBorder": primer.white,
-      "tab.activeBorderTop": auto("#f9826c"),
+      "tab.activeBorderTop": "#f9826c",
 
       "breadcrumb.foreground": primer.gray[5],
       "breadcrumb.focusForeground": primer.gray[9],
@@ -143,7 +143,7 @@ function getTheme({ style, name }) {
 
       "panel.background": primer.gray[1],
       "panel.border": primer.gray[2],
-      "panelTitle.activeBorder": auto("#f9826c"),
+      "panelTitle.activeBorder": "#f9826c",
       "panelTitle.activeForeground": primer.gray[9],
       "panelTitle.inactiveForeground": primer.gray[5],
       "panelInput.border": primer.gray[2],
