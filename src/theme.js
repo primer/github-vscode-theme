@@ -16,6 +16,7 @@ function getTheme({ style, name }) {
       foreground: primer.gray[7],
       descriptionForeground: primer.gray[5],
       errorForeground: primer.red[6],
+
       "textLink.foreground": primer.blue[5],
       "textLink.activeForeground": primer.blue[6],
       "textBlockQuote.background": primer.gray[0],
@@ -23,26 +24,34 @@ function getTheme({ style, name }) {
       "textCodeBlock.background": primer.gray[1],
       "textPreformat.foreground": primer.gray[6],
       "textSeparator.foreground": primer.gray[3],
+
       "button.background": auto("#159739"),
       "button.foreground": primer.white,
       "button.hoverBackground": auto("#138934"),
+
       "checkbox.border": primer.gray[3],
+
       "dropdown.background": primer.gray[0],
       "dropdown.listBackground": primer.white,
       "dropdown.border": primer.gray[2],
       "dropdown.foreground": primer.gray[9],
+
       "input.background": primer.gray[0],
       "input.border": primer.gray[2],
       "input.foreground": primer.gray[9],
       "input.placeholderForeground": primer.gray[4],
+
       "badge.foreground": primer.blue[6],
       "badge.background": primer.blue[1],
+
       "progressBar.background": primer.blue[4],
+
       "titleBar.activeForeground": primer.gray[9],
       "titleBar.activeBackground": primer.white,
       "titleBar.inactiveForeground": primer.gray[5],
       "titleBar.inactiveBackground": primer.gray[1],
       "titleBar.border": primer.gray[2],
+
       "activityBar.foreground": primer.gray[9],
       "activityBar.inactiveForeground": primer.gray[4],
       "activityBar.background": primer.white,
@@ -50,6 +59,7 @@ function getTheme({ style, name }) {
       "activityBarBadge.background": primer.blue[4],
       "activityBar.activeBorder": auto("#f9826c"),
       "activityBar.border": primer.gray[2],
+
       "sideBar.foreground": primer.gray[7],
       "sideBar.background": primer.gray[1],
       "sideBar.border": primer.gray[2],
@@ -57,27 +67,32 @@ function getTheme({ style, name }) {
       "sideBarSectionHeader.foreground": primer.gray[9],
       "sideBarSectionHeader.background": primer.gray[1],
       "sideBarSectionHeader.border": primer.gray[2],
+
       "list.hoverForeground": primer.gray[9],
       "list.inactiveSelectionForeground": primer.gray[9],
       "list.activeSelectionForeground": primer.gray[9],
       "list.hoverBackground": auto("#ebf0f4"),
       "list.inactiveSelectionBackground": auto("#e8eaed"),
       "list.activeSelectionBackground": auto("#e2e5e9"),
+
       "tree.indentGuidesStroke": primer.gray[2],
       "notificationCenterHeader.background": primer.gray[0],
       "pickerGroup.border": primer.gray[2],
       "pickerGroup.foreground": primer.gray[9],
       "quickInput.background": primer.gray[0],
       "quickInput.foreground": primer.gray[9],
+
       "statusBar.foreground": primer.gray[6],
       "statusBar.background": primer.white,
       "statusBar.border": primer.gray[2],
       "statusBar.noFolderBackground": primer.white,
       "statusBar.debuggingBackground": auto("#f9826c"),
       "statusBar.debuggingForeground": primer.white,
+
       "editorGroupHeader.tabsBackground": primer.gray[1],
       "editorGroupHeader.tabsBorder": primer.gray[2],
       "editorGroup.border": primer.gray[2],
+
       "tab.activeForeground": primer.gray[9],
       "tab.inactiveForeground": primer.gray[5],
       "tab.inactiveBackground": primer.gray[1],
@@ -89,10 +104,12 @@ function getTheme({ style, name }) {
       "tab.activeBorder": primer.white,
       "tab.unfocusedActiveBorder": primer.white,
       "tab.activeBorderTop": auto("#f9826c"),
+
       "breadcrumb.foreground": primer.gray[5],
       "breadcrumb.focusForeground": primer.gray[9],
       "breadcrumb.activeSelectionForeground": primer.gray[6],
       "breadcrumbPicker.background": primer.gray[0],
+
       "editor.foreground": primer.gray[9],
       "editor.background": primer.white,
       "editor.foldBackground": primer.gray[0],
@@ -113,20 +130,26 @@ function getTheme({ style, name }) {
       "editorGutter.modifiedBackground": primer.blue[4],
       "editorGutter.addedBackground": primer.green[5],
       "editorGutter.deletedBackground": primer.red[5],
+
       "diffEditor.insertedTextBackground": "#34d05822",
       "diffEditor.removedTextBackground": auto("#d73a4922"),
+
       "scrollbar.shadow": auto("#6a737d33"),
       "scrollbarSlider.background": auto("#959da533"),
       "scrollbarSlider.hoverBackground": auto("#959da544"),
       "scrollbarSlider.activeBackground": auto("#959da588"),
+
       "editorOverviewRuler.border": primer.white,
+
       "panel.background": primer.gray[1],
       "panel.border": primer.gray[2],
       "panelTitle.activeBorder": auto("#f9826c"),
       "panelTitle.activeForeground": primer.gray[9],
       "panelTitle.inactiveForeground": primer.gray[5],
       "panelInput.border": primer.gray[2],
+
       "terminal.foreground": primer.gray[6],
+
       "gitDecoration.addedResourceForeground": primer.green[5],
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
       "gitDecoration.deletedResourceForeground": primer.red[5],
@@ -134,6 +157,7 @@ function getTheme({ style, name }) {
       "gitDecoration.ignoredResourceForeground": primer.gray[4],
       "gitDecoration.conflictingResourceForeground": primer.orange[6],
       "gitDecoration.submoduleResourceForeground": primer.gray[4],
+
       "debugToolBar.background": primer.white,
       "editor.stackFrameHighlightBackground": primer.yellow[1],
       "editor.focusedStackFrameHighlightBackground": primer.yellow[2],
