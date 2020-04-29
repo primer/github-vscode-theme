@@ -172,7 +172,7 @@ function getTheme({ style, name }) {
       {
         scope: ["comment", "punctuation.definition.comment", "string.comment"],
         settings: {
-          foreground: primer.gray[5],
+          foreground: pick({ light: primer.gray[5], dark: primer.gray[4] }),
         },
       },
       {
@@ -189,7 +189,7 @@ function getTheme({ style, name }) {
       {
         scope: ["entity", "entity.name"],
         settings: {
-          foreground: primer.purple[5],
+          foreground: pick({ light: primer.purple[5], dark: primer.purple[6] }),
         },
       },
       {
@@ -207,13 +207,13 @@ function getTheme({ style, name }) {
       {
         scope: "keyword",
         settings: {
-          foreground: primer.red[5],
+          foreground: pick({ light: primer.red[5], dark: primer.red[6] }),
         },
       },
       {
         scope: ["storage", "storage.type"],
         settings: {
-          foreground: primer.red[5],
+          foreground: pick({ light: primer.red[5], dark: primer.red[6] }),
         },
       },
       {
@@ -292,7 +292,7 @@ function getTheme({ style, name }) {
         scope: "carriage-return",
         settings: {
           fontStyle: "italic underline",
-          background: primer.red[5],
+          background: pick({ light: primer.red[5], dark: primer.red[6] }),
           foreground: primer.gray[0],
           content: "^M",
         },
@@ -435,7 +435,7 @@ function getTheme({ style, name }) {
       {
         scope: "meta.diff.range",
         settings: {
-          foreground: primer.purple[5],
+          foreground: pick({ light: primer.purple[5], dark: primer.purple[6] }),
           fontStyle: "bold",
         },
       },

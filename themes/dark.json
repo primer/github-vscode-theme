@@ -142,7 +142,7 @@
         "string.comment"
       ],
       "settings": {
-        "foreground": "#959da5"
+        "foreground": "#6a737d"
       }
     },
     {
@@ -162,7 +162,7 @@
         "entity.name"
       ],
       "settings": {
-        "foreground": "#8a63d2"
+        "foreground": "#b392f0"
       }
     },
     {
@@ -180,7 +180,7 @@
     {
       "scope": "keyword",
       "settings": {
-        "foreground": "#ea4a5a"
+        "foreground": "#f97583"
       }
     },
     {
@@ -189,7 +189,7 @@
         "storage.type"
       ],
       "settings": {
-        "foreground": "#ea4a5a"
+        "foreground": "#f97583"
       }
     },
     {
@@ -268,7 +268,7 @@
       "scope": "carriage-return",
       "settings": {
         "fontStyle": "italic underline",
-        "background": "#ea4a5a",
+        "background": "#f97583",
         "foreground": "#24292e",
         "content": "^M"
       }
@@ -423,7 +423,7 @@
     {
       "scope": "meta.diff.range",
       "settings": {
-        "foreground": "#8a63d2",
+        "foreground": "#b392f0",
         "fontStyle": "bold"
       }
     },
