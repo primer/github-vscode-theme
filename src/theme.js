@@ -12,34 +12,35 @@ function getTheme({ style, name }) {
   return {
     name: name,
     colors: {
-      focusBorder: primer.blue[4],
-      foreground: primer.gray[7],
+      focusBorder: pick({ light: primer.blue[4], dark: primer.blue[3] }),
+      foreground: pick({ light: primer.gray[7], dark: primer.gray[6] }),
       descriptionForeground: primer.gray[5],
       errorForeground: primer.red[6],
 
-      "textLink.foreground": primer.blue[5],
-      "textLink.activeForeground": primer.blue[6],
+      "textLink.foreground": pick({ light: primer.blue[5], dark: primer.blue[6] }),
+      "textLink.activeForeground": pick({ light: primer.blue[6], dark: primer.blue[7] }),
       "textBlockQuote.background": primer.gray[0],
       "textBlockQuote.border": primer.gray[2],
       "textCodeBlock.background": primer.gray[1],
       "textPreformat.foreground": primer.gray[6],
       "textSeparator.foreground": primer.gray[3],
 
-      "button.background": auto("#159739"),
-      "button.foreground": primer.white,
-      "button.hoverBackground": auto("#138934"),
+      "button.background": pick({ light: "#159739", dark: primer.green[2] }),
+      "button.foreground": pick({ light: primer.white, dark: primer.green[8] }),
+      "button.hoverBackground": pick({ light: "#138934", dark: primer.green[3] }),
 
-      "checkbox.border": primer.gray[3],
+      "checkbox.background": pick({ light: primer.gray[0], dark: primer.gray[2] }),
+      "checkbox.border": pick({ light: primer.gray[3], dark: primer.white }),
 
-      "dropdown.background": primer.gray[0],
-      "dropdown.listBackground": primer.white,
-      "dropdown.border": primer.gray[2],
+      "dropdown.background": pick({ light: primer.gray[0], dark: primer.gray[1] }),
+      "dropdown.border": pick({ light: primer.gray[2], dark: primer.white }),
       "dropdown.foreground": primer.gray[9],
+      "dropdown.listBackground": pick({ light: primer.white, dark: primer.gray[0] }),
 
-      "input.background": primer.gray[0],
-      "input.border": primer.gray[2],
+      "input.background": pick({ light: primer.gray[0], dark: primer.gray[1] }),
+      "input.border": pick({ light: primer.gray[2], dark: primer.white }),
       "input.foreground": primer.gray[9],
-      "input.placeholderForeground": primer.gray[4],
+      "input.placeholderForeground": pick({ light: primer.gray[4], dark: primer.gray[5] }),
 
       "badge.foreground": pick({ light: primer.blue[6], dark: primer.blue[7] }),
       "badge.background": pick({ light: primer.blue[1], dark: primer.blue[2] }),
@@ -110,7 +111,7 @@ function getTheme({ style, name }) {
       "breadcrumb.foreground": primer.gray[5],
       "breadcrumb.focusForeground": primer.gray[9],
       "breadcrumb.activeSelectionForeground": primer.gray[6],
-      "breadcrumbPicker.background": primer.gray[0],
+      "breadcrumbPicker.background": pick({ light: primer.gray[0], dark: "#2b3036" }),
 
       "editor.foreground": primer.gray[9],
       "editor.background": pick({ light: primer.white, dark: primer.gray[0] }),
@@ -133,14 +134,13 @@ function getTheme({ style, name }) {
       "editorGutter.addedBackground": pick({ light: primer.green[5], dark: primer.green[4] }),
       "editorGutter.deletedBackground": primer.red[5],
 
-      "diffEditor.insertedTextBackground": "#34d05822",
-      "diffEditor.removedTextBackground": auto("#d73a4922"),
+      "diffEditor.insertedTextBackground": pick({ light: "#34d05822", dark: "#28a74511" }),
+      "diffEditor.removedTextBackground": pick({ light: "#d73a4922", dark: "#d73a4918" }),
 
       "scrollbar.shadow": pick({ light: "#6a737d33", dark: "#0008" }),
       "scrollbarSlider.background": pick({ light: "#959da533", dark: "#6a737d33" }),
       "scrollbarSlider.hoverBackground": pick({ light: "#959da544", dark: "#6a737d44" }),
       "scrollbarSlider.activeBackground": pick({ light: "#959da588", dark: "#6a737d88" }),
-
       "editorOverviewRuler.border": primer.white,
 
       "panel.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
@@ -160,7 +160,7 @@ function getTheme({ style, name }) {
       "gitDecoration.conflictingResourceForeground": primer.orange[6],
       "gitDecoration.submoduleResourceForeground": primer.gray[4],
 
-      "debugToolBar.background": primer.white,
+      "debugToolBar.background": pick({ light: primer.white, dark: "#2b3036" }),
       "editor.stackFrameHighlightBackground": primer.yellow[1],
       "editor.focusedStackFrameHighlightBackground": primer.yellow[2],
       "settings.headerForeground": primer.gray[9],
