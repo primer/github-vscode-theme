@@ -26,7 +26,8 @@
 	"keywords": [
 		"theme",
 		"github",
-		"light"
+		"light",
+		"dark"
 	],
 	"contributes": {
 		"themes": [
