@@ -74,7 +74,7 @@ function getTheme({ style, name }) {
       "list.activeSelectionForeground": primer.gray[9],
       "list.hoverBackground": pick({ light: "#ebf0f4", dark: primer.gray[0] }),
       "list.inactiveSelectionBackground": pick({ light: "#e8eaed", dark: "#282e34" }),
-      "list.activeSelectionBackground": pick({ light: "#e2e5e9", dark: primer.gray[1] }),
+      "list.activeSelectionBackground": pick({ light: "#e2e5e9", dark: "#39414a" }),
       "list.inactiveFocusBackground": pick({ light: primer.blue[1], dark: "#1d2d3e" }),
       "list.focusBackground": pick({ light: "#cce5ff", dark: primer.blue[2] }),
 
