@@ -121,7 +121,7 @@ function getTheme({ style, name }) {
       "editorLineNumber.activeForeground": primer.gray[9],
       "editorIndentGuide.background": pick({ light: "#eff2f6", dark: primer.gray[1] }),
       "editorIndentGuide.activeBackground": pick({ light: "#d7dbe0", dark: primer.gray[2] }),
-      "editorWhitespace.foreground": pick({ light: primer.gray[4], dark: primer.gray[4] }),
+      "editorWhitespace.foreground": pick({ light: primer.gray[3], dark: primer.gray[2] }),
       "editorCursor.foreground": primer.blue[7],
       "editor.inactiveSelectionBackground": pick({ light: "#0366d611", dark: "#79b8ff11" }),
       "editor.selectionBackground": pick({ light: "#0366d625", dark: "#2188ff33" }),
