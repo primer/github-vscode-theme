@@ -39,4 +39,4 @@ Note:
     - `patch` for bug fixes
     - `minor` for improvements
     - `major` for breaking or bigger changes
-4. Push the commits and make a [new realease](https://github.com/primer/github-vscode-theme/releases/new).
+4. Push the commits and make a [new release](https://github.com/primer/github-vscode-theme/releases/new).
