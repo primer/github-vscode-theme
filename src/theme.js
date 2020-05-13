@@ -134,8 +134,8 @@ function getTheme({ style, name }) {
       "editorGutter.addedBackground": pick({ light: primer.green[5], dark: primer.green[4] }),
       "editorGutter.deletedBackground": primer.red[5],
 
-      "diffEditor.insertedTextBackground": pick({ light: "#34d05822", dark: "#28a74511" }),
-      "diffEditor.removedTextBackground": pick({ light: "#d73a4922", dark: "#d73a4918" }),
+      "diffEditor.insertedTextBackground": pick({ light: "#34d05822", dark: "#28a74530" }),
+      "diffEditor.removedTextBackground": pick({ light: "#d73a4922", dark: "#d73a4930" }),
 
       "scrollbar.shadow": pick({ light: "#6a737d33", dark: "#0008" }),
       "scrollbarSlider.background": pick({ light: "#959da533", dark: "#6a737d33" }),
