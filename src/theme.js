@@ -168,6 +168,7 @@ function getTheme({ style, name }) {
       "welcomePage.buttonBackground": primer.gray[1],
       "welcomePage.buttonHoverBackground": primer.gray[2],
     },
+    semanticHighlighting: true,
     tokenColors: [
       {
         scope: ["comment", "punctuation.definition.comment", "string.comment"],
