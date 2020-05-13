@@ -234,7 +234,7 @@ function getTheme({ style, name }) {
           "string punctuation.section.embedded source",
         ],
         settings: {
-          foreground: primer.blue[8],
+          foreground: pick({ light: primer.blue[8], dark: "#9ecbff" }),
         },
       },
       {
