@@ -79,7 +79,16 @@ function getTheme({ style, name }) {
       "list.focusBackground": pick({ light: "#cce5ff", dark: primer.blue[2] }),
 
       "tree.indentGuidesStroke": pick({ light: primer.gray[2], dark: primer.gray[1] }),
-      "notificationCenterHeader.background": primer.gray[0],
+
+      "notificationCenterHeader.foreground": primer.gray[5],
+      "notificationCenterHeader.background": pick({ light: primer.gray[2], dark: primer.gray[0] }),
+      "notifications.foreground": primer.gray[9],
+      "notifications.background": pick({ light: primer.gray[0], dark: primer.gray[1] }),
+      "notifications.border": pick({ light: primer.gray[2], dark: primer.white }),
+      "notificationsErrorIcon.foreground": primer.red[5],
+      "notificationsWarningIcon.foreground": primer.orange[6],
+      "notificationsInfoIcon.foreground": primer.blue[6],
+
       "pickerGroup.border": primer.gray[2],
       "pickerGroup.foreground": primer.gray[9],
       "quickInput.background": primer.gray[0],
