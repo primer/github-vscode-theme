@@ -1,3 +1,12 @@
+## 1.1.0
+
+- Add notifications [#31](https://github.com/primer/github-vscode-theme/pull/31)
+- Enable semantic highlighting [#30](https://github.com/primer/github-vscode-theme/pull/30)
+- Make diff editor colors more opaque [#28](https://github.com/primer/github-vscode-theme/pull/28)
+- Darker strings [#27](https://github.com/primer/github-vscode-theme/pull/27)
+- Fix small typo [#22](https://github.com/primer/github-vscode-theme/pull/22)
+- Decrease whitespace characters color contrast [#17](https://github.com/primer/github-vscode-theme/pull/17)
+
 ## 1.0.0
 
 - Introduce dark theme [#4](https://github.com/primer/github-vscode-theme/pull/4)
