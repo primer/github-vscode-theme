@@ -124,6 +124,7 @@ function getTheme({ style, name }) {
 
       "editor.foreground": primer.gray[9],
       "editor.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "editorWidget.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editor.foldBackground": pick({ light: primer.gray[0], dark: "#282e33" }),
       "editor.lineHighlightBackground": pick({ light: primer.gray[1], dark: "#2b3036" }),
       "editorLineNumber.foreground": pick({ light: "#1b1f234d", dark: primer.gray[2] }),
