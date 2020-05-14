@@ -99,7 +99,7 @@ function getTheme({ style, name }) {
       "statusBar.border": pick({ light: primer.gray[2], dark: primer.white }),
       "statusBar.noFolderBackground": pick({ light: primer.white, dark: primer.gray[0] }),
       "statusBar.debuggingBackground": auto("#f9826c"),
-      "statusBar.debuggingForeground": primer.white,
+      "statusBar.debuggingForeground": pick({ light: primer.white, dark: primer.black }),
 
       "editorGroupHeader.tabsBackground": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editorGroupHeader.tabsBorder": pick({ light: primer.gray[2], dark: primer.white }),
