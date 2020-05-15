@@ -136,20 +136,15 @@ function getTheme({ style, name }) {
 
       "editor.findMatchBackground": pick({ light: primer.yellow[4], dark: "#ffd33d44" }),
       "editor.findMatchHighlightBackground": pick({ light: "#ffdf5d66", dark: "#ffd33d22" }),
-
       "editor.inactiveSelectionBackground": pick({ light: "#0366d611", dark: "#3392FF22" }),
       "editor.selectionBackground": pick({ light: "#0366d625", dark: "#3392FF44" }),
-
       "editor.selectionHighlightBackground": pick({ light: "#34d05840", dark: "#17E5E633" }),
-
       "editor.wordHighlightBackground": pick({ light: "#34d05800", dark: "#17E5E600" }),
       "editor.wordHighlightStrongBackground": pick({ light: "#34d05800", dark: "#17E5E600" }),
       "editor.wordHighlightBorder": pick({ light: "#34d05866", dark: "#17E5E633" }),
       "editor.wordHighlightStrongBorder": pick({ light: "#28a74566", dark: "#17E5E666" }),
-
       "editorBracketMatch.background": pick({ light: "#34d05840", dark: "#17E5E650" }),
       "editorBracketMatch.border": pick({ light: "#34d05800", dark: "#17E5E600" }),
-
 
       "editorGutter.modifiedBackground": pick({ light: primer.blue[4], dark: primer.blue[5] }),
       "editorGutter.addedBackground": pick({ light: primer.green[5], dark: primer.green[4] }),
