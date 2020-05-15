@@ -50,7 +50,7 @@
     "list.hoverForeground": "#fafbfc",
     "list.inactiveSelectionForeground": "#fafbfc",
     "list.activeSelectionForeground": "#fafbfc",
-    "list.hoverBackground": "#24292e",
+    "list.hoverBackground": "#282e34",
     "list.inactiveSelectionBackground": "#282e34",
     "list.activeSelectionBackground": "#39414a",
     "list.inactiveFocusBackground": "#1d2d3e",
