@@ -1,3 +1,10 @@
+## 1.1.1
+
+- Increase contrast for list.hoverBackground [#37](https://github.com/primer/github-vscode-theme/pull/37)
+- Tweak selection and highlights [#36](https://github.com/primer/github-vscode-theme/pull/36)
+- Update debug foreground color for dark theme [#33](https://github.com/primer/github-vscode-theme/pull/33)
+- Add editorWidget.background colors [#32](https://github.com/primer/github-vscode-theme/pull/32)
+
 ## 1.1.0
 
 - Add notifications [#31](https://github.com/primer/github-vscode-theme/pull/31)
