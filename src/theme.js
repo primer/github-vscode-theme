@@ -179,6 +179,11 @@ function getTheme({ style, name }) {
       "debugToolBar.background": pick({ light: primer.white, dark: "#2b3036" }),
       "editor.stackFrameHighlightBackground": primer.yellow[1],
       "editor.focusedStackFrameHighlightBackground": primer.yellow[2],
+
+      "peekViewEditor.matchHighlightBackground": pick({ dark: "#ffd33d44" }),
+      "peekViewEditor.background": pick({ dark: "#1f242888" }),
+      "peekViewResult.background": pick({ dark: "#1f2428" }),
+
       "settings.headerForeground": primer.gray[9],
       "settings.modifiedItemIndicator": primer.blue[4],
       "welcomePage.buttonBackground": primer.gray[1],
