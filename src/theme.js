@@ -180,7 +180,8 @@ function getTheme({ style, name }) {
       "editor.stackFrameHighlightBackground": primer.yellow[1],
       "editor.focusedStackFrameHighlightBackground": primer.yellow[2],
 
-      "peekViewEditor.matchHighlightBackground": pick({ dark: "#ffd33d44" }),
+      "peekViewEditor.matchHighlightBackground": pick({ dark: "#ffd33d33" }),
+      "peekViewResult.matchHighlightBackground": pick({ dark: "#ffd33d33" }),
       "peekViewEditor.background": pick({ dark: "#1f242888" }),
       "peekViewResult.background": pick({ dark: "#1f2428" }),
 
