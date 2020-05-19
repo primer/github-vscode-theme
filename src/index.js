@@ -11,7 +11,7 @@ const darkTheme = getTheme({
   name: "GitHub Dark",
 });
 
-fs.mkdir("./themes").then(() => {
+fs.mkdir("./themes", { recursive: true }).then(() => {
   fs.writeFile("./themes/light.json", JSON.stringify(lightTheme, null, 2))
   fs.writeFile("./themes/dark.json", JSON.stringify(darkTheme, null, 2))
 })
