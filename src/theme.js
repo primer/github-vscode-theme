@@ -139,10 +139,11 @@ function getTheme({ style, name }) {
       "editor.inactiveSelectionBackground": pick({ light: "#0366d611", dark: "#3392FF22" }),
       "editor.selectionBackground": pick({ light: "#0366d625", dark: "#3392FF44" }),
       "editor.selectionHighlightBackground": pick({ light: "#34d05840", dark: "#17E5E633" }),
+      "editor.selectionHighlightBorder": pick({ light: "#34d05800", dark: "#17E5E600" }),
       "editor.wordHighlightBackground": pick({ light: "#34d05800", dark: "#17E5E600" }),
       "editor.wordHighlightStrongBackground": pick({ light: "#34d05800", dark: "#17E5E600" }),
-      "editor.wordHighlightBorder": pick({ light: "#34d05866", dark: "#17E5E633" }),
-      "editor.wordHighlightStrongBorder": pick({ light: "#28a74566", dark: "#17E5E666" }),
+      "editor.wordHighlightBorder": pick({ light: "#24943e99", dark: "#17E5E699" }),
+      "editor.wordHighlightStrongBorder": pick({ light: "#24943e50", dark: "#17E5E666" }),
       "editorBracketMatch.background": pick({ light: "#34d05840", dark: "#17E5E650" }),
       "editorBracketMatch.border": pick({ light: "#34d05800", dark: "#17E5E600" }),
 
