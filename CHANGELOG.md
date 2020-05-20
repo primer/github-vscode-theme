@@ -1,3 +1,10 @@
+## 1.1.2
+
+- Small optimisations [#42](https://github.com/primer/github-vscode-theme/pull/42)
+- Stronger wordHighlightBorder [#40](https://github.com/primer/github-vscode-theme/pull/40)
+- Fixed debug line color for dark theme [#44](https://github.com/primer/github-vscode-theme/pull/44)
+- Add peekViewEditor colors for dark theme [#39](https://github.com/primer/github-vscode-theme/pull/39)
+
 ## 1.1.1
 
 - Increase contrast for list.hoverBackground [#37](https://github.com/primer/github-vscode-theme/pull/37)
