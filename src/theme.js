@@ -225,8 +225,22 @@ function getTheme({ style, name }) {
       {
         scope: "entity.name.tag",
         settings: {
-          foreground: primer.green[6],
+          foreground: pick({ light: primer.green[6], dark: primer.red[6] }),
         },
+      },
+      {
+        scope: [
+          "source.css-ignored-vscode",
+          "punctuation.definition.string.end.html",
+          "string.quoted.double.html",
+          "meta.embedded.line.css",
+          "meta.attribute.style.html",
+          "meta.tag.structure.div.start.html",
+          "text.html.derivative",
+        ],
+        settings: {
+          "foreground": ""
+        }
       },
       {
         scope: "keyword",
@@ -277,6 +291,12 @@ function getTheme({ style, name }) {
         settings: {
           foreground: primer.orange[6],
         },
+      },
+      {
+        scope: "string.template meta.template.expression",
+        settings: {
+          foreground: pick({ light: primer.red[5], dark: primer.red[6] })
+        }
       },
       {
         scope: "variable.other",
