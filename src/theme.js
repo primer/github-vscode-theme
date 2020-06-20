@@ -10,7 +10,7 @@ function getTheme({ style, name }) {
 
   const primer = getColors(style);
 
-  const foreground = primer.gray[7];
+  const foreground = pick({ light: primer.gray[8], dark: primer.gray[7] });
 
   return {
     name: name,
@@ -64,7 +64,7 @@ function getTheme({ style, name }) {
       "activityBar.activeBorder": "#f9826c",
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
-      "sideBar.foreground": primer.gray[7],
+      "sideBar.foreground": primer.gray[6],
       "sideBar.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "sideBar.border": pick({ light: primer.gray[2], dark: primer.white }),
       "sideBarTitle.foreground": foreground,
@@ -387,7 +387,7 @@ function getTheme({ style, name }) {
       {
         scope: "markup.list",
         settings: {
-          foreground: primer.yellow[9],
+          foreground: foreground,
         },
       },
       {
