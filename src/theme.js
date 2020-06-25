@@ -125,13 +125,13 @@ function getTheme({ style, name }) {
       "breadcrumb.activeSelectionForeground": primer.gray[6],
       "breadcrumbPicker.background": pick({ light: primer.gray[0], dark: "#2b3036" }),
 
-      "editor.foreground": pick({ light: primer.gray[9], dark: primer.gray[8] }),
+      "editor.foreground": pick({ light: primer.gray[9], dark: primer.gray[7] }),
       "editor.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "editorWidget.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editor.foldBackground": pick({ light: primer.gray[0], dark: "#282e33" }),
       "editor.lineHighlightBackground": pick({ light: primer.gray[1], dark: "#2b3036" }),
       "editorLineNumber.foreground": pick({ light: "#1b1f234d", dark: primer.gray[2] }),
-      "editorLineNumber.activeForeground": foreground,
+      "editorLineNumber.activeForeground": pick({ light: primer.gray[9], dark: primer.gray[7] }),
       "editorIndentGuide.background": pick({ light: "#eff2f6", dark: primer.gray[1] }),
       "editorIndentGuide.activeBackground": pick({ light: "#d7dbe0", dark: primer.gray[2] }),
       "editorWhitespace.foreground": pick({ light: primer.gray[3], dark: primer.gray[2] }),
@@ -222,7 +222,7 @@ function getTheme({ style, name }) {
       {
         scope: "variable.parameter.function",
         settings: {
-          foreground: foreground,
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] }),
         },
       },
       {
@@ -250,7 +250,7 @@ function getTheme({ style, name }) {
           "storage.type.java",
         ],
         settings: {
-          foreground: foreground,
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] }),
         },
       },
       {
@@ -284,7 +284,7 @@ function getTheme({ style, name }) {
       {
         scope: "variable.other",
         settings: {
-          foreground: foreground,
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] }),
         },
       },
       {
@@ -333,7 +333,7 @@ function getTheme({ style, name }) {
       {
         scope: "string source",
         settings: {
-          foreground: foreground,
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] }),
         },
       },
       {
@@ -407,14 +407,14 @@ function getTheme({ style, name }) {
         scope: "markup.italic",
         settings: {
           fontStyle: "italic",
-          foreground: foreground,
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] }),
         },
       },
       {
         scope: "markup.bold",
         settings: {
           fontStyle: "bold",
-          foreground: foreground,
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] }),
         },
       },
       {
