@@ -125,8 +125,8 @@ function getTheme({ style, name }) {
       "breadcrumb.activeSelectionForeground": primer.gray[6],
       "breadcrumbPicker.background": pick({ light: primer.gray[0], dark: "#2b3036" }),
 
-      "editor.foreground": foreground,
-      "editor.background": primer.gray[0],
+      "editor.foreground": pick({ light: primer.gray[9], dark: primer.gray[8] }),
+      "editor.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "editorWidget.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editor.foldBackground": pick({ light: primer.gray[0], dark: "#282e33" }),
       "editor.lineHighlightBackground": pick({ light: primer.gray[1], dark: "#2b3036" }),
@@ -385,9 +385,9 @@ function getTheme({ style, name }) {
         },
       },
       {
-        scope: "markup.list",
+        scope: "punctuation.definition.list.begin.markdown",
         settings: {
-          foreground: foreground,
+          foreground: primer.orange[6],
         },
       },
       {
