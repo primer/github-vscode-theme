@@ -1,3 +1,8 @@
+## 1.1.3
+
+- Soften foreground color [#65](https://github.com/primer/github-vscode-theme/pull/65)
+- Fix Markdown list punctuation [#65](https://github.com/primer/github-vscode-theme/pull/65)
+
 ## 1.1.2
 
 - Small optimisations [#42](https://github.com/primer/github-vscode-theme/pull/42)
