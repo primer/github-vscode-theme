@@ -59,18 +59,18 @@ function getTheme({ style, name }) {
 
       "activityBar.foreground": workbenchForeground,
       "activityBar.inactiveForeground": primer.gray[4],
-      "activityBar.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "activityBar.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "activityBarBadge.foreground": pick({ light: primer.white, dark: primer.black }),
       "activityBarBadge.background": pick({ light: primer.blue[4], dark: primer.blue[4] }),
       "activityBar.activeBorder": "#f9826c",
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
       "sideBar.foreground": primer.gray[4],
-      "sideBar.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
+      "sideBar.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "sideBar.border": pick({ light: primer.gray[2], dark: primer.white }),
       "sideBarTitle.foreground": workbenchForeground,
       "sideBarSectionHeader.foreground": primer.gray[4],
-      "sideBarSectionHeader.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
+      "sideBarSectionHeader.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "sideBarSectionHeader.border": pick({ light: primer.gray[2], dark: primer.white }),
 
       "list.hoverForeground": workbenchForeground,
@@ -99,13 +99,13 @@ function getTheme({ style, name }) {
       "quickInput.foreground": workbenchForeground,
 
       "statusBar.foreground": primer.gray[6],
-      "statusBar.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "statusBar.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "statusBar.border": pick({ light: primer.gray[2], dark: primer.white }),
       "statusBar.noFolderBackground": pick({ light: primer.white, dark: primer.gray[0] }),
       "statusBar.debuggingBackground": auto("#f9826c"),
       "statusBar.debuggingForeground": pick({ light: primer.white, dark: primer.black }),
 
-      "editorGroupHeader.tabsBackground": pick({ light: primer.gray[1], dark: "#1f2428" }),
+      "editorGroupHeader.tabsBackground": pick({ light: primer.white, dark: primer.gray[0] }),
       "editorGroupHeader.tabsBorder": pick({ light: primer.gray[2], dark: primer.white }),
       "editorGroup.border": pick({ light: primer.gray[2], dark: primer.white }),
 
@@ -127,7 +127,7 @@ function getTheme({ style, name }) {
       "breadcrumbPicker.background": pick({ light: primer.gray[0], dark: "#2b3036" }),
 
       "editor.foreground": editorForeground,
-      "editor.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "editor.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editorWidget.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editor.foldBackground": pick({ light: primer.gray[0], dark: "#282e33" }),
       "editor.lineHighlightBackground": pick({ light: primer.gray[1], dark: "#2b3036" }),
@@ -164,7 +164,7 @@ function getTheme({ style, name }) {
       "scrollbarSlider.activeBackground": pick({ light: "#959da588", dark: "#6a737d88" }),
       "editorOverviewRuler.border": primer.white,
 
-      "panel.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
+      "panel.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "panel.border": pick({ light: primer.gray[2], dark: primer.white }),
       "panelTitle.activeBorder": "#f9826c",
       "panelTitle.activeForeground": workbenchForeground,
