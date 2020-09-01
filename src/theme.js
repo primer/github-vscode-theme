@@ -47,7 +47,7 @@ function getTheme({ style, name }) {
       "input.placeholderForeground": pick({ light: primer.gray[4], dark: primer.gray[5] }),
 
       "badge.foreground": pick({ light: primer.blue[6], dark: primer.blue[7] }),
-      "badge.background": pick({ light: primer.blue[1], dark: primer.blue[2] }),
+      "badge.background": pick({ light: primer.blue[4], dark: primer.blue[4] }),
 
       "progressBar.background": primer.blue[4],
 
@@ -61,7 +61,7 @@ function getTheme({ style, name }) {
       "activityBar.inactiveForeground": primer.gray[4],
       "activityBar.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "activityBarBadge.foreground": pick({ light: primer.white, dark: primer.black }),
-      "activityBarBadge.background": pick({ light: primer.blue[4], dark: primer.blue[4] }),
+      "activityBarBadge.background": pick({ light: primer.blue[1], dark: primer.blue[2] }),
       "activityBar.activeBorder": "#f9826c",
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
