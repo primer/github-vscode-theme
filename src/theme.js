@@ -65,11 +65,11 @@ function getTheme({ style, name }) {
       "activityBar.activeBorder": "#f9826c",
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
-      "sideBar.foreground": primer.gray[4],
+      "sideBar.foreground": primer.gray[5],
       "sideBar.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "sideBar.border": pick({ light: primer.gray[2], dark: primer.white }),
       "sideBarTitle.foreground": workbenchForeground,
-      "sideBarSectionHeader.foreground": primer.gray[4],
+      "sideBarSectionHeader.foreground": primer.gray[5],
       "sideBarSectionHeader.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "sideBarSectionHeader.border": pick({ light: primer.gray[2], dark: primer.white }),
 
@@ -171,7 +171,7 @@ function getTheme({ style, name }) {
       "panelTitle.inactiveForeground": primer.gray[5],
       "panelInput.border": pick({ light: primer.gray[2], dark: primer.gray[1] }),
 
-      "terminal.foreground": primer.gray[4],
+      "terminal.foreground": primer.gray[5],
 
       "gitDecoration.addedResourceForeground": primer.green[5],
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
