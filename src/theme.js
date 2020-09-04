@@ -47,7 +47,7 @@ function getTheme({ style, name }) {
       "input.placeholderForeground": pick({ light: primer.gray[4], dark: primer.gray[5] }),
 
       "badge.foreground": pick({ light: primer.blue[6], dark: primer.blue[7] }),
-      "badge.background": pick({ light: primer.blue[4], dark: primer.blue[4] }),
+      "badge.background": pick({ light: primer.blue[1], dark: primer.blue[2] }),
 
       "progressBar.background": primer.blue[4],
 
@@ -61,23 +61,23 @@ function getTheme({ style, name }) {
       "activityBar.inactiveForeground": primer.gray[4],
       "activityBar.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "activityBarBadge.foreground": pick({ light: primer.white, dark: primer.black }),
-      "activityBarBadge.background": pick({ light: primer.blue[1], dark: primer.blue[2] }),
+      "activityBarBadge.background": pick({ light: primer.blue[4], dark: primer.blue[4] }),
       "activityBar.activeBorder": "#f9826c",
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
       "sideBar.foreground": primer.gray[5],
-      "sideBar.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "sideBar.background": pick({ light: primer.gray[1], dark: "#181c1f" }),
       "sideBar.border": pick({ light: primer.gray[2], dark: primer.white }),
-      "sideBarTitle.foreground": workbenchForeground,
+      "sideBarTitle.foreground": primer.gray[5],
       "sideBarSectionHeader.foreground": primer.gray[5],
-      "sideBarSectionHeader.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "sideBarSectionHeader.background": pick({ light: primer.gray[1], dark: "#181c1f" }),
       "sideBarSectionHeader.border": pick({ light: primer.gray[2], dark: primer.white }),
 
       "list.hoverForeground": workbenchForeground,
       "list.inactiveSelectionForeground": workbenchForeground,
       "list.activeSelectionForeground": workbenchForeground,
-      "list.hoverBackground": pick({ light: "#ebf0f4", dark: "#282e34" }),
-      "list.inactiveSelectionBackground": pick({ light: "#e8eaed", dark: "#282e34" }),
+      "list.hoverBackground": pick({ light: "#ebf0f4", dark: "#21262b" }),
+      "list.inactiveSelectionBackground": pick({ light: "#e8eaed", dark: "#21262b" }),
       "list.activeSelectionBackground": pick({ light: "#e2e5e9", dark: "#39414a" }),
       "list.inactiveFocusBackground": pick({ light: primer.blue[1], dark: "#1d2d3e" }),
       "list.focusBackground": pick({ light: "#cce5ff", dark: primer.blue[2] }),
@@ -98,14 +98,14 @@ function getTheme({ style, name }) {
       "quickInput.background": primer.gray[0],
       "quickInput.foreground": workbenchForeground,
 
-      "statusBar.foreground": primer.gray[6],
-      "statusBar.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
+      "statusBar.foreground": primer.gray[5],
+      "statusBar.background": pick({ light: primer.white, dark: "#181c1f" }),
       "statusBar.border": pick({ light: primer.gray[2], dark: primer.white }),
       "statusBar.noFolderBackground": pick({ light: primer.white, dark: primer.gray[0] }),
       "statusBar.debuggingBackground": auto("#f9826c"),
       "statusBar.debuggingForeground": pick({ light: primer.white, dark: primer.black }),
 
-      "editorGroupHeader.tabsBackground": pick({ light: primer.white, dark: primer.gray[0] }),
+      "editorGroupHeader.tabsBackground": pick({ light: primer.gray[1], dark: "#181c1f" }),
       "editorGroupHeader.tabsBorder": pick({ light: primer.gray[2], dark: primer.white }),
       "editorGroup.border": pick({ light: primer.gray[2], dark: primer.white }),
 
@@ -127,8 +127,8 @@ function getTheme({ style, name }) {
       "breadcrumbPicker.background": pick({ light: primer.gray[0], dark: "#2b3036" }),
 
       "editor.foreground": editorForeground,
-      "editor.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
-      "editorWidget.background": pick({ light: primer.gray[1], dark: "#1f2428" }),
+      "editor.background": pick({ light: primer.gray[1], dark: "#1b1f23" }),
+      "editorWidget.background": pick({ light: primer.gray[1], dark: "#1b1f23" }),
       "editor.foldBackground": pick({ light: primer.gray[0], dark: "#282e33" }),
       "editor.lineHighlightBackground": pick({ light: primer.gray[1], dark: "#2b3036" }),
       "editorLineNumber.foreground": pick({ light: "#1b1f234d", dark: primer.gray[2] }),
@@ -164,7 +164,7 @@ function getTheme({ style, name }) {
       "scrollbarSlider.activeBackground": pick({ light: "#959da588", dark: "#6a737d88" }),
       "editorOverviewRuler.border": primer.white,
 
-      "panel.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "panel.background": pick({ light: primer.gray[1], dark: "#181c1f" }),
       "panel.border": pick({ light: primer.gray[2], dark: primer.white }),
       "panelTitle.activeBorder": "#f9826c",
       "panelTitle.activeForeground": workbenchForeground,
