@@ -65,11 +65,11 @@ function getTheme({ style, name }) {
       "activityBar.activeBorder": "#f9826c",
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
-      "sideBar.foreground": primer.gray[5],
+      "sideBar.foreground": primer.gray[4],
       "sideBar.background": pick({ light: primer.gray[1], dark: "#161a1d" }),
       "sideBar.border": pick({ light: primer.gray[2], dark: primer.white }),
-      "sideBarTitle.foreground": primer.gray[5],
-      "sideBarSectionHeader.foreground": primer.gray[5],
+      "sideBarTitle.foreground": primer.gray[4],
+      "sideBarSectionHeader.foreground": primer.gray[4],
       "sideBarSectionHeader.background": pick({ light: primer.gray[1], dark: "#161a1d" }),
       "sideBarSectionHeader.border": pick({ light: primer.gray[2], dark: primer.white }),
 
@@ -121,9 +121,9 @@ function getTheme({ style, name }) {
       "tab.unfocusedActiveBorder": pick({ light: primer.gray[1], dark: "#181c1f" }),
       "tab.activeBorderTop": "#f9826c",
 
-      "breadcrumb.foreground": primer.gray[5],
+      "breadcrumb.foreground": primer.gray[4],
       "breadcrumb.focusForeground": workbenchForeground,
-      "breadcrumb.activeSelectionForeground": primer.gray[6],
+      "breadcrumb.activeSelectionForeground": primer.gray[2],
       "breadcrumbPicker.background": pick({ light: primer.gray[0], dark: "#2b3036" }),
 
       "editor.foreground": editorForeground,
@@ -177,7 +177,7 @@ function getTheme({ style, name }) {
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
       "gitDecoration.deletedResourceForeground": primer.red[5],
       "gitDecoration.untrackedResourceForeground": primer.green[5],
-      "gitDecoration.ignoredResourceForeground": primer.gray[4],
+      "gitDecoration.ignoredResourceForeground": primer.gray[2],
       "gitDecoration.conflictingResourceForeground": primer.orange[6],
       "gitDecoration.submoduleResourceForeground": primer.gray[4],
 
