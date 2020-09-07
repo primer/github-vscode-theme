@@ -171,7 +171,7 @@ function getTheme({ style, name }) {
       "panelTitle.inactiveForeground": primer.gray[5],
       "panelInput.border": pick({ light: primer.gray[2], dark: primer.gray[1] }),
 
-      "terminal.foreground": primer.gray[5],
+      "terminal.foreground": primer.gray[6],
 
       "gitDecoration.addedResourceForeground": primer.green[5],
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
