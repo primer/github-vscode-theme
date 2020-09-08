@@ -104,6 +104,7 @@ function getTheme({ style, name }) {
       "statusBar.noFolderBackground": pick({ light: primer.white, dark: primer.gray[0] }),
       "statusBar.debuggingBackground": auto("#f9826c"),
       "statusBar.debuggingForeground": pick({ light: primer.white, dark: primer.black }),
+      "statusBarItem.prominentBackground": pick({ light: "#e8eaed", dark: "#282e34" }),
 
       "editorGroupHeader.tabsBackground": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editorGroupHeader.tabsBorder": pick({ light: primer.gray[2], dark: primer.white }),
