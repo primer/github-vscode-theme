@@ -34,9 +34,10 @@ Note:
 **Prerequisite**: Please follow this [guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) to install and login to `vsce`. Ask an existing maintainer how to get the "Personal Access Token".
 
 1. Merge any PR that is ready to be published into `master`.
-2. Update [CHANGELOG.md](https://github.com/primer/github-vscode-theme/blob/master/CHANGELOG.md) + commit the changes.
-3. Run `vsce publish [version]`. Follow the [SemVer](https://semver.org) convention and replace `[version]` with one of the following  options:
+2. Run `npm run build` to generate the themes with the new changes.
+3. Update [CHANGELOG.md](https://github.com/primer/github-vscode-theme/blob/master/CHANGELOG.md) + commit the changes.
+4. Run `vsce publish [version]`. Follow the [SemVer](https://semver.org) convention and replace `[version]` with one of the following  options:
     - `patch` for bug fixes
     - `minor` for improvements
     - `major` for breaking or bigger changes
-4. Push the commits and make a [new release](https://github.com/primer/github-vscode-theme/releases/new).
+5. Push the commits and make a [new release](https://github.com/primer/github-vscode-theme/releases/new).

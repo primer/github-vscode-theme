@@ -1,3 +1,8 @@
+## 1.1.5
+
+- Rename color variables [#68](https://github.com/primer/github-vscode-theme/pull/68)
+- Add statusbar prominent background [#86](https://github.com/primer/github-vscode-theme/pull/86)
+
 ## 1.1.3
 
 - Soften foreground color [#65](https://github.com/primer/github-vscode-theme/pull/65)
