@@ -2,11 +2,7 @@
 	"name": "github-vscode-theme",
 	"displayName": "GitHub Theme",
 	"description": "GitHub theme for VS Code",
-<<<<<<< HEAD
-	"version": "1.2.0",
-=======
 	"version": "1.1.5",
->>>>>>> 7e4192f7b02b72d40fb82e8e11b706a3904a86b8
 	"preview": true,
 	"publisher": "GitHub",
 	"license": "MIT",
