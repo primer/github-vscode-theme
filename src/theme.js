@@ -193,8 +193,8 @@ function getTheme({ style, name }) {
 
       "settings.headerForeground": workbenchForeground,
       "settings.modifiedItemIndicator": primer.blue[4],
-      "welcomePage.buttonBackground": primer.gray[1],
-      "welcomePage.buttonHoverBackground": primer.gray[2],
+      "welcomePage.buttonBackground": primer.gray[0],
+      "welcomePage.buttonHoverBackground": primer.gray[1],
     },
     semanticHighlighting: true,
     tokenColors: [
