@@ -268,7 +268,7 @@ function getTheme({ style, name }) {
       {
         scope: "support",
         settings: {
-          foreground: primer.blue[6],
+          foreground: pick({ light: "#6f42c1", dark: "#b392f0" }),
         },
       },
       {
@@ -375,12 +375,6 @@ function getTheme({ style, name }) {
         },
       },
       {
-        scope: "support",
-        settings: {
-          foreground: "#b392f0",
-        },
-      },
-      {
         scope: "support.variable",
         settings: {
           foreground: primer.blue[6],
@@ -389,7 +383,7 @@ function getTheme({ style, name }) {
       {
         scope: "support.variable.property",
         settings: {
-          foreground: "#e1e4e8",
+          foreground: pick({ light: "#24292e", dark: "#e1e4e8" })
         },
       },
       {
