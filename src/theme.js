@@ -268,7 +268,7 @@ function getTheme({ style, name }) {
       {
         scope: "support",
         settings: {
-          foreground: pick({ light: "#6f42c1", dark: "#b392f0" }),
+          foreground: pick({ light: primer.purple[5], dark: primer.purple[6] }),
         },
       },
       {
@@ -383,7 +383,7 @@ function getTheme({ style, name }) {
       {
         scope: "support.variable.property",
         settings: {
-          foreground: pick({ light: "#24292e", dark: "#e1e4e8" })
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] })
         },
       },
       {
