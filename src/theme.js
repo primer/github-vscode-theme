@@ -369,6 +369,12 @@ function getTheme({ style, name }) {
         },
       },
       {
+        scope: "support.constant.property",
+        settings: {
+          foreground: editorForeground,
+        },
+      },
+      {
         scope: "support.constant",
         settings: {
           foreground: primer.blue[6],
@@ -383,7 +389,7 @@ function getTheme({ style, name }) {
       {
         scope: "support.variable.property",
         settings: {
-          foreground: pick({ light: primer.gray[9], dark: primer.gray[7] })
+          foreground: editorForeground,
         },
       },
       {
