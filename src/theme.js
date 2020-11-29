@@ -375,9 +375,21 @@ function getTheme({ style, name }) {
         },
       },
       {
+        scope: "support",
+        settings: {
+          foreground: "#b392f0",
+        },
+      },
+      {
         scope: "support.variable",
         settings: {
           foreground: primer.blue[6],
+        },
+      },
+      {
+        scope: "support.variable.property",
+        settings: {
+          foreground: "#e1e4e8",
         },
       },
       {
