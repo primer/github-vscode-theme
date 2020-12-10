@@ -1,7 +1,7 @@
 const { getVariant } = require("./process");
 const { getColors } = require("./primer");
 
-function getTheme({ mode, name }) {
+function getTheme({ theme, mode, name }) {
   // Usage: `auto('pink')`
   const auto = (hex) => getVariant(hex, mode);
 
