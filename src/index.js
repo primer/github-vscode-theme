@@ -2,17 +2,17 @@ const fs = require("fs").promises;
 const getTheme = require("./theme");
 
 const lightTheme = getTheme({
-  style: "light",
+  mode: "light",
   name: "GitHub Light",
 });
 
 const darkTheme = getTheme({
-  style: "dark",
+  mode: "dark",
   name: "GitHub Dark",
 });
 
 const spaceGrayTheme = getTheme({
-  style: "dark",
+  mode: "dark",
   name: "GitHub SpaceGray",
 });
 

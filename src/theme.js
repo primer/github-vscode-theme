@@ -1,14 +1,14 @@
 const { getVariant } = require("./process");
 const { getColors } = require("./primer");
 
-function getTheme({ style, name }) {
+function getTheme({ mode, name }) {
   // Usage: `auto('pink')`
-  const auto = (hex) => getVariant(hex, style);
+  const auto = (hex) => getVariant(hex, mode);
 
   // Usage: `pick({ light: "lightblue", dark: "darkblue" })`
-  const pick = (options) => options[style];
+  const pick = (options) => options[mode];
 
-  const primer = getColors(style);
+  const primer = getColors(mode);
 
   const workbenchForeground = pick({ light: primer.gray[8], dark: primer.gray[7] });
   const editorForeground = pick({ light: primer.gray[9], dark: primer.gray[7] });

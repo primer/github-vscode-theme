@@ -4,8 +4,8 @@ const Color = require("color");
  * Generate color variant by inverting
  * luminance in the  HSL representation
  */
-function getVariant(hex, style) {
-  if (style === "dark") {
+function getVariant(hex, mode) {
+  if (mode === "dark") {
     const c = Color(hex);
     return c
       .hsl()

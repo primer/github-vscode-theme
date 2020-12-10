@@ -1,7 +1,7 @@
 const { colors } = require("@primer/primitives");
 
-function getColors(style) {
-  if (style === "dark") {
+function getColors(mode) {
+  if (mode === "dark") {
     /* The array of light to dark colors are reversed to auto-generate dark theme */
     const darkColors = {};
     Object.entries(colors).forEach(([name, val]) => {
