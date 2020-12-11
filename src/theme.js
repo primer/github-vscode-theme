@@ -137,7 +137,7 @@ function getTheme({ theme, name }) {
       "editorWidget.background"           : themes({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "editor.foldBackground"             : themes({ light: color.gray[0], dark: "#282e33", spacegray: "#282e33" }),
       "editor.lineHighlightBackground"    : themes({ light: color.gray[1], dark: "#2b3036", spacegray: "#2b3036" }),
-      "editorLineNumber.foreground"       : themes({ light: "#1b1f234d", dark: color.gray[7], spacegray: color.gray[2] }),
+      "editorLineNumber.foreground"       : themes({ light: "#1b1f234d", dark: "#f0f6fc4d", spacegray: color.gray[2] }),
       "editorLineNumber.activeForeground" : editorForeground,
       "editorIndentGuide.background"      : themes({ light: "#eff2f6", dark: color.gray[8], spacegray: color.gray[1] }),
       "editorIndentGuide.activeBackground": themes({ light: "#d7dbe0", dark: color.gray[7], spacegray: color.gray[2] }),
