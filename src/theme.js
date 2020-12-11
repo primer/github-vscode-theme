@@ -27,7 +27,7 @@ function getTheme({ theme, mode, name }) {
 
   // Usage: color.blue[6]
   // Color scheme from primer/primitives
-  const color = getColors(mode);
+  const color = getColors(theme);
 
   const workbenchForeground = pick({ light: color.gray[8], dark: color.gray[7], spacegray: color.gray[7] });
   const editorForeground    = pick({ light: color.gray[9], dark: color.gray[7], spacegray: color.gray[7] });

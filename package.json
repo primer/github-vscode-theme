@@ -50,7 +50,7 @@
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "^2.0.1",
+		"@primer/primitives": "0.0.0-2020114231048",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
 	},
