@@ -14,16 +14,16 @@ function getTheme({ theme, name }) {
   // Usage: color.blue[6]
   const color = getColors(theme);
 
-  const workbenchForeground = themes({ light: color.gray[8], dark: color.gray[2], spacegray: color.gray[7] });
-  const editorForeground    = themes({ light: color.gray[9], dark: color.gray[2], spacegray: color.gray[7] });
+  const workbenchForeground = themes({ light: color.gray[8], dark: color.gray[1], spacegray: color.gray[7] });
+  const editorForeground    = themes({ light: color.gray[9], dark: color.gray[1], spacegray: color.gray[7] });
   const borderPrimary       = themes({ light: color.gray[2], dark: color.gray[6], spacegray: color.white });
 
   return {
     name: name,
     colors: {
       focusBorder          : themes({ light: color.blue[4], dark: color.blue[6], spacegray: color.blue[3] }),
-      foreground           : themes({ light: color.gray[7], dark: color.gray[3], spacegray: color.gray[6] }),
-      descriptionForeground: themes({ light: color.gray[5], dark: color.gray[4], spacegray: color.gray[5] }),
+      foreground           : themes({ light: color.gray[7], dark: color.gray[1], spacegray: color.gray[6] }),
+      descriptionForeground: themes({ light: color.gray[5], dark: color.gray[3], spacegray: color.gray[5] }),
       errorForeground      : themes({ light: color.red[6], dark: color.red[3], spacegray: color.red[6] }),
 
       "textLink.foreground"      : themes({ light: color.blue[5], dark: color.blue[3], spacegray: color.blue[6] }),
