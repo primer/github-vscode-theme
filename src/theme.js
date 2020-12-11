@@ -1,14 +1,32 @@
 const { getVariant } = require("./process");
 const { getColors } = require("./colors");
 
+// Choosing colors
+// There are different ways to define what color is used:
+
+// 1. Hex value: All themes will use this color
+//    e.g. "textLink.foreground": "#fff",
+
+// 2. Auto Hex: light themes will use this color, dark themes with auto invert the color
+//    e.g. "textLink.foreground": auto("#fff"),
+
+// 3. Auto Primer: light themes will use this primer color, dark themes with auto invert the primer color
+//    e.g. "textLink.foreground": color.blue[6],
+
+// 4. Manual: each theme uses the defined color without auto inverting
+//    e.g. "textLink.foreground": pick({ light: color.blue[5], dark: color.blue[6], spacegray: color.blue[6] }),
+
+// The prefered way is "Auto Primer" or "Manual". In some exceptions it's also ok to use hex values
+
 function getTheme({ theme, mode, name }) {
-  // Usage: `auto('pink')`
+  // Usage: auto('pink')
   const auto = (hex) => getVariant(hex, mode);
 
-  // Usage: `pick({ light: "lightblue", dark: "darkblue" })`
   const pick = (options) => options[mode];
+  // Usage: pick({ light: "lightblue", dark: "darkblue", spacegray: "steelblue" })
 
-  // Colors from primer/primitives
+  // Usage: color.blue[6]
+  // Color scheme from primer/primitives
   const color = getColors(mode);
 
   const workbenchForeground = pick({ light: color.gray[8], dark: color.gray[7] });
