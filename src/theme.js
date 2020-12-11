@@ -73,7 +73,7 @@ function getTheme({ theme, mode, name }) {
       "titleBar.activeForeground"  : workbenchForeground,
       "titleBar.activeBackground"  : pick({ light: color.white, dark: color.gray[0], spacegray: color.gray[0] }),
       "titleBar.inactiveForeground": color.gray[5],
-      "titleBar.inactiveBackground": pick({ light: color.gray[1], dark: "#1f2428", spacegray: "#1f2428" }),
+      "titleBar.inactiveBackground": pick({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "titleBar.border"            : pick({ light: color.gray[2], dark: color.white, spacegray: color.white }),
 
       "activityBar.foreground"        : workbenchForeground,
@@ -85,11 +85,11 @@ function getTheme({ theme, mode, name }) {
       "activityBar.border"            : pick({ light: color.gray[2], dark: color.white, spacegray: color.white }),
 
       "sideBar.foreground"             : color.gray[6],
-      "sideBar.background"             : pick({ light: color.gray[1], dark: "#1f2428", spacegray: "#1f2428" }),
+      "sideBar.background"             : pick({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "sideBar.border"                 : pick({ light: color.gray[2], dark: color.white, spacegray: color.white }),
       "sideBarTitle.foreground"        : workbenchForeground,
       "sideBarSectionHeader.foreground": workbenchForeground,
-      "sideBarSectionHeader.background": pick({ light: color.gray[1], dark: "#1f2428", spacegray: "#1f2428" }),
+      "sideBarSectionHeader.background": pick({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "sideBarSectionHeader.border"    : pick({ light: color.gray[2], dark: color.white, spacegray: color.white }),
 
       "list.hoverForeground"            : workbenchForeground,
@@ -125,13 +125,13 @@ function getTheme({ theme, mode, name }) {
       "statusBar.debuggingForeground"    : pick({ light: color.white, dark: color.black, spacegray: color.black }),
       "statusBarItem.prominentBackground": pick({ light: "#e8eaed", dark: "#282e34", spacegray: "#282e34" }),
 
-      "editorGroupHeader.tabsBackground": pick({ light: color.gray[1], dark: "#1f2428", spacegray: "#1f2428" }),
+      "editorGroupHeader.tabsBackground": pick({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "editorGroupHeader.tabsBorder"    : pick({ light: color.gray[2], dark: color.white, spacegray: color.white }),
       "editorGroup.border"              : pick({ light: color.gray[2], dark: color.white, spacegray: color.white }),
 
       "tab.activeForeground"        : workbenchForeground,
       "tab.inactiveForeground"      : color.gray[5],
-      "tab.inactiveBackground"      : pick({ light: color.gray[1], dark: "#1f2428", spacegray: "#1f2428" }),
+      "tab.inactiveBackground"      : pick({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "tab.activeBackground"        : pick({ light: color.white, dark: color.gray[0], spacegray: color.gray[0] }),
       "tab.hoverBackground"         : pick({ light: color.white, dark: color.gray[0], spacegray: color.gray[0] }),
       "tab.unfocusedHoverBackground": pick({ light: color.white, dark: color.gray[0], spacegray: color.gray[0] }),
@@ -147,8 +147,8 @@ function getTheme({ theme, mode, name }) {
       "breadcrumbPicker.background"         : pick({ light: color.gray[0], dark: "#2b3036", spacegray: "#2b3036" }),
 
       "editor.foreground"                 : editorForeground,
-      "editor.background"                 : pick({ light: color.white, dark: color.gray[0], spacegray: color.gray[0] }),
-      "editorWidget.background"           : pick({ light: color.gray[1], dark: "#1f2428", spacegray: "#1f2428" }),
+      "editor.background"                 : pick({ light: color.white, dark: color.gray[9], spacegray: color.gray[0] }),
+      "editorWidget.background"           : pick({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "editor.foldBackground"             : pick({ light: color.gray[0], dark: "#282e33", spacegray: "#282e33" }),
       "editor.lineHighlightBackground"    : pick({ light: color.gray[1], dark: "#2b3036", spacegray: "#2b3036" }),
       "editorLineNumber.foreground"       : pick({ light: "#1b1f234d", dark: color.gray[2], spacegray: color.gray[2] }),
@@ -184,7 +184,7 @@ function getTheme({ theme, mode, name }) {
       "scrollbarSlider.activeBackground": pick({ light: "#959da588", dark: "#6a737d88", spacegray: "#6a737d88" }),
       "editorOverviewRuler.border"      : color.white,
 
-      "panel.background"             : pick({ light: color.gray[1], dark: "#1f2428", spacegray: "#1f2428" }),
+      "panel.background"             : pick({ light: color.gray[1], dark: color.gray[9], spacegray: "#1f2428" }),
       "panel.border"                 : pick({ light: color.gray[2], dark: color.white, spacegray: color.white }),
       "panelTitle.activeBorder"      : "#f9826c",
       "panelTitle.activeForeground"  : workbenchForeground,
@@ -207,8 +207,8 @@ function getTheme({ theme, mode, name }) {
 
       "peekViewEditor.matchHighlightBackground": pick({ dark: "#ffd33d33", spacegray: "#ffd33d33" }),
       "peekViewResult.matchHighlightBackground": pick({ dark: "#ffd33d33", spacegray: "#ffd33d33" }),
-      "peekViewEditor.background"              : pick({ dark: "#1f242888", spacegray: "#1f242888" }),
-      "peekViewResult.background"              : pick({ dark: "#1f2428", spacegray: "#1f2428" }),
+      "peekViewEditor.background"              : pick({ dark: "#0d111788", spacegray: "#1f242888" }),
+      "peekViewResult.background"              : pick({ dark: color.gray[9], spacegray: "#1f2428" }),
 
       "settings.headerForeground"        : workbenchForeground,
       "settings.modifiedItemIndicator"   : color.blue[4],
