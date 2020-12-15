@@ -46,11 +46,16 @@
 				"label": "GitHub SpaceGray",
 				"uiTheme": "vs-dark",
 				"path": "./themes/spacegray.json"
+			},
+			{
+				"label": "GitHub Dimmed",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dimmed.json"
 			}
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "0.0.0-2020114231048",
+		"@primer/primitives": "0.0.0-2020111574337",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
 	},
