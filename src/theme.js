@@ -15,7 +15,7 @@ function getTheme({ theme, name }) {
   const color = getColors(theme);
 
   const workbenchForeground = themes({ light: color.gray[8], dark: color.gray[1], dimmed: color.gray[1], spacegray: color.gray[7] });
-  const editorForeground    = themes({ light: color.gray[9], dark: color.gray[1], dimmed: color.gray[1], spacegray: color.gray[7] });
+  const editorForeground    = themes({ light: color.gray[9], dark: color.gray[1], dimmed: color.gray[0], spacegray: color.gray[7] });
   const borderPrimary       = themes({ light: color.gray[2], dark: color.gray[6], dimmed: color.gray[7], spacegray: color.white });
 
   return {
