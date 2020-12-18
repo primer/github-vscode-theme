@@ -28,7 +28,8 @@
 		"theme",
 		"github",
 		"light",
-		"dark"
+		"dark",
+		"dimmed"
 	],
 	"contributes": {
 		"themes": [
@@ -41,11 +42,6 @@
 				"label": "GitHub Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark.json"
-			},
-			{
-				"label": "GitHub SpaceGray",
-				"uiTheme": "vs-dark",
-				"path": "./themes/spacegray.json"
 			},
 			{
 				"label": "GitHub Dimmed",
