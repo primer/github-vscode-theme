@@ -1,11 +1,6 @@
-const lightPrimerColors = require("@primer/primitives/dist/json/colors/light.json");
-const darkPrimerColors = require("@primer/primitives/dist/json/colors/dark.json");
-const dimmedPrimerColors = require("@primer/primitives/dist/json/colors/dimmed.json");
-
-// We only need the scale for now
-const lightColors = lightPrimerColors.scale;
-const darkColors = darkPrimerColors.scale;
-const dimmedColors = dimmedPrimerColors.scale;
+const lightColors = require("@primer/primitives/dist/json/colors/light.json");
+const darkColors = require("@primer/primitives/dist/json/colors/dark.json");
+const dimmedColors = require("@primer/primitives/dist/json/colors/dimmed.json");
 
 function getColors(theme) {
   if (theme === "light") {
