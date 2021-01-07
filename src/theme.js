@@ -31,7 +31,7 @@ function getTheme({ theme, name }) {
       "textLink.activeForeground": color.text.link,
       "textBlockQuote.background": color.bg.canvasInset,
       "textBlockQuote.border"    : color.markdown.blockquoteBorder,
-      "textCodeBlock.background" : color.markdown.codeBg,
+      "textCodeBlock.background" : chroma(color.markdown.codeBg).hex(),
       "textPreformat.foreground" : color.text.secondary,
       "textSeparator.foreground" : color.border.secondary,
 
