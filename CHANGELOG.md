@@ -1,3 +1,8 @@
+## 2.0.0
+
+- Update dark colors to match github.com [#102](https://github.com/primer/github-vscode-theme/pull/102)
+- Improve JavaScript/React highlighting [#104](https://github.com/primer/github-vscode-theme/pull/104)
+
 ## 1.1.5
 
 - Rename color variables [#68](https://github.com/primer/github-vscode-theme/pull/68)
