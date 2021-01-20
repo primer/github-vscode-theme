@@ -216,25 +216,47 @@ function getTheme({ theme, name }) {
           "entity.name.constant",
           "variable.other.constant",
           "variable.language",
+          "entity",
         ],
         settings: {
           foreground: themes({ light: scale.blue[6], dark: scale.blue[2], dimmed: scale.blue[2] }),
         },
       },
       {
-        scope: ["entity", "entity.name"],
+        scope: [
+          "entity.name",
+          "meta.export.default",
+          "meta.definition.variable"
+        ],
         settings: {
-          foreground: themes({ light: scale.purple[5], dark: scale.purple[2], dimmed: scale.purple[2] }),
+          foreground: themes({ light: scale.orange[6], dark: scale.orange[2], dimmed: scale.orange[2] }),
         },
       },
       {
-        scope: "variable.parameter.function",
+        scope: [
+          "variable.parameter.function",
+          "meta.jsx.children",
+          "meta.block",
+          "meta.tag.attributes",
+          "entity.name.constant",
+          "meta.object.member",
+          "meta.embedded.expression"
+        ],
         settings: {
           foreground: editorForeground,
         },
       },
       {
-        scope: "entity.name.tag",
+        "scope": "entity.name.function",
+        "settings": {
+          foreground: themes({ light: scale.purple[5], dark: scale.purple[2], dimmed: scale.purple[2] }),
+        }
+      },
+      {
+        "scope": [
+          "entity.name.tag",
+          "support.class.component"
+        ],
         settings: {
           foreground: themes({ light: scale.green[6], dark: scale.green[1], dimmed: scale.green[1] }),
         },
