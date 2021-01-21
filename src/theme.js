@@ -86,7 +86,8 @@ function getTheme({ theme, name }) {
       "list.inactiveSelectionBackground": themes({ light: "#e8eaed", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.activeSelectionBackground"  : themes({ light: "#e2e5e9", dark: scale.gray[7], dimmed: scale.gray[7] }),
       "list.inactiveFocusBackground"    : themes({ light: scale.blue[1], dark: scale.blue[9], dimmed: scale.blue[9] }),
-      "list.focusBackground"            : themes({ light: "#cce5ff", dark: scale.blue[8], dimmed: scale.blue[8] }),
+      "list.focusBackground"            : themes({ light: "#cce5ff", dark: scale.gray[8], dimmed: scale.gray[8] }),
+      "list.highlightForeground"        : themes({ light: scale.blue[5], dark: scale.blue[5], dimmed: scale.blue[5] }),
 
       "tree.indentGuidesStroke": color.border.secondary,
 
@@ -102,7 +103,7 @@ function getTheme({ theme, name }) {
       "pickerGroup.border"    : themes({ light: scale.gray[2], dark: scale.gray[7], dimmed: scale.gray[7] }),
       "pickerGroup.foreground": color.text.secondary,
       "quickInput.background" : themes({ light: scale.gray[0], dark: scale.gray[9], dimmed: scale.gray[9] }),
-      "quickInput.foreground" : color.text.secondary,
+      "quickInput.foreground" : color.text.primary,
 
       "statusBar.foreground"             : color.text.secondary,
       "statusBar.background"             : color.bg.canvas,
