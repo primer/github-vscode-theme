@@ -142,7 +142,7 @@ function getTheme({ theme, name }) {
       "editorLineNumber.activeForeground" : color.text.primary,
       "editorIndentGuide.background"      : color.border.secondary,
       "editorIndentGuide.activeBackground": color.border.primary,
-      "editorWhitespace.foreground"       : color.border.tertiary,
+      "editorWhitespace.foreground"       : color.border.primary,
       "editorCursor.foreground"           : themes({ light: scale.blue[7], dark: scale.blue[2], dimmed: scale.blue[2] }),
 
       "editor.findMatchBackground"          : themes({ light: scale.yellow[4], dark: "#ffd33d44", dimmed: "#ffd33d44" }),
