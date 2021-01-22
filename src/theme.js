@@ -85,7 +85,7 @@ function getTheme({ theme, name }) {
       "list.hoverBackground"            : themes({ light: "#ebf0f4", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.inactiveSelectionBackground": themes({ light: "#e8eaed", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.activeSelectionBackground"  : themes({ light: "#e2e5e9", dark: scale.gray[7], dimmed: scale.gray[7] }),
-      "list.focusForeground"            : themes({ light: "#cce5ff", dark: scale.gray[0], dimmed: scale.gray[0] }),
+      "list.focusForeground"            : themes({ light: scale.blue[9], dark: scale.gray[0], dimmed: scale.gray[0] }),
       "list.focusBackground"            : themes({ light: "#cce5ff", dark: scale.gray[7], dimmed: scale.gray[7] }),
       "list.inactiveFocusBackground"    : themes({ light: scale.blue[1], dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.highlightForeground"        : themes({ light: scale.blue[5], dark: scale.blue[4], dimmed: scale.blue[4] }),
