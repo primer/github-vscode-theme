@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Fix various issues for the new dark theme [#117](https://github.com/primer/github-vscode-theme/pull/117)
+
 ## 2.0.0
 
 - Update dark colors to match github.com [#102](https://github.com/primer/github-vscode-theme/pull/102)
