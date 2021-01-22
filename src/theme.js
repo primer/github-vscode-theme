@@ -186,7 +186,7 @@ function getTheme({ theme, name }) {
       "gitDecoration.modifiedResourceForeground"   : color.diff.change.text,
       "gitDecoration.deletedResourceForeground"    : color.diff.deletion.text,
       "gitDecoration.untrackedResourceForeground"  : color.diff.addition.text,
-      "gitDecoration.ignoredResourceForeground"    : color.text.disabled,
+      "gitDecoration.ignoredResourceForeground"    : themes({ light: scale.gray[4], dark: color.text.disabled, dimmed: color.text.disabled }),
       "gitDecoration.conflictingResourceForeground": color.text.warning,
       "gitDecoration.submoduleResourceForeground"  : color.text.secondary,
 
