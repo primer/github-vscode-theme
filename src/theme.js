@@ -85,8 +85,10 @@ function getTheme({ theme, name }) {
       "list.hoverBackground"            : themes({ light: "#ebf0f4", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.inactiveSelectionBackground": themes({ light: "#e8eaed", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.activeSelectionBackground"  : themes({ light: "#e2e5e9", dark: scale.gray[7], dimmed: scale.gray[7] }),
-      "list.inactiveFocusBackground"    : themes({ light: scale.blue[1], dark: scale.blue[9], dimmed: scale.blue[9] }),
-      "list.focusBackground"            : themes({ light: "#cce5ff", dark: scale.blue[8], dimmed: scale.blue[8] }),
+      "list.focusForeground"            : themes({ light: scale.blue[9], dark: scale.gray[0], dimmed: scale.gray[0] }),
+      "list.focusBackground"            : themes({ light: "#cce5ff", dark: scale.gray[7], dimmed: scale.gray[7] }),
+      "list.inactiveFocusBackground"    : themes({ light: scale.blue[1], dark: scale.gray[8], dimmed: scale.gray[8] }),
+      "list.highlightForeground"        : themes({ light: scale.blue[5], dark: scale.blue[4], dimmed: scale.blue[4] }),
 
       "tree.indentGuidesStroke": color.border.secondary,
 
@@ -102,7 +104,7 @@ function getTheme({ theme, name }) {
       "pickerGroup.border"    : themes({ light: scale.gray[2], dark: scale.gray[7], dimmed: scale.gray[7] }),
       "pickerGroup.foreground": color.text.secondary,
       "quickInput.background" : themes({ light: scale.gray[0], dark: scale.gray[9], dimmed: scale.gray[9] }),
-      "quickInput.foreground" : color.text.secondary,
+      "quickInput.foreground" : color.text.primary,
 
       "statusBar.foreground"             : color.text.secondary,
       "statusBar.background"             : color.bg.canvas,
@@ -142,7 +144,7 @@ function getTheme({ theme, name }) {
       "editorLineNumber.activeForeground" : color.text.primary,
       "editorIndentGuide.background"      : color.border.secondary,
       "editorIndentGuide.activeBackground": color.border.primary,
-      "editorWhitespace.foreground"       : color.border.tertiary,
+      "editorWhitespace.foreground"       : themes({ light: scale.gray[3], dark: scale.gray[5], dimmed: scale.gray[5] }),
       "editorCursor.foreground"           : themes({ light: scale.blue[7], dark: scale.blue[2], dimmed: scale.blue[2] }),
 
       "editor.findMatchBackground"          : themes({ light: scale.yellow[4], dark: "#ffd33d44", dimmed: "#ffd33d44" }),
@@ -184,7 +186,7 @@ function getTheme({ theme, name }) {
       "gitDecoration.modifiedResourceForeground"   : color.diff.change.text,
       "gitDecoration.deletedResourceForeground"    : color.diff.deletion.text,
       "gitDecoration.untrackedResourceForeground"  : color.diff.addition.text,
-      "gitDecoration.ignoredResourceForeground"    : color.text.disabled,
+      "gitDecoration.ignoredResourceForeground"    : themes({ light: scale.gray[4], dark: color.text.disabled, dimmed: color.text.disabled }),
       "gitDecoration.conflictingResourceForeground": color.text.warning,
       "gitDecoration.submoduleResourceForeground"  : color.text.secondary,
 
