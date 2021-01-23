@@ -1,8 +1,6 @@
 # GitHub VS Code theme
 
-> ⚠️ With `2.0.0` the dark colors changed. If you prefer the "old" dark theme, you can still install it via `.vsix` from the [github-vscode-theme-dark-classic](https://github.com/primer/github-vscode-theme-dark-classic) repo. See [Install](https://github.com/primer/github-vscode-theme-dark-classic#install) in the README. It should appear as `GitHub Dark Classic`.
-
-![GitHub VS Code theme](https://user-images.githubusercontent.com/378023/105131643-b64b2a00-5b2c-11eb-886f-622e4dc46187.png)
+![GitHub VS Code theme](https://user-images.githubusercontent.com/378023/80668639-595e9e00-8add-11ea-8673-4a481cc7e2dd.png)
 
 ## Install
 
