@@ -28,8 +28,7 @@
 		"theme",
 		"github",
 		"light",
-		"dark",
-		"dimmed"
+		"dark"
 	],
 	"contributes": {
 		"themes": [
@@ -46,8 +45,8 @@
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "0.0.0-2020111574337",
-		"chroma-js": "^2.1.0",
+		"@primer/primitives": "^2.0.1",
+		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
 	},
 	"scripts": {
