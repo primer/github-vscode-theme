@@ -1,3 +1,7 @@
+## 3.0.0
+
+- Revert dark changes  [#123](https://github.com/primer/github-vscode-theme/pull/123). This should be the same as the `1.1.5` version.
+
 ## 2.0.1
 
 - Fix various issues for the new dark theme [#117](https://github.com/primer/github-vscode-theme/pull/117)
