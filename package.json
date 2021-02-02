@@ -35,17 +35,28 @@
 			{
 				"label": "GitHub Light",
 				"uiTheme": "vs",
-				"path": "./themes/light.json"
+				"path": "./themes/classic-light.json"
 			},
 			{
 				"label": "GitHub Dark",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dark.json"
+				"path": "./themes/classic-dark.json"
+			},
+			{
+				"label": "GitHub.com Light",
+				"uiTheme": "vs",
+				"path": "./themes/dotcom-light.json"
+			},
+			{
+				"label": "GitHub.com Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dotcom-dark.json"
 			}
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "^2.0.1",
+		"@primer/primitives": "0.0.0-2020111574337",
+		"chroma-js": "^2.1.0",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
 	},
