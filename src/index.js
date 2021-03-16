@@ -26,6 +26,11 @@ const dotcomDark = getDotcomTheme({
   name: "GitHub.com Dark",
 });
 
+const dotcomDimmed = getDotcomTheme({
+  theme: "dimmed",
+  name: "Github.com Dimmed"
+})
+
 // Write themes
 
 fs.mkdir("./themes", { recursive: true })
@@ -34,5 +39,6 @@ fs.mkdir("./themes", { recursive: true })
     fs.writeFile("./themes/classic-dark.json", JSON.stringify(classicDark, null, 2)),
     fs.writeFile("./themes/dotcom-light.json", JSON.stringify(dotcomLight, null, 2)),
     fs.writeFile("./themes/dotcom-dark.json", JSON.stringify(dotcomDark, null, 2)),
+    fs.writeFile("./themes/dotcom-dimmed.json", JSON.stringify(dotcomDimmed, null, 2))
   ]))
   .catch(() => process.exit(1))
