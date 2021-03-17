@@ -51,11 +51,16 @@
 				"label": "GitHub.com Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dotcom-dark.json"
+			},
+			{
+				"label": "GitHub.com Dimmed",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dotcom-dimmed.json"
 			}
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "0.0.0-2020111574337",
+		"@primer/primitives": "0.0.0-202121645454",
 		"chroma-js": "^2.1.0",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
