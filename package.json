@@ -33,16 +33,6 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "GitHub Light",
-				"uiTheme": "vs",
-				"path": "./themes/classic-light.json"
-			},
-			{
-				"label": "GitHub Dark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/classic-dark.json"
-			},
-			{
 				"label": "GitHub.com Light",
 				"uiTheme": "vs",
 				"path": "./themes/dotcom-light.json"
