@@ -33,19 +33,19 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "GitHub.com Light",
+				"label": "GitHub Light",
 				"uiTheme": "vs",
-				"path": "./themes/dotcom-light.json"
+				"path": "./themes/light.json"
 			},
 			{
-				"label": "GitHub.com Dark",
+				"label": "GitHub Dark",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dotcom-dark.json"
+				"path": "./themes/dark.json"
 			},
 			{
-				"label": "GitHub.com Dimmed",
+				"label": "GitHub Dimmed",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dotcom-dimmed.json"
+				"path": "./themes/dimmed.json"
 			}
 		]
 	},

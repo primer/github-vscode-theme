@@ -1,25 +1,25 @@
 const fs = require("fs").promises;
 const theme = require("./theme");
 
-const dotcomLight = theme({
+const lightTheme = theme({
   theme: "light",
-  name: "GitHub.com Light",
+  name: "GitHub Light",
 });
 
-const dotcomDark = theme({
+const darkTheme = theme({
   theme: "dark",
-  name: "GitHub.com Dark",
+  name: "GitHub Dark",
 });
 
-const dotcomDimmed = theme({
+const dimmedTheme = theme({
   theme: "dimmed",
-  name: "Github.com Dimmed"
+  name: "Github Dimmed"
 })
 
 fs.mkdir("./themes", { recursive: true })
   .then(() => Promise.all([
-    fs.writeFile("./themes/dotcom-light.json", JSON.stringify(dotcomLight, null, 2)),
-    fs.writeFile("./themes/dotcom-dark.json", JSON.stringify(dotcomDark, null, 2)),
-    fs.writeFile("./themes/dotcom-dimmed.json", JSON.stringify(dotcomDimmed, null, 2))
+    fs.writeFile("./themes/light.json", JSON.stringify(lightTheme, null, 2)),
+    fs.writeFile("./themes/dark.json", JSON.stringify(darkTheme, null, 2)),
+    fs.writeFile("./themes/dimmed.json", JSON.stringify(dimmedTheme, null, 2))
   ]))
   .catch(() => process.exit(1))
