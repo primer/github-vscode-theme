@@ -1,44 +1,42 @@
 const fs = require("fs").promises;
-const getTheme = require("./classic/theme");
-const getDotcomTheme = require("./dotcom/theme");
+const getTheme = require("./theme");
+const getClassicTheme = require("./classic/theme");
+
+const lightDefaultTheme = getTheme({
+  theme: "light",
+  name: "GitHub Light Default",
+});
+
+const darkDefaultTheme = getTheme({
+  theme: "dark",
+  name: "GitHub Dark Default",
+});
+
+const darkDimmedTheme = getTheme({
+  theme: "dimmed",
+  name: "GitHub Dark Dimmed"
+})
 
 // Classic
 
-const classicLight = getTheme({
+const lightTheme = getClassicTheme({
   style: "light",
   name: "GitHub Light",
 });
 
-const classicDark = getTheme({
+const darkTheme = getClassicTheme({
   style: "dark",
   name: "GitHub Dark",
 });
-
-// Dotcom
-
-const dotcomLight = getDotcomTheme({
-  theme: "light",
-  name: "GitHub.com Light",
-});
-
-const dotcomDark = getDotcomTheme({
-  theme: "dark",
-  name: "GitHub.com Dark",
-});
-
-const dotcomDimmed = getDotcomTheme({
-  theme: "dimmed",
-  name: "Github.com Dimmed"
-})
 
 // Write themes
 
 fs.mkdir("./themes", { recursive: true })
   .then(() => Promise.all([
-    fs.writeFile("./themes/classic-light.json", JSON.stringify(classicLight, null, 2)),
-    fs.writeFile("./themes/classic-dark.json", JSON.stringify(classicDark, null, 2)),
-    fs.writeFile("./themes/dotcom-light.json", JSON.stringify(dotcomLight, null, 2)),
-    fs.writeFile("./themes/dotcom-dark.json", JSON.stringify(dotcomDark, null, 2)),
-    fs.writeFile("./themes/dotcom-dimmed.json", JSON.stringify(dotcomDimmed, null, 2))
+    fs.writeFile("./themes/light-default.json", JSON.stringify(lightDefaultTheme, null, 2)),
+    fs.writeFile("./themes/dark-default.json", JSON.stringify(darkDefaultTheme, null, 2)),
+    fs.writeFile("./themes/dark-dimmed.json", JSON.stringify(darkDimmedTheme, null, 2)),
+    fs.writeFile("./themes/light.json", JSON.stringify(lightTheme, null, 2)),
+    fs.writeFile("./themes/dark.json", JSON.stringify(darkTheme, null, 2)),
   ]))
   .catch(() => process.exit(1))

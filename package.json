@@ -33,29 +33,29 @@
 	"contributes": {
 		"themes": [
 			{
+				"label": "GitHub Light Default",
+				"uiTheme": "vs",
+				"path": "./themes/light-default.json"
+			},
+			{
+				"label": "GitHub Dark Default",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-default.json"
+			},
+			{
+				"label": "GitHub Dark Dimmed",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-dimmed.json"
+			},
+			{
 				"label": "GitHub Light",
 				"uiTheme": "vs",
-				"path": "./themes/classic-light.json"
+				"path": "./themes/light.json"
 			},
 			{
 				"label": "GitHub Dark",
 				"uiTheme": "vs-dark",
-				"path": "./themes/classic-dark.json"
-			},
-			{
-				"label": "GitHub.com Light",
-				"uiTheme": "vs",
-				"path": "./themes/dotcom-light.json"
-			},
-			{
-				"label": "GitHub.com Dark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/dotcom-dark.json"
-			},
-			{
-				"label": "GitHub.com Dimmed",
-				"uiTheme": "vs-dark",
-				"path": "./themes/dotcom-dimmed.json"
+				"path": "./themes/dark.json"
 			}
 		]
 	},
