@@ -193,7 +193,7 @@ function getTheme({ theme, name }) {
       'terminal.ansiBrightRed': color.ansi.redBright,
       'terminal.ansiBrightGreen': color.ansi.greenBright,
       'terminal.ansiBrightYellow': color.ansi.yellowBright,
-      'terminal.ansiBrightBlue': color.ansi.blackBright,
+      'terminal.ansiBrightBlue': color.ansi.blueBright,
       'terminal.ansiBrightMagenta': color.ansi.magentaBright,
       'terminal.ansiBrightCyan': color.ansi.cyanBright,
       'terminal.ansiBrightWhite': color.ansi.whiteBright,
