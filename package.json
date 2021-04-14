@@ -33,6 +33,21 @@
 	"contributes": {
 		"themes": [
 			{
+				"label": "GitHub Light Default",
+				"uiTheme": "vs",
+				"path": "./themes/light-default.json"
+			},
+			{
+				"label": "GitHub Dark Default",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-default.json"
+			},
+			{
+				"label": "GitHub Dark Dimmed",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-dimmed.json"
+			},
+			{
 				"label": "GitHub Light",
 				"uiTheme": "vs",
 				"path": "./themes/light.json"
@@ -45,7 +60,8 @@
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "^2.0.1",
+		"@primer/primitives": "^4.2.1",
+		"chroma-js": "^2.1.0",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
 	},
