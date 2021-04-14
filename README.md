@@ -1,11 +1,17 @@
-# GitHub VS Code theme
+# GitHub VS Code themes
 
-![GitHub VS Code theme](https://user-images.githubusercontent.com/378023/80668639-595e9e00-8add-11ea-8673-4a481cc7e2dd.png)
+![GitHub VS Code theme](https://user-images.githubusercontent.com/378023/114663107-c1c97e00-9d34-11eb-8aa6-0c4f3d35af0b.png)
 
 ## Install
 
-1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
-2. Click on the "Install" button
+1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme).
+2. Click on the "Install" button.
+3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme). Currently the following themes are available:
+    - `GitHub Light`
+    - `GitHub Dark`
+    - `GitHub Light Default` ✨ new ✨ 
+    - `GitHub Dark Default` ✨ new ✨ 
+    - `GitHub Dark Dimmed` ✨ new ✨ 
 
 ## Override this theme
 
