@@ -1,3 +1,9 @@
+## 4.0.1
+
+- fix: Use color.ansi.blueBright for ansiBrightBlue [#142](https://github.com/primer/github-vscode-theme/pull/142).
+- Use primer's official colors for activity bar, tab & panel borders [#143](https://github.com/primer/github-vscode-theme/pull/143).
+- Use primer's primary text color for editor foreground [#144](https://github.com/primer/github-vscode-theme/pull/144).
+
 ## 4.0.0
 
 - Add GitHub.com dimmed theme [#138](https://github.com/primer/github-vscode-theme/pull/138).
