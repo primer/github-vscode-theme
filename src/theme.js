@@ -17,8 +17,6 @@ function getTheme({ theme, name }) {
   // Usage: scale.blue[6]
   const scale = color.scale;
 
-  const editorForeground    = themes({ light: color.text.primary, dark: color.text.primary, dimmed: scale.gray[0] });
-
   return {
     name: name,
     colors: {
@@ -135,7 +133,7 @@ function getTheme({ theme, name }) {
       "breadcrumb.activeSelectionForeground": color.text.secondary,
       "breadcrumbPicker.background"         : color.bg.overlay,
 
-      "editor.foreground"                 : editorForeground,
+      "editor.foreground"                 : color.text.primary,
       "editor.background"                 : color.bg.canvas,
       "editorWidget.background"           : color.bg.overlay,
       "editor.foldBackground"             : color.bg.canvasInset,
@@ -261,7 +259,7 @@ function getTheme({ theme, name }) {
           "meta.embedded.expression"
         ],
         settings: {
-          foreground: editorForeground,
+          foreground: color.text.primary,
         },
       },
       {
@@ -298,7 +296,7 @@ function getTheme({ theme, name }) {
           "storage.type.java",
         ],
         settings: {
-          foreground: editorForeground,
+          foreground: color.text.primary,
         },
       },
       {
@@ -332,7 +330,7 @@ function getTheme({ theme, name }) {
       {
         scope: "variable.other",
         settings: {
-          foreground: editorForeground,
+          foreground: color.text.primary,
         },
       },
       {
@@ -381,7 +379,7 @@ function getTheme({ theme, name }) {
       {
         scope: "string source",
         settings: {
-          foreground: editorForeground,
+          foreground: color.text.primary,
         },
       },
       {
@@ -455,14 +453,14 @@ function getTheme({ theme, name }) {
         scope: "markup.italic",
         settings: {
           fontStyle: "italic",
-          foreground: editorForeground,
+          foreground: color.text.primary,
         },
       },
       {
         scope: "markup.bold",
         settings: {
           fontStyle: "bold",
-          foreground: editorForeground,
+          foreground: color.text.primary,
         },
       },
       {
