@@ -66,7 +66,7 @@ function getTheme({ theme, name }) {
       "activityBar.background"        : color.bg.canvas,
       "activityBarBadge.foreground"   : scale.white,
       "activityBarBadge.background"   : themes({ light: scale.blue[4], dark: scale.blue[5], dimmed: scale.blue[5] }),
-      "activityBar.activeBorder"      : "#f9826c",
+      "activityBar.activeBorder"      : color.underlinenav.borderActive,
       "activityBar.border"            : color.border.primary,
 
       "sideBar.foreground"             : color.text.secondary,
@@ -126,7 +126,7 @@ function getTheme({ theme, name }) {
       "tab.unfocusedActiveBorderTop": color.border.primary,
       "tab.activeBorder"            : color.bg.canvas,
       "tab.unfocusedActiveBorder"   : color.bg.canvas,
-      "tab.activeBorderTop"         : "#f9826c",
+      "tab.activeBorderTop"         : color.underlinenav.borderActive,
 
       "breadcrumb.foreground"               : color.text.tertiary,
       "breadcrumb.focusForeground"          : color.text.primary,
@@ -173,7 +173,7 @@ function getTheme({ theme, name }) {
 
       "panel.background"             : color.bg.canvasInset,
       "panel.border"                 : color.border.primary,
-      "panelTitle.activeBorder"      : "#f9826c",
+      "panelTitle.activeBorder"      : color.underlinenav.borderActive,
       "panelTitle.activeForeground"  : color.text.primary,
       "panelTitle.inactiveForeground": color.text.tertiary,
       "panelInput.border"            : color.border.primary,
