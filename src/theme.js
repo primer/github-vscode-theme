@@ -136,7 +136,7 @@ function getTheme({ theme, name }) {
       "editor.foreground"                 : color.text.primary,
       "editor.background"                 : color.bg.canvas,
       "editorWidget.background"           : color.bg.overlay,
-      "editor.foldBackground"             : color.bg.canvasInset,
+      "editor.foldBackground"             : chroma(scale.gray[4]).alpha(0.1).hex(), // needs opacity
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
       "editorLineNumber.activeForeground" : color.text.primary,
