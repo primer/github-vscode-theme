@@ -1,3 +1,9 @@
+## 4.0.2
+
+- Fix diffs (Light Default) [#153](https://github.com/primer/github-vscode-theme/pull/153).
+- Style linkedEditing [#154](https://github.com/primer/github-vscode-theme/pull/154).
+- Use opacity for foldBackground [#156](https://github.com/primer/github-vscode-theme/pull/156).
+
 ## 4.0.1
 
 - fix: Use color.ansi.blueBright for ansiBrightBlue [#142](https://github.com/primer/github-vscode-theme/pull/142).
