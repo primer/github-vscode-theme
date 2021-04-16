@@ -162,8 +162,8 @@ function getTheme({ theme, name }) {
       "editorGutter.addedBackground"   : color.diff.addition.border,
       "editorGutter.deletedBackground" : color.diff.deletion.border,
 
-      "diffEditor.insertedTextBackground": chroma(color.diff.addition.bg).hex(),
-      "diffEditor.removedTextBackground":  chroma(color.diff.deletion.bg).hex(),
+      "diffEditor.insertedTextBackground": themes({ light: chroma(scale.green[3]).alpha(0.2).hex(), dark: chroma(color.diff.addition.bg).hex(), dimmed: chroma(color.diff.addition.bg).hex() }),
+      "diffEditor.removedTextBackground" : themes({ light: chroma(scale.red[3]  ).alpha(0.15).hex(), dark: chroma(color.diff.deletion.bg).hex(), dimmed: chroma(color.diff.deletion.bg).hex() }),
 
       "scrollbar.shadow"                : themes({ light: "#6a737d33", dark: "#0008", dimmed: "#0008" }),
       "scrollbarSlider.background"      : themes({ light: "#959da533", dark: "#484F5833", dimmed: "#484F5833" }),
