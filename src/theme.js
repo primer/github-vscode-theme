@@ -69,7 +69,7 @@ function getTheme({ theme, name }) {
       "activityBar.activeBorder"      : color.underlinenav.borderActive,
       "activityBar.border"            : color.border.primary,
 
-      "sideBar.foreground"             : color.text.secondary,
+      "sideBar.foreground"             : color.text.primary,
       "sideBar.background"             : color.bg.canvasInset,
       "sideBar.border"                 : color.border.primary,
       "sideBarTitle.foreground"        : color.text.primary,
