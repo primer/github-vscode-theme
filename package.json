@@ -60,7 +60,7 @@
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "^4.2.1",
+		"@primer/primitives": "^4.2.2",
 		"chroma-js": "^2.1.0",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
