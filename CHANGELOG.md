@@ -1,3 +1,7 @@
+## 4.0.3
+
+- Fix terminal colors (Light Default) [#160](https://github.com/primer/github-vscode-theme/pull/160).
+
 ## 4.0.2
 
 - Fix diffs (Light Default) [#153](https://github.com/primer/github-vscode-theme/pull/153).
