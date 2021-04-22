@@ -184,8 +184,8 @@ function getTheme({ style, name }) {
       "gitDecoration.submoduleResourceForeground": primer.gray[4],
 
       "debugToolBar.background": pick({ light: primer.white, dark: "#2b3036" }),
-      "editor.stackFrameHighlightBackground": pick({ light: primer.yellow[1], dark: "#a707" }),
-      "editor.focusedStackFrameHighlightBackground": pick({ light: primer.yellow[2], dark: "#b808" }),
+      "editor.stackFrameHighlightBackground": pick({ light: "#ffd33d33", dark: "#C6902625" }), // needs opacity (yellow)
+      "editor.focusedStackFrameHighlightBackground": pick({ light: "#28a74525", dark: "#2b6a3033" }), // needs opacity (green)
 
       "peekViewEditor.matchHighlightBackground": pick({ dark: "#ffd33d33" }),
       "peekViewResult.matchHighlightBackground": pick({ dark: "#ffd33d33" }),
