@@ -1,3 +1,9 @@
+## 4.0.4
+
+- Fix sidebar contrast [#158](https://github.com/primer/github-vscode-theme/pull/158).
+- Use opacity for stackFrameHighlight [#162](https://github.com/primer/github-vscode-theme/pull/162).
+- Improve ANSI colors [#164](https://github.com/primer/github-vscode-theme/pull/164).
+
 ## 4.0.3
 
 - Fix terminal colors (Light Default) [#160](https://github.com/primer/github-vscode-theme/pull/160).
