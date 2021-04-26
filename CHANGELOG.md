@@ -1,3 +1,7 @@
+## 4.0.5
+
+- Increase contrast for selected list item [#165](https://github.com/primer/github-vscode-theme/pull/165).
+
 ## 4.0.4
 
 - Fix sidebar contrast [#158](https://github.com/primer/github-vscode-theme/pull/158).
