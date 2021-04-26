@@ -77,9 +77,9 @@ function getTheme({ theme, name }) {
       "sideBarSectionHeader.background": color.bg.canvasInset,
       "sideBarSectionHeader.border"    : color.border.primary,
 
-      "list.hoverForeground"            : color.text.secondary,
-      "list.inactiveSelectionForeground": color.text.secondary,
-      "list.activeSelectionForeground"  : color.text.secondary,
+      "list.hoverForeground"            : color.text.primary,
+      "list.inactiveSelectionForeground": color.text.primary,
+      "list.activeSelectionForeground"  : color.text.primary,
       "list.hoverBackground"            : themes({ light: "#ebf0f4", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.inactiveSelectionBackground": themes({ light: "#e8eaed", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.activeSelectionBackground"  : themes({ light: "#e2e5e9", dark: scale.gray[7], dimmed: scale.gray[7] }),
