@@ -36,6 +36,10 @@ function getTheme({ theme, name }) {
       "button.background"     : color.btn.primary.bg,
       "button.foreground"     : color.btn.primary.text,
       "button.hoverBackground": color.btn.primary.hoverBg,
+      
+      "button.secondaryBackground"     : color.btn.activeBg,
+      "button.secondaryForeground"     : color.btn.text,
+      "button.secondaryHoverBackground": color.btn.hoverBg,
 
       "checkbox.background": color.bg.tertiary,
       "checkbox.border"    : color.border.primary,

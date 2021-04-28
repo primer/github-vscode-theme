@@ -33,6 +33,10 @@ function getTheme({ style, name }) {
       "button.foreground": pick({ light: primer.white, dark: primer.green[8] }),
       "button.hoverBackground": pick({ light: "#138934", dark: primer.green[3] }),
 
+      "button.secondaryBackground": pick({ light: primer.gray[2], dark: primer.gray[2]}),
+      "button.secondaryForeground": primer.black,
+      "button.secondaryHoverBackground": pick({ light: primer.gray[3], dark: primer.gray[3]}),
+
       "checkbox.background": pick({ light: primer.gray[0], dark: primer.gray[2] }),
       "checkbox.border": pick({ light: primer.gray[3], dark: primer.white }),
 
