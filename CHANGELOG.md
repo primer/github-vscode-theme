@@ -1,3 +1,8 @@
+## 4.1.0
+
+- Add support for secondary button style [#167](https://github.com/primer/github-vscode-theme/pull/167).
+- Replace border.overlay with border.primary [#168](https://github.com/primer/github-vscode-theme/pull/168).
+
 ## 4.0.5
 
 - Increase contrast for selected list item [#165](https://github.com/primer/github-vscode-theme/pull/165).
