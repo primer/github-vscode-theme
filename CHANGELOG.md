@@ -1,3 +1,7 @@
+## 4.1.1
+
+- Generate themes based on `4.1.0`.
+
 ## 4.1.0
 
 - Add support for secondary button style [#167](https://github.com/primer/github-vscode-theme/pull/167).
