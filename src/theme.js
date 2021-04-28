@@ -41,7 +41,7 @@ function getTheme({ theme, name }) {
       "checkbox.border"    : color.border.primary,
 
       "dropdown.background"    : color.bg.overlay,
-      "dropdown.border"        : color.border.overlay,
+      "dropdown.border"        : color.border.primary,
       "dropdown.foreground"    : color.text.primary,
       "dropdown.listBackground": color.bg.overlay,
 
