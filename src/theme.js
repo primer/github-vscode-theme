@@ -115,6 +115,8 @@ function getTheme({ theme, name }) {
       "statusBar.debuggingBackground"    : color.bg.dangerInverse,
       "statusBar.debuggingForeground"    : scale.white,
       "statusBarItem.prominentBackground": color.bg.tertiary,
+      "statusBarItem.remoteForeground"   : color.text.secondary,
+      "statusBarItem.remoteBackground"   : color.bg.canvas,
 
       "editorGroupHeader.tabsBackground": color.bg.canvasInset,
       "editorGroupHeader.tabsBorder"    : color.border.primary,
