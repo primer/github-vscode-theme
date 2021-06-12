@@ -562,6 +562,17 @@ function getTheme({ theme, name }) {
           fontStyle: "underline",
         },
       },
+      {
+        scope: ['punctuation.section.embedded'],
+        settings: {
+          foreground: themes({
+            light: scale.red[5],
+            dark: scale.red[3],
+            dimmed: scale.red[3],
+          }),
+        },
+      },
+
     ],
   };
 }
