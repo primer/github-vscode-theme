@@ -178,6 +178,7 @@ function getTheme({ style, name }) {
       "panelInput.border": pick({ light: primer.gray[2], dark: primer.gray[1] }),
 
       "terminal.foreground": primer.gray[6],
+      "terminal.tab.activeBorder": "#f9826c",
 
       "gitDecoration.addedResourceForeground": primer.green[5],
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
