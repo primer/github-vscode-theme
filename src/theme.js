@@ -25,13 +25,13 @@ function getTheme({ theme, name }) {
       descriptionForeground: color.fg.muted,
       errorForeground      : color.danger.fg,
 
-      "textLink.foreground"      : color.text.link,
-      "textLink.activeForeground": color.text.link,
-      "textBlockQuote.background": color.bg.canvasInset,
-      "textBlockQuote.border"    : color.markdown.blockquoteBorder,
-      "textCodeBlock.background" : chroma(color.markdown.codeBg).hex(),
-      "textPreformat.foreground" : color.text.secondary,
-      "textSeparator.foreground" : color.border.secondary,
+      "textLink.foreground"      : color.accent.fg,
+      "textLink.activeForeground": color.accent.fg,
+      "textBlockQuote.background": color.canvas.inset,
+      "textBlockQuote.border"    : color.border.default,
+      "textCodeBlock.background" : chroma(color.neutral.muted).hex(),
+      "textPreformat.foreground" : color.fg.muted,
+      "textSeparator.foreground" : color.border.muted,
 
       "button.background"     : color.btn.primary.bg,
       "button.foreground"     : color.btn.primary.text,
@@ -59,10 +59,10 @@ function getTheme({ theme, name }) {
 
       "progressBar.background": themes({ light: scale.blue[4], dark: scale.blue[5], dimmed: scale.blue[5] }),
 
-      "titleBar.activeForeground"  : color.text.secondary,
+      "titleBar.activeForeground"  : color.fg.muted,
       "titleBar.activeBackground"  : color.bg.canvas,
       "titleBar.inactiveForeground": color.fg.muted,
-      "titleBar.inactiveBackground": color.bg.canvasInset,
+      "titleBar.inactiveBackground": color.canvas.inset,
       "titleBar.border"            : color.border.primary,
 
       "activityBar.foreground"        : color.fg.default,
@@ -74,11 +74,11 @@ function getTheme({ theme, name }) {
       "activityBar.border"            : color.border.primary,
 
       "sideBar.foreground"             : color.fg.default,
-      "sideBar.background"             : color.bg.canvasInset,
+      "sideBar.background"             : color.canvas.inset,
       "sideBar.border"                 : color.border.primary,
       "sideBarTitle.foreground"        : color.fg.default,
       "sideBarSectionHeader.foreground": color.fg.default,
-      "sideBarSectionHeader.background": color.bg.canvasInset,
+      "sideBarSectionHeader.background": color.canvas.inset,
       "sideBarSectionHeader.border"    : color.border.primary,
 
       "list.hoverForeground"            : color.fg.default,
@@ -92,11 +92,11 @@ function getTheme({ theme, name }) {
       "list.inactiveFocusBackground"    : themes({ light: scale.blue[1], dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.highlightForeground"        : themes({ light: scale.blue[5], dark: scale.blue[4], dimmed: scale.blue[4] }),
 
-      "tree.indentGuidesStroke": color.border.secondary,
+      "tree.indentGuidesStroke": color.border.muted,
 
       "notificationCenterHeader.foreground": themes({ light: scale.gray[5], dark: scale.gray[4], dimmed: scale.gray[4] }),
       "notificationCenterHeader.background": themes({ light: scale.gray[2], dark: scale.gray[9], dimmed: scale.gray[9] }),
-      "notifications.foreground"           : color.text.secondary,
+      "notifications.foreground"           : color.fg.muted,
       "notifications.background"           : themes({ light: scale.gray[0], dark: scale.gray[8], dimmed: scale.gray[8] }),
       "notifications.border"               : color.border.primary,
       "notificationsErrorIcon.foreground"  : themes({ light: scale.red[5], dark: scale.red[4], dimmed: scale.red[4] }),
@@ -104,11 +104,11 @@ function getTheme({ theme, name }) {
       "notificationsInfoIcon.foreground"   : themes({ light: scale.blue[6], dark: scale.blue[3], dimmed: scale.blue[3] }),
 
       "pickerGroup.border"    : themes({ light: scale.gray[2], dark: scale.gray[7], dimmed: scale.gray[7] }),
-      "pickerGroup.foreground": color.text.secondary,
+      "pickerGroup.foreground": color.fg.muted,
       "quickInput.background" : themes({ light: scale.gray[0], dark: scale.gray[9], dimmed: scale.gray[9] }),
       "quickInput.foreground" : color.fg.default,
 
-      "statusBar.foreground"             : color.text.secondary,
+      "statusBar.foreground"             : color.fg.muted,
       "statusBar.background"             : color.bg.canvas,
       "statusBar.border"                 : color.border.primary,
       "statusBar.noFolderBackground"     : color.bg.canvas,
@@ -116,13 +116,13 @@ function getTheme({ theme, name }) {
       "statusBar.debuggingForeground"    : scale.white,
       "statusBarItem.prominentBackground": color.bg.tertiary,
 
-      "editorGroupHeader.tabsBackground": color.bg.canvasInset,
+      "editorGroupHeader.tabsBackground": color.canvas.inset,
       "editorGroupHeader.tabsBorder"    : color.border.primary,
       "editorGroup.border"              : color.border.primary,
 
       "tab.activeForeground"        : color.fg.default,
       "tab.inactiveForeground"      : color.fg.muted,
-      "tab.inactiveBackground"      : color.bg.canvasInset,
+      "tab.inactiveBackground"      : color.canvas.inset,
       "tab.activeBackground"        : color.bg.canvas,
       "tab.hoverBackground"         : color.bg.canvas,
       "tab.unfocusedHoverBackground": color.state.hover.secondaryBg,
@@ -134,7 +134,7 @@ function getTheme({ theme, name }) {
 
       "breadcrumb.foreground"               : color.fg.muted,
       "breadcrumb.focusForeground"          : color.fg.default,
-      "breadcrumb.activeSelectionForeground": color.text.secondary,
+      "breadcrumb.activeSelectionForeground": color.fg.muted,
       "breadcrumbPicker.background"         : color.bg.overlay,
 
       "editor.foreground"                 : color.fg.default,
@@ -144,7 +144,7 @@ function getTheme({ theme, name }) {
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
       "editorLineNumber.activeForeground" : color.fg.default,
-      "editorIndentGuide.background"      : color.border.secondary,
+      "editorIndentGuide.background"      : color.border.muted,
       "editorIndentGuide.activeBackground": color.border.primary,
       "editorWhitespace.foreground"       : themes({ light: scale.gray[3], dark: scale.gray[5], dimmed: scale.gray[5] }),
       "editorCursor.foreground"           : themes({ light: scale.blue[7], dark: scale.blue[2], dimmed: scale.blue[2] }),
@@ -176,14 +176,14 @@ function getTheme({ theme, name }) {
       "scrollbarSlider.activeBackground": themes({ light: "#959da588", dark: "#484F5888", dimmed: "#484F5888" }),
       "editorOverviewRuler.border"      : themes({ light: scale.white, dark: scale.black, dimmed: scale.black }),
 
-      "panel.background"             : color.bg.canvasInset,
+      "panel.background"             : color.canvas.inset,
       "panel.border"                 : color.border.primary,
       "panelTitle.activeBorder"      : color.underlinenav.borderActive,
       "panelTitle.activeForeground"  : color.fg.default,
       "panelTitle.inactiveForeground": color.fg.muted,
       "panelInput.border"            : color.border.primary,
 
-      "terminal.foreground": color.text.secondary,
+      "terminal.foreground": color.fg.muted,
       'terminal.ansiBlack': color.ansi.black,
       'terminal.ansiRed': color.ansi.red,
       'terminal.ansiGreen': color.ansi.green,
@@ -207,7 +207,7 @@ function getTheme({ theme, name }) {
       "gitDecoration.untrackedResourceForeground"  : color.diff.addition.text,
       "gitDecoration.ignoredResourceForeground"    : themes({ light: scale.gray[4], dark: color.text.disabled, dimmed: color.text.disabled }),
       "gitDecoration.conflictingResourceForeground": color.text.warning,
-      "gitDecoration.submoduleResourceForeground"  : color.text.secondary,
+      "gitDecoration.submoduleResourceForeground"  : color.fg.muted,
 
       "debugToolBar.background"                    : color.bg.overlay,
       "editor.stackFrameHighlightBackground"       : themes({ light: "#ffd33d33", dark: "#D2992225", dimmed: "#C6902625" }), // needs opacity (yellow)
@@ -218,7 +218,7 @@ function getTheme({ theme, name }) {
       "peekViewEditor.background"              : themes({ dark: "#0d111788", dimmed: "#0d111788" }),
       "peekViewResult.background"              : themes({ dark: scale.gray[9], dimmed: scale.gray[9] }),
 
-      "settings.headerForeground"        : color.text.secondary,
+      "settings.headerForeground"        : color.fg.muted,
       "settings.modifiedItemIndicator"   : color.diff.change.border,
       "welcomePage.buttonBackground"     : color.btn.bg,
       "welcomePage.buttonHoverBackground": color.btn.hoverBg,
