@@ -94,14 +94,14 @@ function getTheme({ theme, name }) {
 
       "tree.indentGuidesStroke": chroma(color.border.muted).hex(),
 
-      "notificationCenterHeader.foreground": themes({ light: scale.gray[5], dark: scale.gray[4], dimmed: scale.gray[4] }),
-      "notificationCenterHeader.background": themes({ light: scale.gray[2], dark: scale.gray[9], dimmed: scale.gray[9] }),
-      "notifications.foreground"           : color.fg.muted,
-      "notifications.background"           : themes({ light: scale.gray[0], dark: scale.gray[8], dimmed: scale.gray[8] }),
+      "notificationCenterHeader.foreground": color.fg.muted,
+      "notificationCenterHeader.background": color.canvas.subtle,
+      "notifications.foreground"           : color.fg.default,
+      "notifications.background"           : color.canvas.overlay,
       "notifications.border"               : color.border.default,
-      "notificationsErrorIcon.foreground"  : themes({ light: scale.red[5], dark: scale.red[4], dimmed: scale.red[4] }),
-      "notificationsWarningIcon.foreground": themes({ light: scale.orange[6], dark: scale.orange[3], dimmed: scale.orange[3] }),
-      "notificationsInfoIcon.foreground"   : themes({ light: scale.blue[6], dark: scale.blue[3], dimmed: scale.blue[3] }),
+      "notificationsErrorIcon.foreground"  : color.danger.fg,
+      "notificationsWarningIcon.foreground": color.attention.fg,
+      "notificationsInfoIcon.foreground"   : color.accent.fg,
 
       "pickerGroup.border"    : themes({ light: scale.gray[2], dark: scale.gray[7], dimmed: scale.gray[7] }),
       "pickerGroup.foreground": color.fg.muted,
