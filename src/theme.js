@@ -12,7 +12,7 @@ const { getColors } = require("./colors");
 function getTheme({ theme, name }) {
   // Usage: themes({ light: "lightblue", dark: "darkblue", dimmed: "royalblue" })
   const themes = (options) => options[theme];
-  // Usage: color.text.primary
+  // Usage: color.fg.default
   const color = getColors(theme);
   // Usage: scale.blue[6]
   const scale = color.scale;
@@ -20,10 +20,10 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
-      focusBorder          : color.state.focus.border,
-      foreground           : color.text.primary,
-      descriptionForeground: color.text.tertiary,
-      errorForeground      : color.text.danger,
+      focusBorder          : color.accent.emphasis,
+      foreground           : color.fg.default,
+      descriptionForeground: color.fg.muted,
+      errorForeground      : color.danger.fg,
 
       "textLink.foreground"      : color.text.link,
       "textLink.activeForeground": color.text.link,
@@ -36,7 +36,7 @@ function getTheme({ theme, name }) {
       "button.background"     : color.btn.primary.bg,
       "button.foreground"     : color.btn.primary.text,
       "button.hoverBackground": color.btn.primary.hoverBg,
-      
+
       "button.secondaryBackground"     : color.btn.activeBg,
       "button.secondaryForeground"     : color.btn.text,
       "button.secondaryHoverBackground": color.btn.hoverBg,
@@ -46,12 +46,12 @@ function getTheme({ theme, name }) {
 
       "dropdown.background"    : color.bg.overlay,
       "dropdown.border"        : color.border.primary,
-      "dropdown.foreground"    : color.text.primary,
+      "dropdown.foreground"    : color.fg.default,
       "dropdown.listBackground": color.bg.overlay,
 
       "input.background"           : color.input.bg,
       "input.border"               : color.input.border,
-      "input.foreground"           : color.text.primary,
+      "input.foreground"           : color.fg.default,
       "input.placeholderForeground": color.text.placeholder,
 
       "badge.foreground": themes({ light: scale.blue[6], dark: scale.blue[2], dimmed: scale.blue[2] }),
@@ -61,29 +61,29 @@ function getTheme({ theme, name }) {
 
       "titleBar.activeForeground"  : color.text.secondary,
       "titleBar.activeBackground"  : color.bg.canvas,
-      "titleBar.inactiveForeground": color.text.tertiary,
+      "titleBar.inactiveForeground": color.fg.muted,
       "titleBar.inactiveBackground": color.bg.canvasInset,
       "titleBar.border"            : color.border.primary,
 
-      "activityBar.foreground"        : color.text.primary,
-      "activityBar.inactiveForeground": color.text.tertiary,
+      "activityBar.foreground"        : color.fg.default,
+      "activityBar.inactiveForeground": color.fg.muted,
       "activityBar.background"        : color.bg.canvas,
       "activityBarBadge.foreground"   : scale.white,
       "activityBarBadge.background"   : themes({ light: scale.blue[4], dark: scale.blue[5], dimmed: scale.blue[5] }),
       "activityBar.activeBorder"      : color.underlinenav.borderActive,
       "activityBar.border"            : color.border.primary,
 
-      "sideBar.foreground"             : color.text.primary,
+      "sideBar.foreground"             : color.fg.default,
       "sideBar.background"             : color.bg.canvasInset,
       "sideBar.border"                 : color.border.primary,
-      "sideBarTitle.foreground"        : color.text.primary,
-      "sideBarSectionHeader.foreground": color.text.primary,
+      "sideBarTitle.foreground"        : color.fg.default,
+      "sideBarSectionHeader.foreground": color.fg.default,
       "sideBarSectionHeader.background": color.bg.canvasInset,
       "sideBarSectionHeader.border"    : color.border.primary,
 
-      "list.hoverForeground"            : color.text.primary,
-      "list.inactiveSelectionForeground": color.text.primary,
-      "list.activeSelectionForeground"  : color.text.primary,
+      "list.hoverForeground"            : color.fg.default,
+      "list.inactiveSelectionForeground": color.fg.default,
+      "list.activeSelectionForeground"  : color.fg.default,
       "list.hoverBackground"            : themes({ light: "#ebf0f4", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.inactiveSelectionBackground": themes({ light: "#e8eaed", dark: scale.gray[8], dimmed: scale.gray[8] }),
       "list.activeSelectionBackground"  : themes({ light: "#e2e5e9", dark: scale.gray[7], dimmed: scale.gray[7] }),
@@ -106,7 +106,7 @@ function getTheme({ theme, name }) {
       "pickerGroup.border"    : themes({ light: scale.gray[2], dark: scale.gray[7], dimmed: scale.gray[7] }),
       "pickerGroup.foreground": color.text.secondary,
       "quickInput.background" : themes({ light: scale.gray[0], dark: scale.gray[9], dimmed: scale.gray[9] }),
-      "quickInput.foreground" : color.text.primary,
+      "quickInput.foreground" : color.fg.default,
 
       "statusBar.foreground"             : color.text.secondary,
       "statusBar.background"             : color.bg.canvas,
@@ -120,8 +120,8 @@ function getTheme({ theme, name }) {
       "editorGroupHeader.tabsBorder"    : color.border.primary,
       "editorGroup.border"              : color.border.primary,
 
-      "tab.activeForeground"        : color.text.primary,
-      "tab.inactiveForeground"      : color.text.tertiary,
+      "tab.activeForeground"        : color.fg.default,
+      "tab.inactiveForeground"      : color.fg.muted,
       "tab.inactiveBackground"      : color.bg.canvasInset,
       "tab.activeBackground"        : color.bg.canvas,
       "tab.hoverBackground"         : color.bg.canvas,
@@ -132,18 +132,18 @@ function getTheme({ theme, name }) {
       "tab.unfocusedActiveBorder"   : color.bg.canvas,
       "tab.activeBorderTop"         : color.underlinenav.borderActive,
 
-      "breadcrumb.foreground"               : color.text.tertiary,
-      "breadcrumb.focusForeground"          : color.text.primary,
+      "breadcrumb.foreground"               : color.fg.muted,
+      "breadcrumb.focusForeground"          : color.fg.default,
       "breadcrumb.activeSelectionForeground": color.text.secondary,
       "breadcrumbPicker.background"         : color.bg.overlay,
 
-      "editor.foreground"                 : color.text.primary,
+      "editor.foreground"                 : color.fg.default,
       "editor.background"                 : color.bg.canvas,
       "editorWidget.background"           : color.bg.overlay,
       "editor.foldBackground"             : chroma(scale.gray[4]).alpha(0.1).hex(), // needs opacity
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
-      "editorLineNumber.activeForeground" : color.text.primary,
+      "editorLineNumber.activeForeground" : color.fg.default,
       "editorIndentGuide.background"      : color.border.secondary,
       "editorIndentGuide.activeBackground": color.border.primary,
       "editorWhitespace.foreground"       : themes({ light: scale.gray[3], dark: scale.gray[5], dimmed: scale.gray[5] }),
@@ -179,8 +179,8 @@ function getTheme({ theme, name }) {
       "panel.background"             : color.bg.canvasInset,
       "panel.border"                 : color.border.primary,
       "panelTitle.activeBorder"      : color.underlinenav.borderActive,
-      "panelTitle.activeForeground"  : color.text.primary,
-      "panelTitle.inactiveForeground": color.text.tertiary,
+      "panelTitle.activeForeground"  : color.fg.default,
+      "panelTitle.inactiveForeground": color.fg.muted,
       "panelInput.border"            : color.border.primary,
 
       "terminal.foreground": color.text.secondary,
@@ -264,7 +264,7 @@ function getTheme({ theme, name }) {
           "meta.embedded.expression"
         ],
         settings: {
-          foreground: color.text.primary,
+          foreground: color.fg.default,
         },
       },
       {
@@ -301,7 +301,7 @@ function getTheme({ theme, name }) {
           "storage.type.java",
         ],
         settings: {
-          foreground: color.text.primary,
+          foreground: color.fg.default,
         },
       },
       {
@@ -335,7 +335,7 @@ function getTheme({ theme, name }) {
       {
         scope: "variable.other",
         settings: {
-          foreground: color.text.primary,
+          foreground: color.fg.default,
         },
       },
       {
@@ -384,7 +384,7 @@ function getTheme({ theme, name }) {
       {
         scope: "string source",
         settings: {
-          foreground: color.text.primary,
+          foreground: color.fg.default,
         },
       },
       {
@@ -458,14 +458,14 @@ function getTheme({ theme, name }) {
         scope: "markup.italic",
         settings: {
           fontStyle: "italic",
-          foreground: color.text.primary,
+          foreground: color.fg.default,
         },
       },
       {
         scope: "markup.bold",
         settings: {
           fontStyle: "bold",
-          foreground: color.text.primary,
+          foreground: color.fg.default,
         },
       },
       {
