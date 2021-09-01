@@ -140,16 +140,16 @@ function getTheme({ theme, name }) {
       "editor.foreground"                 : color.fg.default,
       "editor.background"                 : color.canvas.default,
       "editorWidget.background"           : color.canvas.overlay,
-      "editor.foldBackground"             : chroma(scale.gray[4]).alpha(0.1).hex(), // needs opacity
+      "editor.foldBackground"             : chroma(color.neutral.emphasis).alpha(0.1).hex(), // needs opacity
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
       "editorLineNumber.activeForeground" : color.fg.default,
       "editorIndentGuide.background"      : chroma(color.border.muted).hex(),
       "editorIndentGuide.activeBackground": color.border.default,
-      "editorWhitespace.foreground"       : themes({ light: scale.gray[3], dark: scale.gray[5], dimmed: scale.gray[5] }),
-      "editorCursor.foreground"           : themes({ light: scale.blue[7], dark: scale.blue[2], dimmed: scale.blue[2] }),
+      "editorWhitespace.foreground"       : color.fg.subtle,
+      "editorCursor.foreground"           : color.accent.fg,
 
-      "editor.findMatchBackground"          : themes({ light: scale.yellow[4], dark: "#ffd33d44", dimmed: "#ffd33d44" }),
+      "editor.findMatchBackground"          : themes({ light: "#bf8700", dark: "#ffd33d44", dimmed: "#ffd33d44" }),
       "editor.findMatchHighlightBackground" : themes({ light: "#ffdf5d66", dark: "#ffd33d22", dimmed: "#ffd33d22" }),
       "editor.linkedEditingBackground"      : themes({ light: "#0366d611", dark: "#3392FF22", dimmed: "#3392FF22" }),
       "editor.inactiveSelectionBackground"  : themes({ light: "#0366d611", dark: "#3392FF22", dimmed: "#3392FF22" }),
@@ -163,12 +163,12 @@ function getTheme({ theme, name }) {
       "editorBracketMatch.background"       : themes({ light: "#34d05840", dark: "#17E5E650", dimmed: "#17E5E650" }),
       "editorBracketMatch.border"           : themes({ light: "#34d05800", dark: "#17E5E600", dimmed: "#17E5E600" }),
 
-      "editorGutter.modifiedBackground": color.diff.change.border,
-      "editorGutter.addedBackground"   : color.diff.addition.border,
-      "editorGutter.deletedBackground" : color.diff.deletion.border,
+      "editorGutter.modifiedBackground": color.attention.muted,
+      "editorGutter.addedBackground"   : color.success.muted,
+      "editorGutter.deletedBackground" : color.danger.muted,
 
-      "diffEditor.insertedTextBackground": themes({ light: chroma(scale.green[3]).alpha(0.2).hex(), dark: chroma(color.diff.addition.bg).hex(), dimmed: chroma(color.diff.addition.bg).hex() }),
-      "diffEditor.removedTextBackground" : themes({ light: chroma(scale.red[3]  ).alpha(0.15).hex(), dark: chroma(color.diff.deletion.bg).hex(), dimmed: chroma(color.diff.deletion.bg).hex() }),
+      "diffEditor.insertedTextBackground": color.success.subtle,
+      "diffEditor.removedTextBackground" : color.danger.subtle,
 
       "scrollbar.shadow"                : themes({ light: "#6a737d33", dark: "#0008", dimmed: "#0008" }),
       "scrollbarSlider.background"      : themes({ light: "#959da533", dark: "#484F5833", dimmed: "#484F5833" }),
@@ -178,7 +178,7 @@ function getTheme({ theme, name }) {
 
       "panel.background"             : color.canvas.inset,
       "panel.border"                 : color.border.default,
-      "panelTitle.activeBorder"      : color.underlinenav.borderActive,
+      "panelTitle.activeBorder"      : color.primer.border.active,
       "panelTitle.activeForeground"  : color.fg.default,
       "panelTitle.inactiveForeground": color.fg.muted,
       "panelInput.border"            : color.border.default,
@@ -201,12 +201,12 @@ function getTheme({ theme, name }) {
       'terminal.ansiBrightCyan': color.ansi.cyanBright,
       'terminal.ansiBrightWhite': color.ansi.whiteBright,
 
-      "gitDecoration.addedResourceForeground"      : color.diff.addition.text,
-      "gitDecoration.modifiedResourceForeground"   : color.diff.change.text,
-      "gitDecoration.deletedResourceForeground"    : color.diff.deletion.text,
-      "gitDecoration.untrackedResourceForeground"  : color.diff.addition.text,
-      "gitDecoration.ignoredResourceForeground"    : themes({ light: scale.gray[4], dark: color.text.disabled, dimmed: color.text.disabled }),
-      "gitDecoration.conflictingResourceForeground": color.text.warning,
+      "gitDecoration.addedResourceForeground"      : color.success.fg,
+      "gitDecoration.modifiedResourceForeground"   : color.attention.fg,
+      "gitDecoration.deletedResourceForeground"    : color.danger.fg,
+      "gitDecoration.untrackedResourceForeground"  : color.fg.subtle,
+      "gitDecoration.ignoredResourceForeground"    : color.fg.subtle,
+      "gitDecoration.conflictingResourceForeground": color.severe.fg,
       "gitDecoration.submoduleResourceForeground"  : color.fg.muted,
 
       "debugToolBar.background"                    : color.canvas.overlay,
@@ -219,7 +219,7 @@ function getTheme({ theme, name }) {
       "peekViewResult.background"              : themes({ dark: scale.gray[9], dimmed: scale.gray[9] }),
 
       "settings.headerForeground"        : color.fg.muted,
-      "settings.modifiedItemIndicator"   : color.diff.change.border,
+      "settings.modifiedItemIndicator"   : color.attention.muted,
       "welcomePage.buttonBackground"     : color.btn.bg,
       "welcomePage.buttonHoverBackground": color.btn.hoverBg,
     },
