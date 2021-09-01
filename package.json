@@ -28,7 +28,8 @@
 		"theme",
 		"github",
 		"light",
-		"dark"
+		"dark",
+		"high contrast"
 	],
 	"contributes": {
 		"themes": [
@@ -56,6 +57,11 @@
 				"label": "GitHub Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark.json"
+			},
+			{
+				"label": "GitHub Dark High Contrast",
+				"uiTheme": "hc-black",
+				"path": "./themes/dark-high-contrast.json"
 			}
 		]
 	},
