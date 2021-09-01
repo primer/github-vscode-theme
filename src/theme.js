@@ -141,7 +141,7 @@ function getTheme({ theme, name }) {
       "editor.background"                 : color.canvas.default,
       "editorWidget.background"           : color.canvas.overlay,
       "editor.foldBackground"             : chroma(color.neutral.emphasis).alpha(0.1).hex(), // needs opacity
-      "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
+      "editor.lineHighlightBackground"    : chroma(color.codemirror.activelineBg).hex(),
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
       "editorLineNumber.activeForeground" : color.fg.default,
       "editorIndentGuide.background"      : chroma(color.border.muted).hex(),
@@ -163,9 +163,9 @@ function getTheme({ theme, name }) {
       "editorBracketMatch.background"       : themes({ light: "#34d05840", dark: "#17E5E650", dimmed: "#17E5E650" }),
       "editorBracketMatch.border"           : themes({ light: "#34d05800", dark: "#17E5E600", dimmed: "#17E5E600" }),
 
-      "editorGutter.modifiedBackground": color.attention.muted,
-      "editorGutter.addedBackground"   : color.success.muted,
-      "editorGutter.deletedBackground" : color.danger.muted,
+      "editorGutter.modifiedBackground": chroma(color.attention.muted).hex(),
+      "editorGutter.addedBackground"   : chroma(color.success.muted).hex(),
+      "editorGutter.deletedBackground" : chroma(color.danger.muted).hex(),
 
       "diffEditor.insertedTextBackground": color.success.subtle,
       "diffEditor.removedTextBackground" : color.danger.subtle,
