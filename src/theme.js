@@ -94,8 +94,8 @@ function getTheme({ theme, name }) {
       "list.hoverBackground"            : hex(color.neutral.subtle),
       "list.inactiveSelectionBackground": hex(color.neutral.muted),
       "list.activeSelectionBackground"  : hex(color.neutral.muted),
-      "list.focusForeground"            : hex(color.accent.fg),
-      "list.focusBackground"            : hex(color.accent.muted),
+      "list.focusForeground"            : hex(color.fg.default),
+      "list.focusBackground"            : hex(color.accent.subtle),
       "list.inactiveFocusBackground"    : hex(color.accent.subtle),
       "list.highlightForeground"        : hex(color.accent.fg),
 
