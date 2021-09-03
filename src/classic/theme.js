@@ -200,11 +200,11 @@ function getTheme({ style, name }) {
       "terminalCursor.foreground": primer.blue[6],
 
       "editorBracketHighlight.foreground1": primer.blue[6],
-      "editorBracketHighlight.foreground2": primer.purple[6],
-      "editorBracketHighlight.foreground3": primer.orange[6],
-      "editorBracketHighlight.foreground4": primer.green[6],
-      "editorBracketHighlight.foreground5": primer.yellow[6],
-      "editorBracketHighlight.foreground6": primer.red[6],
+      "editorBracketHighlight.foreground2": primer.orange[6],
+      "editorBracketHighlight.foreground3": primer.purple[6],
+      "editorBracketHighlight.foreground4": primer.blue[6],
+      "editorBracketHighlight.foreground5": primer.orange[6],
+      "editorBracketHighlight.foreground6": primer.purple[6],
 
       "gitDecoration.addedResourceForeground": primer.green[5],
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
