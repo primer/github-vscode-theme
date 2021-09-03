@@ -196,6 +196,8 @@ function getTheme({ style, name }) {
       "terminal.ansiBrightMagenta": primer.purple[6],
       "terminal.ansiBrightCyan": "#9ecbff",
       "terminal.ansiBrightWhite": primer.white,
+      "terminalCursor.background": primer.gray[3],
+      "terminalCursor.foreground": primer.blue[6],
 
       "editorBracketHighlight.foreground1": primer.blue[6],
       "editorBracketHighlight.foreground2": primer.purple[6],
