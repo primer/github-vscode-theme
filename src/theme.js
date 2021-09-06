@@ -150,6 +150,7 @@ function getTheme({ theme, name }) {
       "editorWidget.background"           : hex(color.canvas.overlay),
       "editor.foldBackground"             : hex(chroma(color.neutral.emphasis).alpha(0.1)), // needs opacity
       "editor.lineHighlightBackground"    : hex(color.codemirror.activelineBg),
+      "editor.lineHighlightBorder"        : themes({ hc: color.accent.fg }), // only add border to HC
       "editorLineNumber.foreground"       : hex(color.codemirror.linenumberText),
       "editorLineNumber.activeForeground" : hex(color.fg.default),
       "editorIndentGuide.background"      : hex(color.border.muted),
