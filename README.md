@@ -6,12 +6,16 @@
 
 1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme).
 2. Click on the "Install" button.
-3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme). Currently the following themes are available:
-    - `GitHub Light` (A legacy old theme.)
-    - `GitHub Dark` (A legacy old theme.)
-    - `GitHub Light Default` ✨ new ✨ (A new theme that aims for consistency with GitHub's Primer design system.)
-    - `GitHub Dark Default` ✨ new ✨ (A new theme that aims for consistency with GitHub's Primer design system.)
-    - `GitHub Dark Dimmed` ✨ new ✨ (A new theme that aims for consistency with GitHub's Primer design system.)
+3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme). The GitHub themes try to match the themes available in [github.com's settings](https://github.com/settings/appearance):
+    - `GitHub Light Default`
+    - `GitHub Dark Default`
+    - `GitHub Dark Dimmed`
+    - `GitHub Dark High Contrast` ✨ new ✨
+
+Additionally, there are also two older themes. **Note**: They won't get updated anymore and are kept for legacy reasons:
+
+- `GitHub Light` (legacy)
+- `GitHub Dark` (legacy)
 
 ## Override this theme
 
