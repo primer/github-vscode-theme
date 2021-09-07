@@ -142,6 +142,8 @@ function getTheme({ style, name }) {
       "editorIndentGuide.activeBackground": pick({ light: "#d7dbe0", dark: primer.gray[2] }),
       "editorWhitespace.foreground": pick({ light: primer.gray[3], dark: primer.gray[2] }),
       "editorCursor.foreground": primer.blue[7],
+      "editorError.foreground": primer.red[6],
+      "editorWarning.foreground": primer.yellow[6],
 
       "editor.findMatchBackground": pick({ light: primer.yellow[4], dark: "#ffd33d44" }),
       "editor.findMatchHighlightBackground": pick({ light: "#ffdf5d66", dark: "#ffd33d22" }),
