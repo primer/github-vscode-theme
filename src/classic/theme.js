@@ -180,7 +180,6 @@ function getTheme({ style, name }) {
       "panelInput.border": pick({ light: primer.gray[2], dark: primer.gray[1] }),
 
       "terminal.foreground": primer.gray[6],
-      "terminal.background": pick({ light: primer.white, dark: primer.gray[0] }),
       "terminal.tab.activeBorder": "#f9826c",
       "terminal.ansiBlack": primer.gray[3],
       "terminal.ansiWhite": pick({ light: primer.gray[9], dark: primer.gray[7] }),
