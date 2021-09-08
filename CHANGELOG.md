@@ -1,3 +1,9 @@
+## 4.2.0
+
+- Add `editorBracketHighlight` and ANSI to classic. [#205](https://github.com/primer/github-vscode-theme/pull/205).
+- Set `terminal.tab.activeBorder` based on editor tab [#189](https://github.com/primer/github-vscode-theme/pull/189).
+- More clearer for the difference between new theme and legacy theme [#191](https://github.com/primer/github-vscode-theme/pull/191).
+
 ## 4.1.1
 
 - Generate themes based on `4.1.0`.
