@@ -1,3 +1,7 @@
+## 4.2.1
+
+- Fix importing v2 colors from primer/primitives
+
 ## 4.2.0
 
 - Add `editorBracketHighlight` and ANSI to classic. [#205](https://github.com/primer/github-vscode-theme/pull/205).

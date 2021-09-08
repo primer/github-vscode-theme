@@ -2,7 +2,7 @@
 	"name": "github-vscode-theme",
 	"displayName": "GitHub Theme",
 	"description": "GitHub theme for VS Code",
-	"version": "4.2.0",
+	"version": "4.2.1",
 	"preview": true,
 	"publisher": "GitHub",
 	"license": "MIT",
@@ -28,8 +28,7 @@
 		"theme",
 		"github",
 		"light",
-		"dark",
-		"high contrast"
+		"dark"
 	],
 	"contributes": {
 		"themes": [
@@ -57,16 +56,11 @@
 				"label": "GitHub Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark.json"
-			},
-			{
-				"label": "GitHub Dark High Contrast",
-				"uiTheme": "hc-black",
-				"path": "./themes/dark-high-contrast.json"
 			}
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "^4.6.7",
+		"@primer/primitives": "4.3.0",
 		"chroma-js": "^2.1.0",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
