@@ -181,16 +181,16 @@ function getTheme({ style, name }) {
 
       "terminal.foreground": primer.gray[6],
       "terminal.tab.activeBorder": "#f9826c",
-      "terminal.ansiBlack": primer.gray[3],
-      "terminal.ansiWhite": pick({ light: primer.gray[9], dark: primer.gray[7] }),
+      "terminal.ansiBlack": primer.gray[3], // BLACK
+      "terminal.ansiWhite": pick({ light: primer.gray[9], dark: primer.gray[6] }),  // LIGHT_GRAY
       "terminal.ansiRed": primer.red[6],
       "terminal.ansiGreen": primer.green[6],
       "terminal.ansiYellow": primer.yellow[6],
       "terminal.ansiBlue": primer.blue[6],
       "terminal.ansiMagenta": primer.purple[6],
       "terminal.ansiCyan": "#9ecbff",
-      "terminal.ansiBrightBlack": primer.gray[3],
-      "terminal.ansiBrightWhite": pick({ light: primer.gray[9], dark: primer.gray[7] }),
+      "terminal.ansiBrightBlack": primer.gray[5], // GRAY
+      "terminal.ansiBrightWhite": pick({ light: primer.gray[9], dark: primer.gray[9] }), // WHITE
       "terminal.ansiBrightRed": primer.red[6],
       "terminal.ansiBrightGreen": primer.green[6],
       "terminal.ansiBrightYellow": primer.yellow[6],
