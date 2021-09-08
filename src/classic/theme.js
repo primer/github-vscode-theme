@@ -181,24 +181,35 @@ function getTheme({ style, name }) {
 
       "terminal.foreground": primer.gray[6],
       "terminal.tab.activeBorder": "#f9826c",
-      "terminal.ansiBlack": primer.gray[3], // BLACK
-      "terminal.ansiWhite": pick({ light: primer.gray[9], dark: primer.gray[6] }),  // LIGHT_GRAY
-      "terminal.ansiRed": primer.red[6],
-      "terminal.ansiGreen": primer.green[6],
-      "terminal.ansiYellow": primer.yellow[6],
-      "terminal.ansiBlue": primer.blue[6],
-      "terminal.ansiMagenta": primer.purple[6],
-      "terminal.ansiCyan": "#9ecbff",
-      "terminal.ansiBrightBlack": primer.gray[5], // GRAY
-      "terminal.ansiBrightWhite": pick({ light: primer.gray[9], dark: primer.gray[9] }), // WHITE
-      "terminal.ansiBrightRed": primer.red[6],
-      "terminal.ansiBrightGreen": primer.green[6],
-      "terminal.ansiBrightYellow": primer.yellow[6],
-      "terminal.ansiBrightBlue": primer.blue[6],
-      "terminal.ansiBrightMagenta": primer.purple[6],
-      "terminal.ansiBrightCyan": "#9ecbff",
       "terminalCursor.background": primer.gray[3],
       "terminalCursor.foreground": primer.blue[6],
+
+      // Test ANSI colors with:
+      // echo -e "\033[0mNC (No color)"
+      // echo -e "\033[1;37mWHITE\t\033[0;30mBLACK"
+      // echo -e "\033[0;34mBLUE\t\033[1;34mLIGHT_BLUE"
+      // echo -e "\033[0;32mGREEN\t\033[1;32mLIGHT_GREEN"
+      // echo -e "\033[0;36mCYAN\t\033[1;36mLIGHT_CYAN"
+      // echo -e "\033[0;31mRED\t\033[1;31mLIGHT_RED"
+      // echo -e "\033[0;35mPURPLE\t\033[1;35mLIGHT_PURPLE"
+      // echo -e "\033[0;33mYELLOW\t\033[1;33mLIGHT_YELLOW"
+      // echo -e "\033[1;30mGRAY\t\033[0;37mLIGHT_GRAY"
+      "terminal.ansiBrightWhite": pick({ light: primer.gray[3], dark: primer.gray[9] }), // WHITE
+      "terminal.ansiWhite": pick({ light: primer.gray[5], dark: primer.gray[6] }),  // LIGHT_GRAY
+      "terminal.ansiBrightBlack": pick({ light: primer.gray[4], dark: primer.gray[5] }), // GRAY
+      "terminal.ansiBlack": pick({ light: primer.gray[9], dark: primer.gray[3] }), // BLACK
+      "terminal.ansiBlue": primer.blue[5],
+      "terminal.ansiBrightBlue": primer.blue[6],
+      "terminal.ansiGreen": primer.green[5],
+      "terminal.ansiBrightGreen": primer.green[6],
+      "terminal.ansiCyan": pick({ light: "#1b7c83", dark: "#39c5cf" }),
+      "terminal.ansiBrightCyan": pick({ light: "#3192aa", dark: "#56d4dd" }),
+      "terminal.ansiRed": primer.red[5],
+      "terminal.ansiBrightRed": primer.red[6],
+      "terminal.ansiMagenta": primer.purple[6],
+      "terminal.ansiBrightMagenta": primer.purple[6],
+      "terminal.ansiYellow": pick({ light: primer.yellow[7], dark: primer.yellow[6] }),
+      "terminal.ansiBrightYellow": pick({ light: primer.yellow[8], dark: primer.yellow[6] }),
 
       "editorBracketHighlight.foreground1": primer.blue[6],
       "editorBracketHighlight.foreground2": primer.orange[6],
