@@ -36,7 +36,7 @@ function getTheme({ theme, name }) {
       "button.background"     : color.btn.primary.bg,
       "button.foreground"     : color.btn.primary.text,
       "button.hoverBackground": color.btn.primary.hoverBg,
-      
+
       "button.secondaryBackground"     : color.btn.activeBg,
       "button.secondaryForeground"     : color.btn.text,
       "button.secondaryHoverBackground": color.btn.hoverBg,
@@ -236,6 +236,7 @@ function getTheme({ theme, name }) {
           "constant",
           "entity.name.constant",
           "variable.other.constant",
+          "variable.other.enummember",
           "variable.language",
           "entity",
         ],
