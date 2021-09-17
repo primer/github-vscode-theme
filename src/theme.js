@@ -213,7 +213,7 @@ function getTheme({ theme, name }) {
       "gitDecoration.addedResourceForeground"      : hex(color.success.fg),
       "gitDecoration.modifiedResourceForeground"   : hex(color.attention.fg),
       "gitDecoration.deletedResourceForeground"    : hex(color.danger.fg),
-      "gitDecoration.untrackedResourceForeground"  : hex(color.fg.subtle),
+      "gitDecoration.untrackedResourceForeground"  : hex(color.success.fg),
       "gitDecoration.ignoredResourceForeground"    : hex(color.fg.subtle),
       "gitDecoration.conflictingResourceForeground": hex(color.severe.fg),
       "gitDecoration.submoduleResourceForeground"  : hex(color.fg.muted),
