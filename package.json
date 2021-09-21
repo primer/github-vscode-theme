@@ -48,6 +48,11 @@
 				"path": "./themes/dark-dimmed.json"
 			},
 			{
+				"label": "GitHub Dark High Contrast",
+				"uiTheme": "hc-black",
+				"path": "./themes/dark-high-contrast.json"
+			},
+			{
 				"label": "GitHub Light",
 				"uiTheme": "vs",
 				"path": "./themes/light.json"
@@ -60,7 +65,7 @@
 		]
 	},
 	"devDependencies": {
-		"@primer/primitives": "4.3.0",
+		"@primer/primitives": "4.7.1",
 		"chroma-js": "^2.1.0",
 		"color": "^3.1.2",
 		"nodemon": "^2.0.3"
