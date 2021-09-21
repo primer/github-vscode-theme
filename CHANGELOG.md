@@ -1,3 +1,10 @@
+## 5.0.0
+
+- Add new "GitHub Dark High Contrast" theme [#203](https://github.com/primer/github-vscode-theme/pull/203).
+- Update colors from Primer Primitives [#203](https://github.com/primer/github-vscode-theme/pull/203).
+
+![GitHub VS Code theme](https://user-images.githubusercontent.com/378023/132220037-3cd3e777-55a6-445f-9a2e-da6020ebd78d.png)
+
 ## 4.2.1
 
 - Fix importing v2 colors from primer/primitives
