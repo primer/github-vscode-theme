@@ -57,7 +57,7 @@ function getTheme({ theme, name }) {
       "dropdown.foreground"    : hex(color.fg.default),
       "dropdown.listBackground": hex(color.canvas.overlay),
 
-      "input.background"           : hex(color.canvas.subtle),
+      "input.background"           : hex(color.canvas.default),
       "input.border"               : hex(color.border.default),
       "input.foreground"           : hex(color.fg.default),
       "input.placeholderForeground": hex(color.fg.subtle),
