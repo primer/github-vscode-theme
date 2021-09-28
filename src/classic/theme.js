@@ -29,7 +29,7 @@ function getTheme({ style, name }) {
       "textPreformat.foreground": primer.gray[6],
       "textSeparator.foreground": primer.gray[3],
 
-      "button.background": pick({ light: "#159739", dark: primer.green[2] }),
+      "button.background": pick({ light: "#ff0000", dark: primer.green[2] }),
       "button.foreground": pick({ light: primer.white, dark: primer.green[8] }),
       "button.hoverBackground": pick({ light: "#138934", dark: primer.green[3] }),
 
