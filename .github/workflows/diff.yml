@@ -81,7 +81,7 @@ jobs:
           # this action may not work as expected.
           comment-token: 'diff'
           script: |
-            diff=$(for file in themes/**/*.json
+            diff=$(for file in themes/*.json
               do
                 # using `2> /dev/null || true` here to suppress errors because,
                 # in this case, differences are not errors
