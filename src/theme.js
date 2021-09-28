@@ -57,10 +57,10 @@ function getTheme({ theme, name }) {
       "dropdown.foreground"    : hex(color.fg.default),
       "dropdown.listBackground": hex(color.canvas.overlay),
 
+      "input.text"                 : hex(color.fg.muted),
       "input.background"           : hex(color.canvas.subtle),
       "input.border"               : hex(color.border.default),
       "input.foreground"           : hex(color.fg.default),
-      "input.placeholderForeground": hex(color.fg.subtle),
 
       "badge.foreground": hex(color.fg.onEmphasis),
       "badge.background": hex(color.accent.emphasis),
