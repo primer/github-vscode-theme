@@ -83,9 +83,7 @@ jobs:
           script: |
             diff=$(for file in themes/*.json
               do
-                # using `2> /dev/null || true` here to suppress errors because,
-                # in this case, differences are not errors
-                diff -U 1 base/$file $file 2> /dev/null || true
+                diff -U 1 base/$file $file
               done)
 
             echo "\`\`\`diff"
