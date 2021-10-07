@@ -28,7 +28,9 @@
 		"theme",
 		"github",
 		"light",
-		"dark"
+		"dark",
+		"protanopia",
+		"colorblind"
 	],
 	"contributes": {
 		"themes": [
@@ -36,6 +38,11 @@
 				"label": "GitHub Light Default",
 				"uiTheme": "vs",
 				"path": "./themes/light-default.json"
+			},
+			{
+				"label": "GitHub Colorblind",
+				"uiTheme": "vs",
+				"path": "./themes/light-protanopia.json"
 			},
 			{
 				"label": "GitHub Dark Default",
@@ -51,6 +58,11 @@
 				"label": "GitHub Dark High Contrast",
 				"uiTheme": "hc-black",
 				"path": "./themes/dark-high-contrast.json"
+			},
+			{
+				"label": "GitHub Dark Colorblind",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-protanopia.json"
 			},
 			{
 				"label": "GitHub Light",

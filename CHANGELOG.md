@@ -1,3 +1,9 @@
+## 5.1.0
+
+- Add new "GitHub Colorblind" theme [#225](https://github.com/primer/github-vscode-theme/pull/225).
+- Add new "GitHub Dark Colorblind" theme [#225](https://github.com/primer/github-vscode-theme/pull/225).
+
+
 ## 5.0.0
 
 - Add new "GitHub Dark High Contrast" theme [#203](https://github.com/primer/github-vscode-theme/pull/203).
