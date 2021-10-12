@@ -28,7 +28,7 @@ const darkHighContrastTheme = getTheme({
 })
 
 const darkProtanopiaTheme = getTheme({
-  theme: "dark-protanopia",
+  theme: "dark_protanopia",
   name: "GitHub Dark Colorblind"
 })
 

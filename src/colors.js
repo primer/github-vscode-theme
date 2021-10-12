@@ -16,7 +16,7 @@ function getColors(theme) {
     return protanopiaColors;
   } else if (theme === "hc") {
     return hcColors;
-  } else if (theme === "dark-protanopia") {
+  } else if (theme === "dark_protanopia") {
     return darkProtanopiaColors;
   }
 }
