@@ -40,7 +40,7 @@
 				"path": "./themes/light-default.json"
 			},
 			{
-				"label": "GitHub Colorblind",
+				"label": "GitHub Light Colorblind",
 				"uiTheme": "vs",
 				"path": "./themes/light-protanopia.json"
 			},
