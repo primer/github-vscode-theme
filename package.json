@@ -42,7 +42,7 @@
 			{
 				"label": "GitHub Light Colorblind",
 				"uiTheme": "vs",
-				"path": "./themes/light-protanopia.json"
+				"path": "./themes/light-colorblind.json"
 			},
 			{
 				"label": "GitHub Dark Default",
@@ -62,7 +62,7 @@
 			{
 				"label": "GitHub Dark Colorblind",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dark-protanopia.json"
+				"path": "./themes/dark-colorblind.json"
 			},
 			{
 				"label": "GitHub Light",

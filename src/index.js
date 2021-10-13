@@ -7,8 +7,8 @@ const lightDefaultTheme = getTheme({
   name: "GitHub Light Default",
 });
 
-const protanopiaTheme = getTheme({
-  theme: "protanopia",
+const lightColorblindTheme = getTheme({
+  theme: "light_colorblind",
   name: "GitHub Light Colorblind",
 });
 
@@ -27,8 +27,8 @@ const darkHighContrastTheme = getTheme({
   name: "GitHub Dark High Contrast"
 })
 
-const darkProtanopiaTheme = getTheme({
-  theme: "dark_protanopia",
+const darkColorblindTheme = getTheme({
+  theme: "dark_colorblind",
   name: "GitHub Dark Colorblind"
 })
 
@@ -49,10 +49,10 @@ const darkTheme = getClassicTheme({
 fs.mkdir("./themes", { recursive: true })
   .then(() => Promise.all([
     fs.writeFile("./themes/light-default.json", JSON.stringify(lightDefaultTheme, null, 2)),
-    fs.writeFile("./themes/light-protanopia.json", JSON.stringify(protanopiaTheme, null, 2)),
+    fs.writeFile("./themes/light-colorblind.json", JSON.stringify(lightColorblindTheme, null, 2)),
     fs.writeFile("./themes/dark-default.json", JSON.stringify(darkDefaultTheme, null, 2)),
     fs.writeFile("./themes/dark-dimmed.json", JSON.stringify(darkDimmedTheme, null, 2)),
-    fs.writeFile("./themes/dark-protanopia.json", JSON.stringify(darkProtanopiaTheme, null, 2)),
+    fs.writeFile("./themes/dark-colorblind.json", JSON.stringify(darkColorblindTheme, null, 2)),
     fs.writeFile("./themes/dark-high-contrast.json", JSON.stringify(darkHighContrastTheme, null, 2)),
     fs.writeFile("./themes/light.json", JSON.stringify(lightTheme, null, 2)),
     fs.writeFile("./themes/dark.json", JSON.stringify(darkTheme, null, 2)),
