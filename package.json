@@ -87,8 +87,8 @@
 	"scripts": {
 		"start": "nodemon --watch src src/index.js",
 		"build": "node src/index.js",
-        "publish": "echo 'hello'",
-        "release": "changeset publish"
+		"publish": "echo 'hello'",
+		"release": "changeset publish"
 	},
 	"__metadata": {
 		"id": "7328a705-91fc-49e6-8293-da6f112e482d",
