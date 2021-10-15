@@ -8,9 +8,11 @@
 2. Click on the "Install" button.
 3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme). The GitHub themes try to match the themes available in [github.com's settings](https://github.com/settings/appearance):
     - `GitHub Light Default`
+    - `GitHub Light Colorblind` ✨ new ✨
     - `GitHub Dark Default`
+    - `GitHub Dark Colorblind` ✨ new ✨
     - `GitHub Dark Dimmed`
-    - `GitHub Dark High Contrast` ✨ new ✨
+    - `GitHub Dark High Contrast`
 
 Additionally, there are also two older themes. **Note**: They won't get updated anymore and are kept for legacy reasons:
 
@@ -24,7 +26,7 @@ To quickly test something, you can also override this (or any other) theme in yo
 ## Contribute
 
 1. Clone and open this [repo](https://github.com/primer/github-vscode-theme) in VS Code
-2. Run `npm install` to install the Primer CSS color reference and run `npm start` to run the converter.
+2. Run `yarn` to install the Primer CSS color reference and run `npm start` to run the converter.
 3. Press `F5` to open a new window with your extension loaded
 4. Open `Code > Preferences > Color Theme` [`⌘k ⌘t`] and pick the "GitHub Light" or "GitHub Dark" theme
 5. Make changes to the [`/src/theme.js`](https://github.com/primer/github-vscode-theme/blob/master/src/theme.js) file.
@@ -46,7 +48,7 @@ Note:
 **Prerequisite**: Please follow this [guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) to install and login to `vsce`. Ask an existing maintainer how to get the "Personal Access Token".
 
 1. Merge any PR that is ready to be published into `master`.
-2. Run `npm run build` to generate the themes with the new changes.
+2. Run `yarn build` to generate the themes with the new changes.
 3. Update [CHANGELOG.md](https://github.com/primer/github-vscode-theme/blob/master/CHANGELOG.md) + commit the changes.
 4. Run `vsce publish [version]`. Follow the [SemVer](https://semver.org) convention and replace `[version]` with one of the following  options:
     - `patch` for bug fixes
