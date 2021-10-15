@@ -39,6 +39,8 @@ Note:
 
 ## Publish (internal)
 
+> Note: This is out of date since we're trying to use changesets.
+
 > Note: Publishing a new version of this theme is only meant for maintainers.
 
 **Prerequisite**: Please follow this [guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) to install and login to `vsce`. Ask an existing maintainer how to get the "Personal Access Token".
