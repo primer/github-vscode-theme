@@ -1,5 +1,17 @@
 # github-vscode-theme
 
+## 5.0.2
+
+### Patch Changes
+
+- [#232](https://github.com/primer/github-vscode-theme/pull/232) [`027ef70`](https://github.com/primer/github-vscode-theme/commit/027ef7050ba360a76d7bdd252ff60568edc4343b) Thanks [@jonrohan](https://github.com/jonrohan)! - Testing another patch release
+
+## 5.0.1
+
+### Patch Changes
+
+- [#229](https://github.com/primer/github-vscode-theme/pull/229) [`4279f43`](https://github.com/primer/github-vscode-theme/commit/4279f431387df11544508f618ecc75c3739a95ed) Thanks [@simurai](https://github.com/simurai)! - Add note about publishing
+
 ## 5.0.0
 
 ### Major Changes
@@ -61,7 +73,7 @@
 
 ## 3.0.0
 
-- Revert dark changes  [#123](https://github.com/primer/github-vscode-theme/pull/123). This should be the same as the `1.1.5` version.
+- Revert dark changes [#123](https://github.com/primer/github-vscode-theme/pull/123). This should be the same as the `1.1.5` version.
 
 ## 2.0.1
 
