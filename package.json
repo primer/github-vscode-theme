@@ -78,8 +78,7 @@
     "build": "node src/index.js && mkdir -p build",
     "package": "vsce package -o ./build/github-vscode-theme.vsix",
     "vscode:prepublish": "yarn build",
-    "prepublish": "yarn vsce-publish -- -p $VSCE_PUBLISHER_TOKEN",
-    "vsce-publish": "vsce publish",
+    "prepublishOnly": "vsce publish -- -p $VSCE_PUBLISHER_TOKEN",
     "release": "changeset publish"
   },
   "__metadata": {
