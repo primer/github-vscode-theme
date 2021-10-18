@@ -77,7 +77,7 @@
     "start": "nodemon --watch src src/index.js",
     "build": "node src/index.js && mkdir -p build",
     "package": "vsce package -o ./build/github-vscode-theme.vsix",
-    "prepublishOnly": "yarn build && vsce publish",
+    "prepublishOnly": "npm run build && vsce publish",
     "release": "changeset publish"
   },
   "__metadata": {
