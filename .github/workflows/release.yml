@@ -35,3 +35,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GPR_AUTH_TOKEN_SHARED }}
           VSCE_PAT: ${{ secrets.VSCE_PUBLISHER_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_SHARED }}
