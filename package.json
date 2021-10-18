@@ -9,9 +9,7 @@
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#1b1f23",
-    "theme": "dark",
-    "protanopia",
-    "colorblind"
+    "theme": "dark"
   },
   "repository": {
     "type": "git",
@@ -30,7 +28,9 @@
     "theme",
     "github",
     "light",
-    "dark"
+    "dark",
+    "protanopia",
+    "colorblind"
   ],
   "contributes": {
     "themes": [
