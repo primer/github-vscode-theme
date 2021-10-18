@@ -86,5 +86,8 @@
     "id": "7328a705-91fc-49e6-8293-da6f112e482d",
     "publisherDisplayName": "GitHub",
     "publisherId": "7c1c19cd-78eb-4dfb-8999-99caf7679002"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
