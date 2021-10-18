@@ -581,7 +581,7 @@ chokidar@^3.2.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chroma-js@^2.1.0:
+chroma-js@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/chroma-js/-/chroma-js-2.1.2.tgz#1075cb9ae25bcb2017c109394168b5cf3aa500ec"
   integrity sha512-ri/ouYDWuxfus3UcaMxC1Tfp3IE9K5iQzxc2hSxbBRVNQFut1UuGAsZmiAf2mOUubzGJwgMSv9lHg+XqLaz1QQ==
