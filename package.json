@@ -40,6 +40,11 @@
         "path": "./themes/light-default.json"
       },
       {
+        "label": "GitHub Light High Contrast",
+        "uiTheme": "vs",
+        "path": "./themes/light-high-contrast.json"
+      },
+      {
 				"label": "GitHub Light Colorblind",
 				"uiTheme": "vs",
 				"path": "./themes/light-colorblind.json"
@@ -48,11 +53,6 @@
         "label": "GitHub Dark Default",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
-      },
-      {
-        "label": "GitHub Dark Dimmed",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-dimmed.json"
       },
       {
         "label": "GitHub Dark High Contrast",
@@ -64,6 +64,11 @@
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark-colorblind.json"
 			},
+      {
+        "label": "GitHub Dark Dimmed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-dimmed.json"
+      },
       {
         "label": "GitHub Light",
         "uiTheme": "vs",
@@ -79,7 +84,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.1",
     "@changesets/cli": "^2.17.0",
-    "@primer/primitives": "5.0.0",
+    "@primer/primitives": "7.1.0",
     "chroma-js": "^2.1.2",
     "color": "^3.1.2",
     "nodemon": "^2.0.3",
