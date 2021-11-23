@@ -79,7 +79,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.1",
     "@changesets/cli": "^2.17.0",
-    "@primer/primitives": "6.1.0",
+    "@primer/primitives": "7.1.1",
     "chroma-js": "^2.1.2",
     "color": "^3.1.2",
     "nodemon": "^2.0.3",
