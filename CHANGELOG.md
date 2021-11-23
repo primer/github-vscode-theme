@@ -1,5 +1,11 @@
 # github-vscode-theme
 
+## 5.0.3
+
+### Patch Changes
+
+- [#234](https://github.com/primer/github-vscode-theme/pull/234) [`bbb3a83`](https://github.com/primer/github-vscode-theme/commit/bbb3a83f20be57106f6bf68bb06b7d64b2a58025) Thanks [@simurai](https://github.com/simurai)! - Update README
+
 ## 5.0.2
 
 ### Patch Changes
