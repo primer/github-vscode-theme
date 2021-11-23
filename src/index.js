@@ -8,7 +8,7 @@ const lightDefaultTheme = getTheme({
 });
 
 const lightHighContrastTheme = getTheme({
-  theme: "hc",
+  theme: "light_high_contrast",
   name: "GitHub Light High Contrast"
 })
 
@@ -23,7 +23,7 @@ const darkDefaultTheme = getTheme({
 });
 
 const darkHighContrastTheme = getTheme({
-  theme: "hc",
+  theme: "dark_high_contrast",
   name: "GitHub Dark High Contrast"
 })
 
@@ -33,7 +33,7 @@ const darkColorblindTheme = getTheme({
 })
 
 const darkDimmedTheme = getTheme({
-  theme: "dimmed",
+  theme: "dark_dimmed",
   name: "GitHub Dark Dimmed"
 })
 
