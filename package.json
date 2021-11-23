@@ -40,7 +40,7 @@
         "path": "./themes/light-default.json"
       },
       {
-				"label": "GitHub Light Colorblind",
+				"label": "GitHub Light Colorblind (Beta)",
 				"uiTheme": "vs",
 				"path": "./themes/light-colorblind.json"
 			},
@@ -60,7 +60,7 @@
         "path": "./themes/dark-high-contrast.json"
       },
       {
-				"label": "GitHub Dark Colorblind",
+				"label": "GitHub Dark Colorblind (Beta)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark-colorblind.json"
 			},

@@ -9,7 +9,7 @@ const lightDefaultTheme = getTheme({
 
 const lightColorblindTheme = getTheme({
   theme: "light_colorblind",
-  name: "GitHub Light Colorblind (Beta)",
+  name: "GitHub Light Colorblind",
 });
 
 const darkDefaultTheme = getTheme({
@@ -29,7 +29,7 @@ const darkHighContrastTheme = getTheme({
 
 const darkColorblindTheme = getTheme({
   theme: "dark_colorblind",
-  name: "GitHub Dark Colorblind (Beta)"
+  name: "GitHub Dark Colorblind"
 })
 
 // Classic
