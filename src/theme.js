@@ -326,13 +326,13 @@ function getTheme({ theme, name }) {
       {
         scope: "support",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_hight_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
         },
       },
       {
         scope: "meta.property-name",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_hight_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
         },
       },
       {
