@@ -161,7 +161,7 @@ function getTheme({ theme, name }) {
       "editor.findMatchHighlightBackground"   : lightDark("#ffdf5d66", "#ffd33d22"),
       "editor.linkedEditingBackground"        : lightDark("#0366d611", "#3392FF22"),
       "editor.inactiveSelectionBackground"    : lightDark("#0366d611", "#3392FF22"),      
-      "editor.selectionBackground"            : themes({ light: "#0366d625", light_high_contrast: "#0366d625", light_colorblind: "#0366d625", dark: "#3392FF44", dark_high_contrast: "#addcff99", dark_colorblind: "#3392FF44", dimmed: "#3392FF44" }),
+      "editor.selectionBackground"            : lightDark("#0366d625", "#3392FF44"),
       "editor.selectionHighlightBackground"   : lightDark("#34d05840", "#17E5E633"),
       "editor.selectionHighlightBorder"       : lightDark("#34d05800", "#17E5E600"),
       "editor.wordHighlightBackground"        : lightDark("#34d05800", "#17E5E600"),
@@ -179,18 +179,18 @@ function getTheme({ theme, name }) {
       "diffEditor.insertedTextBackground": color.success.subtle,
       "diffEditor.removedTextBackground" : color.danger.subtle,
 
-      "scrollbar.shadow"                : themes({ light: "#6a737d33", light_high_contrast: "#6a737d33", light_colorblind: "#6a737d33", dark: "#0008", dark_colorblind: "#0008", dimmed: "#0008" }),
-      "scrollbarSlider.background"      : themes({ light: "#959da533", light_high_contrast: "#959da533", light_colorblind: "#959da533", dark: "#484F5833", dark_high_contrast: "#484F5833", dark_colorblind: "#484F5833", dimmed: "#484F5833" }),
-      "scrollbarSlider.hoverBackground" : themes({ light: "#959da544", light_high_contrast: "#959da544", light_colorblind: "#959da544", dark: "#484F5844", dark_high_contrast: "#484F5844", dark_colorblind: "#484F5844", dimmed: "#484F5844" }),
-      "scrollbarSlider.activeBackground": themes({ light: "#959da588", light_high_contrast: "#959da588", light_colorblind: "#959da588", dark: "#484F5888", dark_high_contrast: "#484F5888", dark_colorblind: "#484F5888", dimmed: "#484F5888" }),
-      "editorOverviewRuler.border"      : themes({ light: scale.white, light_high_contrast: scale.white, light_colorblind: scale.white, dark: scale.black, dark_high_contrast: scale.black, dark_colorblind: scale.black, dimmed: scale.black }),
+      "scrollbar.shadow"                  : lightDark("#6a737d33", "#0008"),
+      "scrollbarSlider.background"        : lightDark("#959da533", "#484F5833"),
+      "scrollbarSlider.hoverBackground"   : lightDark("#959da544", "#484F5844"),
+      "scrollbarSlider.activeBackground"  : lightDark("#959da588", "#484F5888"),
+      "editorOverviewRuler.border"        : lightDark(scale.white, scale.black),
 
-      "panel.background"             : color.canvas.inset,
-      "panel.border"                 : color.border.default,
-      "panelTitle.activeBorder"      : color.primer.border.active,
-      "panelTitle.activeForeground"  : color.fg.default,
-      "panelTitle.inactiveForeground": color.fg.muted,
-      "panelInput.border"            : color.border.default,
+      "panel.background"               : color.canvas.inset,
+      "panel.border"                   : color.border.default,
+      "panelTitle.activeBorder"        : color.primer.border.active,
+      "panelTitle.activeForeground"    : color.fg.default,
+      "panelTitle.inactiveForeground"  : color.fg.muted,
+      "panelInput.border"              : color.border.default,
 
       "terminal.foreground": color.fg.muted,
       'terminal.ansiBlack': color.ansi.black,
@@ -237,7 +237,7 @@ function getTheme({ theme, name }) {
       {
         scope: ["comment", "punctuation.definition.comment", "string.comment"],
         settings: {
-          foreground: themes({ light: scale.gray[5], light_high_contrast: scale.gray[5], light_colorblind: scale.gray[5], dark: scale.gray[3], dark_high_contrast: scale.gray[3], dark_colorblind: scale.gray[3], dimmed: scale.gray[3] }),
+          foreground: lightDark(scale.gray[5], scale.gray[3])
         },
       },
       {
@@ -249,7 +249,7 @@ function getTheme({ theme, name }) {
           "entity",
         ],
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
@@ -279,7 +279,7 @@ function getTheme({ theme, name }) {
       {
         "scope": "entity.name.function",
         "settings": {
-          foreground: themes({ light: scale.purple[5], light_high_contrast: scale.purple[5], light_colorblind: scale.purple[5], dark: scale.purple[2], dark_high_contrast: scale.purple[2], dark_colorblind: scale.purple[2], dimmed: scale.purple[2] }),
+          foreground: lightDark(scale.purple[5], scale.purple[2])
         }
       },
       {
