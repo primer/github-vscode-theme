@@ -14,9 +14,15 @@ const { getColors } = require("./colors");
 //    e.g. "textLink.foreground": themes({ light: scale.blue[5], light_high_contrast: scale.blue[5], light_colorblind: scale.blue[5], dark: scale.blue[2], dark_high_contrast: scale.blue[3], dark_colorblind: scale.blue[2], dimmed: scale.blue[3] }),
 
 function getTheme({ theme, name }) {
+
   const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", light_high_contrast: "lightblue", light_colorblind: "lightblue", dark: "darkblue", dark_high_contrast: "darkblue", dark_colorblind: "darkblue", dimmed: "royalblue" })
-  const color = getColors(theme); // Usage: color.fg.default
+  const rawColors = getColors(theme)
+  const color = changeColorToHexAlphas(rawColors)
   const scale = color.scale; // Usage: scale.blue[6]
+
+  const lightDark = (light, dark) => {
+    return themes({ light: light, light_high_contrast: light, light_colorblind: light, dark: dark, dark_high_contrast: dark, dark_colorblind: dark, dimmed: dark })
+  }
 
   return {
     name: name,
@@ -151,19 +157,20 @@ function getTheme({ theme, name }) {
       "editorWhitespace.foreground"       : color.fg.subtle,
       "editorCursor.foreground"           : color.accent.fg,
 
-      "editor.findMatchBackground"          : themes({ light: "#bf8700", light_high_contrast: "#bf8700", light_colorblind: "#bf8700", dark: "#ffd33d44", dark_high_contrast: "#ffd33d44", dark_colorblind: "#ffd33d44", dimmed: "#ffd33d44" }),
-      "editor.findMatchHighlightBackground" : themes({ light: "#ffdf5d66", light_high_contrast: "#ffdf5d66", light_colorblind: "#ffdf5d66", dark: "#ffd33d22", dark_high_contrast: "#ffd33d22", dark_colorblind: "#ffd33d22", dimmed: "#ffd33d22" }),
-      "editor.linkedEditingBackground"      : themes({ light: "#0366d611", light_high_contrast: "#0366d611", light_colorblind: "#0366d611", dark: "#3392FF22", dark_high_contrast: "#3392FF22", dark_colorblind: "#3392FF22", dimmed: "#3392FF22" }),
-      "editor.inactiveSelectionBackground"  : themes({ light: "#0366d611", light_high_contrast: "#0366d611", light_colorblind: "#0366d611", dark: "#3392FF22", dark_high_contrast: "#addcff66", dark_colorblind: "#3392FF22", dimmed: "#3392FF22" }),
-      "editor.selectionBackground"          : themes({ light: "#0366d625", light_high_contrast: "#0366d625", light_colorblind: "#0366d625", dark: "#3392FF44", dark_high_contrast: "#addcff99", dark_colorblind: "#3392FF44", dimmed: "#3392FF44" }),
-      "editor.selectionHighlightBackground" : themes({ light: "#34d05840", light_high_contrast: "#34d05840", light_colorblind: "#34d05840", dark: "#17E5E633", dark_high_contrast: "#17E5E633", dark_colorblind: "#17E5E633", dimmed: "#17E5E633" }),
-      "editor.selectionHighlightBorder"     : themes({ light: "#34d05800", light_high_contrast: "#34d05800", light_colorblind: "#34d05800", dark: "#17E5E600", dark_high_contrast: "#17E5E600", dark_colorblind: "#17E5E600", dimmed: "#17E5E600" }),
-      "editor.wordHighlightBackground"      : themes({ light: "#34d05800", light_high_contrast: "#34d05800", light_colorblind: "#34d05800", dark: "#17E5E600", dark_high_contrast: "#17E5E600", dark_colorblind: "#17E5E600", dimmed: "#17E5E600" }),
-      "editor.wordHighlightStrongBackground": themes({ light: "#34d05800", light_high_contrast: "#34d05800", light_colorblind: "#34d05800", dark: "#17E5E600", dark_high_contrast: "#17E5E600", dark_colorblind: "#17E5E600", dimmed: "#17E5E600" }),
-      "editor.wordHighlightBorder"          : themes({ light: "#24943e99", light_high_contrast: "#24943e99", light_colorblind: "#24943e99", dark: "#17E5E699", dark_high_contrast: "#17E5E699", dark_colorblind: "#17E5E699", dimmed: "#17E5E699" }),
-      "editor.wordHighlightStrongBorder"    : themes({ light: "#24943e50", light_high_contrast: "#24943e50", light_colorblind: "#24943e50", dark: "#17E5E666", dark_high_contrast: "#17E5E666", dark_colorblind: "#17E5E666", dimmed: "#17E5E666" }),
-      "editorBracketMatch.background"       : themes({ light: "#34d05840", light_high_contrast: "#34d05840", light_colorblind: "#34d05840", dark: "#17E5E650", dark_high_contrast: "#17E5E650", dark_colorblind: "#17E5E650", dimmed: "#17E5E650" }),
-      "editorBracketMatch.border"           : themes({ light: "#34d05800", light_high_contrast: "#34d05800", light_colorblind: "#34d05800", dark: "#17E5E600", dark_high_contrast: "#17E5E600", dark_colorblind: "#17E5E600", dimmed: "#17E5E600" }),
+      "editor.findMatchBackground"            : lightDark("#bf8700", "#ffd33d44"),
+      "editor.findMatchHighlightBackground"   : lightDark("#ffdf5d66", "#ffd33d22"),
+      "editor.linkedEditingBackground"        : lightDark("#0366d611", "#3392FF22"),
+      "editor.inactiveSelectionBackground"    : lightDark("#0366d611", "#3392FF22"),      
+      "editor.selectionBackground"            : themes({ light: "#0366d625", light_high_contrast: "#0366d625", light_colorblind: "#0366d625", dark: "#3392FF44", dark_high_contrast: "#addcff99", dark_colorblind: "#3392FF44", dimmed: "#3392FF44" }),
+      "editor.selectionHighlightBackground"   : lightDark("#34d05840", "#17E5E633"),
+      "editor.selectionHighlightBorder"       : lightDark("#34d05800", "#17E5E600"),
+      "editor.wordHighlightBackground"        : lightDark("#34d05800", "#17E5E600"),
+      "editor.wordHighlightStrongBackground"  : lightDark("#34d05800", "#17E5E600"),
+      "editor.wordHighlightBorder"            : lightDark("#24943e99", "#17E5E699"),
+      "editor.wordHighlightStrongBorder"      : lightDark("#24943e50", "#17E5E666"),
+      "editorBracketMatch.background"         : lightDark("#34d05840", "#17E5E650"),
+      "editorBracketMatch.border"             : lightDark("#34d05800", "#17E5E600"),
+      
 
       "editorGutter.modifiedBackground": color.attention.muted,
       "editorGutter.addedBackground"   : color.success.muted,
@@ -567,24 +574,25 @@ function getTheme({ theme, name }) {
     ],
   };
 }
-  
-  // Convert to hex
-  // VS Code doesn't support other formats like hsl, rgba etc.
 
-  function changeColorToHexAlphas(obj) {
-    if (typeof obj === 'object') {
-      for (var keys in obj) {
-        if (typeof obj[keys] === 'object') {
-          changeColorToHexAlphas(obj[keys])
-        } else {
-          let keyValue = obj[keys]
+// Convert to hex
+// VS Code doesn't support other formats like hsl, rgba etc.
+
+function changeColorToHexAlphas(obj) {
+  if (typeof obj === 'object') {
+    for (var keys in obj) {
+      if (typeof obj[keys] === 'object') {
+        changeColorToHexAlphas(obj[keys])
+      } else {
+        let keyValue = obj[keys]
+        if(chroma.valid(keyValue)){
           obj[keys] = chroma(keyValue).hex();
         }
       }
     }
-    return obj;
   }
-
+  return obj;
+}
 
 
 module.exports = getTheme;
