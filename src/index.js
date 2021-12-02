@@ -1,4 +1,6 @@
 const fs = require("fs").promises;
+const chroma = require("chroma-js");
+
 const getTheme = require("./theme");
 const getClassicTheme = require("./classic/theme");
 
@@ -50,6 +52,31 @@ const darkTheme = getClassicTheme({
 });
 
 // Write themes
+
+function changeColorToHexAlphas(obj) {
+  console.log(obj)
+  if (typeof obj === 'object') {
+    for (var keys in obj) {
+      if (typeof obj[keys] === 'object') {
+        changeColorToHexAlphas(obj[keys])
+      } else {
+        let keyValue = obj[keys]
+        if(keys !== "name" && keyValue && typeof keyValue != "boolean") {
+          console.log(typeof keyValue)
+          console.log("test")
+          console.log(keys)
+          console.log(keyValue)
+          obj[keys] = chroma(keyValue).hex();
+        }
+        
+      }
+    }
+  }
+  return obj;
+}
+
+const test = changeColorToHexAlphas(lightDefaultTheme)
+//console.log(JSON.stringify(changeColorToHexAlphas(lightDefaultTheme)))
 
 fs.mkdir("./themes", { recursive: true })
   .then(() => Promise.all([
