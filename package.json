@@ -40,19 +40,19 @@
         "path": "./themes/light-default.json"
       },
       {
-        "label": "GitHub Light Colorblind (Beta)",
-        "uiTheme": "vs",
-        "path": "./themes/light-colorblind.json"
+        "label": "GitHub Light High Contrast (Beta)",
+        "uiTheme": "hc-black",
+        "path": "./themes/light-high-contrast.json"
       },
+      {
+				"label": "GitHub Light Colorblind (Beta)",
+				"uiTheme": "vs",
+				"path": "./themes/light-colorblind.json"
+			},
       {
         "label": "GitHub Dark Default",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
-      },
-      {
-        "label": "GitHub Dark Dimmed",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-dimmed.json"
       },
       {
         "label": "GitHub Dark High Contrast",
@@ -63,6 +63,11 @@
         "label": "GitHub Dark Colorblind (Beta)",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-colorblind.json"
+      },
+      {
+        "label": "GitHub Dark Dimmed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-dimmed.json"
       },
       {
         "label": "GitHub Light",
