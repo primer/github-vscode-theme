@@ -8,9 +8,7 @@ const { getColors } = require("./colors");
 //    e.g. "textLink.foreground": hex(color.fg.default),
 // 2. Color scale
 //    e.g. "textLink.foreground": scale.blue[5],
-// 3. Hex value: All themes will use this scale. Only use for exceptions
-//    e.g. "textLink.foreground": "#fff",
-// 4. Per theme. Useful when a certain theme needs an exception
+// 3. Per theme. Useful when a certain theme needs an exception
 //    e.g. "textLink.foreground": themes({ light: scale.blue[5], light_high_contrast: scale.blue[5], light_colorblind: scale.blue[5], dark: scale.blue[2], dark_high_contrast: scale.blue[3], dark_colorblind: scale.blue[2], dimmed: scale.blue[3] }),
 
 function getTheme({ theme, name }) {
