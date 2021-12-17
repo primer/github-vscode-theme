@@ -20,6 +20,14 @@ function getTheme({ theme, name }) {
   const color = changeColorToHexAlphas(rawColors)
   const scale = color.scale; // Usage: scale.blue[6]
 
+  const onlyDark = (color) => {
+    return themes({ dark: color, dark_high_contrast: color, dark_colorblind: color, dimmed: color })
+  }
+
+  const onlyDarkHighContrast = (color) => {
+    return themes({ dark_high_contrast: color })
+  }
+
   const lightDark = (light, dark) => {
     return themes({ light: light, light_high_contrast: light, light_colorblind: light, dark: dark, dark_high_contrast: dark, dark_colorblind: dark, dimmed: dark })
   }
@@ -151,9 +159,9 @@ function getTheme({ theme, name }) {
       "editor.foreground"                 : color.fg.default,
       "editor.background"                 : color.canvas.default,
       "editorWidget.background"           : color.canvas.overlay,
-      "editor.foldBackground"             : chroma(color.neutral.emphasis).alpha(0.1).hex(), // needs opacity
+      "editor.foldBackground"             : alpha(color.neutral.emphasis, 0.1),
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
-      "editor.lineHighlightBorder"        : themes({ dark_high_contrast: color.accent.fg }), // only add border to HC
+      "editor.lineHighlightBorder"        : onlyDarkHighContrast(color.accent.fg),
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
       "editorLineNumber.activeForeground" : color.fg.default,
       "editorIndentGuide.background"      : color.border.muted,
@@ -170,9 +178,9 @@ function getTheme({ theme, name }) {
       "editor.selectionHighlightBorder"       : null,
       "editor.wordHighlightBackground"        : null,
       "editor.wordHighlightStrongBackground"  : null,
-      "editor.wordHighlightBorder"            : chroma(color.success.emphasis).alpha(0.6).hex(),
-      "editor.wordHighlightStrongBorder"      : chroma(color.success.emphasis).alpha(0.5).hex(),
-      "editorBracketMatch.background"         : chroma(color.success.subtle).alpha(0.5).hex(),
+      "editor.wordHighlightBorder"            : alpha(color.success.emphasis, 0.6),
+      "editor.wordHighlightStrongBorder"      : alpha(color.success.emphasis, 0.5),
+      "editorBracketMatch.background"         : alpha(color.success.subtle, 0.5),
       "editorBracketMatch.border"             : null,
       
 
@@ -183,10 +191,10 @@ function getTheme({ theme, name }) {
       "diffEditor.insertedTextBackground": color.success.subtle,
       "diffEditor.removedTextBackground" : color.danger.subtle,
 
-      "scrollbar.shadow"                  : chroma(scale.gray[5]).alpha(0.2).hex(),
-      "scrollbarSlider.background"        : chroma(scale.gray[4]).alpha(0.2).hex(),
-      "scrollbarSlider.hoverBackground"   : chroma(scale.gray[4]).alpha(0.27).hex(),
-      "scrollbarSlider.activeBackground"  : chroma(scale.gray[4]).alpha(0.53).hex(),
+      "scrollbar.shadow"                  : alpha(scale.gray[5], 0.2),
+      "scrollbarSlider.background"        : alpha(scale.gray[4], 0.2),
+      "scrollbarSlider.hoverBackground"   : alpha(scale.gray[4], 0.27),
+      "scrollbarSlider.activeBackground"  : alpha(scale.gray[4], 0.53),
       "editorOverviewRuler.border"        : lightDark(scale.white, scale.black),
 
       "panel.background"               : color.canvas.inset,
@@ -223,13 +231,13 @@ function getTheme({ theme, name }) {
       "gitDecoration.submoduleResourceForeground"  : color.fg.muted,
 
       "debugToolBar.background"                    : color.canvas.overlay,
-      "editor.stackFrameHighlightBackground"       : themes({ light: "#ffd33d33", light_high_contrast: "#ffd33d33", light_colorblind: "#ffd33d33", dark: "#D2992225", dark_high_contrast: "#C6902625", dark_colorblind: "#D2992225", dimmed: "#C6902625" }), // needs opacity (yellow)
-      "editor.focusedStackFrameHighlightBackground": themes({ light: "#28a74525", light_high_contrast: "#28a74525", light_colorblind: "#28a74525", dark: "#3FB95025", dark_high_contrast: "#2b6a3033", dark_colorblind: "#3FB95025", dimmed: "#2b6a3033" }), // needs opacity (green)
+      "editor.stackFrameHighlightBackground"       : color.attention.muted,      
+      "editor.focusedStackFrameHighlightBackground": color.success.muted,
 
-      "peekViewEditor.matchHighlightBackground": themes({ dark: "#ffd33d33", dark_high_contrast: "#ffd33d33", dark_colorblind: "#ffd33d33", dimmed: "#ffd33d33" }),
-      "peekViewResult.matchHighlightBackground": themes({ dark: "#ffd33d33", dark_high_contrast: "#ffd33d33", dark_colorblind: "#ffd33d33", dimmed: "#ffd33d33" }),
-      "peekViewEditor.background"              : themes({ dark: "#0d111788", dark_high_contrast: "#0d111788", dark_colorblind: "#0d111788", dimmed: "#0d111788" }),
-      "peekViewResult.background"              : themes({ dark: scale.gray[9], dark_high_contrast: scale.gray[9], dark_colorblind: scale.gray[9], dimmed: scale.gray[9] }),
+      "peekViewEditor.matchHighlightBackground": onlyDark(color.attention.muted),
+      "peekViewResult.matchHighlightBackground": onlyDark(color.attention.muted),
+      "peekViewEditor.background"              : onlyDark(color.neutral.subtle),
+      "peekViewResult.background"              : onlyDark(scale.gray[9]),
 
       "settings.headerForeground"        : color.fg.muted,
       "settings.modifiedItemIndicator"   : color.attention.muted,
