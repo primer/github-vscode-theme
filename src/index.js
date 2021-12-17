@@ -50,8 +50,6 @@ const darkTheme = getClassicTheme({
   name: "GitHub Dark",
 });
 
-
-console.log(lightTheme)
 // Write themes
 fs.mkdir("./themes", { recursive: true })
   .then(() => Promise.all([
