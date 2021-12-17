@@ -5,7 +5,7 @@ const { getColors } = require("./colors");
 // There are multiple ways to define what color is used:
 
 // 1. Global variable
-//    e.g. "textLink.foreground": hex(color.fg.default),
+//    e.g. "textLink.foreground": color.fg.default,
 // 2. Color scale
 //    e.g. "textLink.foreground": scale.blue[5],
 // 3. Per theme. Useful when a certain theme needs an exception
@@ -157,7 +157,7 @@ function getTheme({ theme, name }) {
       "editor.foreground"                 : color.fg.default,
       "editor.background"                 : color.canvas.default,
       "editorWidget.background"           : color.canvas.overlay,
-      "editor.foldBackground"             : alpha(color.neutral.emphasis, 0.1),
+      "editor.foldBackground"             : color.neutral.muted,
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
       "editor.lineHighlightBorder"        : onlyDarkHighContrast(color.accent.fg),
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
@@ -180,7 +180,6 @@ function getTheme({ theme, name }) {
       "editor.wordHighlightStrongBorder"      : alpha(color.success.emphasis, 0.5),
       "editorBracketMatch.background"         : alpha(color.success.subtle, 0.5),
       "editorBracketMatch.border"             : null,
-      
 
       "editorGutter.modifiedBackground": color.attention.muted,
       "editorGutter.addedBackground"   : color.success.muted,
