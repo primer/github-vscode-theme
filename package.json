@@ -40,8 +40,8 @@
         "path": "./themes/light-default.json"
       },
       {
-        "label": "GitHub Light High Contrast",
-        "uiTheme": "vs",
+        "label": "GitHub Light High Contrast (Beta)",
+        "uiTheme": "hc-black",
         "path": "./themes/light-high-contrast.json"
       },
       {
