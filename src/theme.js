@@ -259,7 +259,7 @@ function getTheme({ theme, name }) {
           "meta.definition.variable"
         ],
         settings: {
-          foreground: themes({ light: scale.orange[6], light_high_contrast: scale.orange[6], light_colorblind: scale.orange[6], dark: scale.orange[2], dark_high_contrast: scale.orange[2], dark_colorblind: scale.orange[6], dimmed: scale.orange[2] }),
+          foreground: lightDark(scale.orange[6], scale.orange[2])
         },
       },
       {
@@ -288,19 +288,19 @@ function getTheme({ theme, name }) {
           "support.class.component"
         ],
         settings: {
-          foreground: themes({ light: scale.green[6], light_high_contrast: scale.green[6], light_colorblind: scale.green[6], dark: scale.green[1], dark_high_contrast: scale.green[1], dark_colorblind: scale.green[1], dimmed: scale.green[1] }),
+          foreground: lightDark(scale.green[6], scale.green[1])
         },
       },
       {
         scope: "keyword",
         settings: {
-          foreground: themes({ light: scale.red[5], light_high_contrast: scale.red[5], light_colorblind: scale.red[5], dark: scale.red[3], dark_high_contrast: scale.red[3], dark_colorblind: scale.red[3], dimmed: scale.red[3] }),
+          foreground: lightDark(scale.red[5], scale.red[3])
         },
       },
       {
         scope: ["storage", "storage.type"],
         settings: {
-          foreground: themes({ light: scale.red[5], light_high_contrast: scale.red[5], light_colorblind: scale.red[5], dark: scale.red[3], dark_high_contrast: scale.red[3], dark_colorblind: scale.red[3], dimmed: scale.red[3] }),
+          foreground: lightDark(scale.red[5], scale.red[3])
         },
       },
       {
@@ -320,25 +320,25 @@ function getTheme({ theme, name }) {
           "string punctuation.section.embedded source",
         ],
         settings: {
-          foreground: themes({ light: scale.blue[8], light_high_contrast: scale.blue[8], light_colorblind: scale.blue[8], dark: scale.blue[1], dark_high_contrast: scale.blue[1], dark_colorblind: scale.blue[1], dimmed: scale.blue[1] }),
+          foreground: lightDark(scale.blue[8], scale.blue[1])
         },
       },
       {
         scope: "support",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "meta.property-name",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "variable",
         settings: {
-          foreground: themes({ light: scale.orange[6], light_high_contrast: scale.orange[6], light_colorblind: scale.orange[6], dark: scale.orange[2], dark_high_contrast: scale.orange[2], dark_colorblind: scale.orange[2], dimmed: scale.orange[2] }),
+          foreground: lightDark(scale.orange[6], scale.orange[2])
         },
       },
       {
@@ -351,43 +351,43 @@ function getTheme({ theme, name }) {
         scope: "invalid.broken",
         settings: {
           fontStyle: "italic",
-          foreground: themes({ light: scale.red[7], light_high_contrast: scale.red[7], light_colorblind: scale.red[7], dark: scale.red[2], dark_high_contrast: scale.red[2], dark_colorblind: scale.red[7], dimmed: scale.red[2] }),
+          foreground: lightDark(scale.red[7], scale.red[2])
         },
       },
       {
         scope: "invalid.deprecated",
         settings: {
           fontStyle: "italic",
-          foreground: themes({ light: scale.red[7], light_high_contrast: scale.red[7], light_colorblind: scale.red[7], dark: scale.red[2], dark_high_contrast: scale.red[2], dark_colorblind: scale.red[2], dimmed: scale.red[2] }),
+          foreground: lightDark(scale.red[7], scale.red[2])
         },
       },
       {
         scope: "invalid.illegal",
         settings: {
           fontStyle: "italic",
-          foreground: themes({ light: scale.red[7], light_high_contrast: scale.red[7], light_colorblind: scale.red[7], dark: scale.red[2], dark_high_contrast: scale.red[2], dark_colorblind: scale.red[2], dimmed: scale.red[2] }),
+          foreground: lightDark(scale.red[7], scale.red[2])
         },
       },
       {
         scope: "invalid.unimplemented",
         settings: {
           fontStyle: "italic",
-          foreground: themes({ light: scale.red[7], light_high_contrast: scale.red[7], light_colorblind: scale.red[7], dark: scale.red[2], dark_high_contrast: scale.red[2], dark_colorblind: scale.red[2], dimmed: scale.red[2] }),
+          foreground: lightDark(scale.red[7], scale.red[2]) 
         },
       },
       {
         scope: "carriage-return",
         settings: {
           fontStyle: "italic underline",
-          background: themes({ light: scale.red[5], light_high_contrast: scale.red[5], light_colorblind: scale.red[5], dark: scale.red[3], dark_high_contrast: scale.red[3], dark_colorblind: scale.red[3], dimmed: scale.red[3] }),
-          foreground: themes({ light: scale.gray[0], light_high_contrast: scale.gray[0], light_colorblind: scale.gray[0], dark: scale.gray[9], dark_high_contrast: scale.gray[9], dark_colorblind: scale.gray[9], dimmed: scale.gray[9] }),
+          background: lightDark(scale.red[5], scale.red[3]),
+          foreground: lightDark(scale.gray[0], scale.gray[0]),
           content: "^M",
         },
       },
       {
         scope: "message.error",
         settings: {
-          foreground: themes({ light: scale.red[7], light_high_contrast: scale.red[7], light_colorblind: scale.red[7], dark: scale.red[2], dark_high_contrast: scale.red[2], dark_colorblind: scale.red[2], dimmed: scale.red[2] }),
+          foreground: lightDark(scale.red[7], scale.red[2])
         },
       },
       {
@@ -399,13 +399,13 @@ function getTheme({ theme, name }) {
       {
         scope: "string variable",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: ["source.regexp", "string.regexp"],
         settings: {
-          foreground: themes({ light: scale.blue[8], light_high_contrast: scale.blue[8], light_colorblind: scale.blue[8], dark: scale.blue[1], dark_high_contrast: scale.blue[1], dark_colorblind: scale.blue[1], dimmed: scale.blue[1] }),
+          foreground: lightDark(scale.blue[8], scale.blue[1])
         },
       },
       {
@@ -416,51 +416,51 @@ function getTheme({ theme, name }) {
           "string.regexp string.regexp.arbitrary-repitition",
         ],
         settings: {
-          foreground: themes({ light: scale.blue[8], light_high_contrast: scale.blue[8], light_colorblind: scale.blue[8], dark: scale.blue[1], dark_high_contrast: scale.blue[1], dark_colorblind: scale.blue[1], dimmed: scale.blue[1] }),
+          foreground: lightDark(scale.blue[8], scale.blue[1])
         },
       },
       {
         scope: "string.regexp constant.character.escape",
         settings: {
           fontStyle: "bold",
-          foreground: themes({ light: scale.green[6], light_high_contrast: scale.green[6], light_colorblind: scale.green[6], dark: scale.green[1], dark_high_contrast: scale.green[1], dark_colorblind: scale.green[1], dimmed: scale.green[1] }),
+          foreground: lightDark(scale.green[6], scale.green[1])
         },
       },
       {
         scope: "support.constant",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "support.variable",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "meta.module-reference",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "punctuation.definition.list.begin.markdown",
         settings: {
-          foreground: themes({ light: scale.orange[6], light_high_contrast: scale.orange[6], light_colorblind: scale.orange[6], dark: scale.orange[2], dark_high_contrast: scale.orange[2], dark_colorblind: scale.orange[2], dimmed: scale.orange[2] }),
+          foreground: lightDark(scale.orange[6], scale.orange[2])
         },
       },
       {
         scope: ["markup.heading", "markup.heading entity.name"],
         settings: {
           fontStyle: "bold",
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "markup.quote",
         settings: {
-          foreground: themes({ light: scale.green[6], light_high_contrast: scale.green[6], light_colorblind: scale.green[6], dark: scale.green[1], dark_high_contrast: scale.green[1], dark_colorblind: scale.green[1], dimmed: scale.green[1] }),
+          foreground: lightDark(scale.green[6], scale.green[1])
         },
       },
       {
@@ -480,7 +480,7 @@ function getTheme({ theme, name }) {
       {
         scope: "markup.raw",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
@@ -490,8 +490,8 @@ function getTheme({ theme, name }) {
           "punctuation.definition.deleted",
         ],
         settings: {
-          background: themes({ light: scale.red[0], light_high_contrast: scale.red[0], light_colorblind: scale.red[0], dark: scale.red[9], dark_high_contrast: scale.red[9], dark_colorblind: scale.red[9], dimmed: scale.red[9]  }),
-          foreground: themes({ light: scale.red[7], light_high_contrast: scale.red[7], light_colorblind: scale.red[7], dark: scale.red[2], dark_high_contrast: scale.red[2], dark_colorblind: scale.red[2], dimmed: scale.red[2] }),
+          background: lightDark(scale.red[0], scale.red[9]),
+          foreground: lightDark(scale.red[7], scale.red[2])
         },
       },
       {
@@ -501,48 +501,48 @@ function getTheme({ theme, name }) {
           "punctuation.definition.inserted",
         ],
         settings: {
-          background: themes({ light: scale.green[0], light_high_contrast: scale.green[0], light_colorblind: scale.green[0], dark: scale.green[9], dark_high_contrast: scale.green[9], dark_colorblind: scale.green[9], dimmed: scale.green[9],  }),
-          foreground: themes({ light: scale.green[6], light_high_contrast: scale.green[6], light_colorblind: scale.green[6], dark: scale.green[1], dark_high_contrast: scale.green[1] , dark_colorblind: scale.green[1], dimmed: scale.green[1]}),
+          background: lightDark(scale.green[0], scale.green[9]),
+          foreground: lightDark(scale.green[6], scale.green[1])
         },
       },
       {
         scope: ["markup.changed", "punctuation.definition.changed"],
         settings: {
-          background: themes({ light: scale.orange[1], light_high_contrast: scale.orange[1], light_colorblind: scale.orange[1], dark: scale.orange[8], dark_high_contrast: scale.orange[8], dark_colorblind: scale.orange[8], dimmed: scale.orange[8],  }),
-          foreground: themes({ light: scale.orange[6], light_high_contrast: scale.orange[6], light_colorblind: scale.orange[6], dark: scale.orange[2], dark_high_contrast: scale.orange[2], dark_colorblind: scale.orange[2], dimmed: scale.orange[2],  }),
+          background: lightDark(scale.orange[1], scale.orange[8]),
+          foreground: lightDark(scale.orange[6], scale.orange[2])
         },
       },
       {
         scope: ["markup.ignored", "markup.untracked"],
         settings: {
-          foreground: themes({ light: scale.gray[1], light_high_contrast: scale.gray[1], light_colorblind: scale.gray[1], dark: scale.gray[8], dark_high_contrast: scale.gray[8], dark_colorblind: scale.gray[8], dimmed: scale.gray[8],  }),
-          background: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.gray[1], scale.gray[8]),
+          background: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "meta.diff.range",
         settings: {
-          foreground: themes({ light: scale.purple[5], light_high_contrast: scale.purple[5], light_colorblind: scale.purple[5], dark: scale.purple[2], dark_high_contrast: scale.purple[2], dark_colorblind: scale.purple[2], dimmed: scale.purple[2]  }),
+          foreground: lightDark(scale.purple[5], scale.purple[2]),
           fontStyle: "bold",
         },
       },
       {
         scope: "meta.diff.header",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "meta.separator",
         settings: {
           fontStyle: "bold",
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
         scope: "meta.output",
         settings: {
-          foreground: themes({ light: scale.blue[6], light_high_contrast: scale.blue[6], light_colorblind: scale.blue[6], dark: scale.blue[2], dark_high_contrast: scale.blue[2], dark_colorblind: scale.blue[2], dimmed: scale.blue[2] }),
+          foreground: lightDark(scale.blue[6], scale.blue[2])  
         },
       },
       {
@@ -555,19 +555,19 @@ function getTheme({ theme, name }) {
           "brackethighlighter.quote",
         ],
         settings: {
-          foreground: themes({ light: scale.gray[6], light_high_contrast: scale.gray[6], light_colorblind: scale.gray[6], dark: scale.gray[3], dark_high_contrast: scale.gray[3], dark_colorblind: scale.gray[3], dimmed: scale.gray[3] }),
+          foreground: lightDark(scale.gray[6], scale.gray[3])          
         },
       },
       {
         scope: "brackethighlighter.unmatched",
         settings: {
-          foreground: themes({ light: scale.red[7], light_high_contrast: scale.red[7], light_colorblind: scale.red[7], dark: scale.red[2], dark_high_contrast: scale.red[2], dark_colorblind: scale.red[2], dimmed: scale.red[2] }),
+          foreground: lightDark(scale.red[7], scale.red[2])
         },
       },
       {
         scope: ["constant.other.reference.link", "string.other.link"],
         settings: {
-          foreground: themes({ light: scale.blue[8], light_high_contrast: scale.blue[8], light_colorblind: scale.blue[8], dark: scale.blue[1], dark_high_contrast: scale.blue[1], dark_colorblind: scale.blue[1], dimmed: scale.blue[1] }),
+          foreground: lightDark(scale.blue[8], scale.blue[1]),
           fontStyle: "underline",
         },
       },
