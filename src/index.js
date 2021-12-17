@@ -50,6 +50,7 @@ const darkTheme = getClassicTheme({
 });
 
 // Write themes
+
 fs.mkdir("./themes", { recursive: true })
   .then(() => Promise.all([
     fs.writeFile("./themes/light-default.json", JSON.stringify(lightDefaultTheme, null, 2)),
