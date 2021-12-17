@@ -167,19 +167,19 @@ function getTheme({ theme, name }) {
       "editorWhitespace.foreground"       : color.fg.subtle,
       "editorCursor.foreground"           : color.accent.fg,
 
-      "editor.findMatchBackground"            : color.attention.emphasis,
-      "editor.findMatchHighlightBackground"   : alpha(color.attention.fg, 0.4),
-      "editor.linkedEditingBackground"        : alpha(color.accent.emphasis, 0.07),
-      "editor.inactiveSelectionBackground"    : alpha(color.accent.emphasis, 0.07),
-      "editor.selectionBackground"            : alpha(color.accent.emphasis, 0.15),
+      "editor.findMatchBackground"            : color.attention.muted,
+      "editor.findMatchHighlightBackground"   : color.attention.subtle,
+      "editor.linkedEditingBackground"        : color.accent.subtle,
+      "editor.inactiveSelectionBackground"    : color.accent.subtle,
+      "editor.selectionBackground"            : color.accent.muted,
       "editor.selectionHighlightBackground"   : color.success.muted,
-      "editor.selectionHighlightBorder"       : null,
-      "editor.wordHighlightBackground"        : null,
-      "editor.wordHighlightStrongBackground"  : null,
-      "editor.wordHighlightBorder"            : alpha(color.success.emphasis, 0.6),
-      "editor.wordHighlightStrongBorder"      : alpha(color.success.emphasis, 0.5),
-      "editorBracketMatch.background"         : alpha(color.success.subtle, 0.5),
-      "editorBracketMatch.border"             : null,
+      "editor.selectionHighlightBorder"       : null, // I need to figure this out as I think this was nothing....
+      "editor.wordHighlightBackground"        : null, // I need to figure this out as I think this was nothing....
+      "editor.wordHighlightStrongBackground"  : null, // I need to figure this out as I think this was nothing....
+      "editor.wordHighlightBorder"            : color.success.muted,
+      "editor.wordHighlightStrongBorder"      : color.success.subtle,
+      "editorBracketMatch.background"         : color.success.subtle,
+      "editorBracketMatch.border"             : null, // I need to figure this out as I think this was nothing....
 
       "editorGutter.modifiedBackground": color.attention.muted,
       "editorGutter.addedBackground"   : color.success.muted,
