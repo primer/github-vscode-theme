@@ -24,6 +24,10 @@ function getTheme({ theme, name }) {
     return themes({ light: light, light_high_contrast: light, light_colorblind: light, dark: dark, dark_high_contrast: dark, dark_colorblind: dark, dimmed: dark })
   }
 
+  const alpha = (color, alpha) => {
+    return chroma(color).alpha(alpha).hex()
+  }
+
   return {
     name: name,
     colors: {
@@ -157,19 +161,19 @@ function getTheme({ theme, name }) {
       "editorWhitespace.foreground"       : color.fg.subtle,
       "editorCursor.foreground"           : color.accent.fg,
 
-      "editor.findMatchBackground"            : lightDark("#bf8700", "#ffd33d44"),
-      "editor.findMatchHighlightBackground"   : lightDark("#ffdf5d66", "#ffd33d22"),
-      "editor.linkedEditingBackground"        : lightDark("#0366d611", "#3392FF22"),
-      "editor.inactiveSelectionBackground"    : lightDark("#0366d611", "#3392FF22"),      
-      "editor.selectionBackground"            : lightDark("#0366d625", "#3392FF44"),
-      "editor.selectionHighlightBackground"   : lightDark("#34d05840", "#17E5E633"),
-      "editor.selectionHighlightBorder"       : lightDark("#34d05800", "#17E5E600"),
-      "editor.wordHighlightBackground"        : lightDark("#34d05800", "#17E5E600"),
-      "editor.wordHighlightStrongBackground"  : lightDark("#34d05800", "#17E5E600"),
-      "editor.wordHighlightBorder"            : lightDark("#24943e99", "#17E5E699"),
-      "editor.wordHighlightStrongBorder"      : lightDark("#24943e50", "#17E5E666"),
-      "editorBracketMatch.background"         : lightDark("#34d05840", "#17E5E650"),
-      "editorBracketMatch.border"             : lightDark("#34d05800", "#17E5E600"),
+      "editor.findMatchBackground"            : color.attention.emphasis,
+      "editor.findMatchHighlightBackground"   : alpha(color.attention.fg, 0.4),
+      "editor.linkedEditingBackground"        : alpha(color.accent.emphasis, 0.07),
+      "editor.inactiveSelectionBackground"    : alpha(color.accent.emphasis, 0.07),
+      "editor.selectionBackground"            : alpha(color.accent.emphasis, 0.15),
+      "editor.selectionHighlightBackground"   : color.success.muted,
+      "editor.selectionHighlightBorder"       : null,
+      "editor.wordHighlightBackground"        : null,
+      "editor.wordHighlightStrongBackground"  : null,
+      "editor.wordHighlightBorder"            : chroma(color.success.emphasis).alpha(0.6).hex(),
+      "editor.wordHighlightStrongBorder"      : chroma(color.success.emphasis).alpha(0.5).hex(),
+      "editorBracketMatch.background"         : chroma(color.success.subtle).alpha(0.5).hex(),
+      "editorBracketMatch.border"             : null,
       
 
       "editorGutter.modifiedBackground": color.attention.muted,
@@ -179,10 +183,10 @@ function getTheme({ theme, name }) {
       "diffEditor.insertedTextBackground": color.success.subtle,
       "diffEditor.removedTextBackground" : color.danger.subtle,
 
-      "scrollbar.shadow"                  : lightDark("#6a737d33", "#0008"),
-      "scrollbarSlider.background"        : lightDark("#959da533", "#484F5833"),
-      "scrollbarSlider.hoverBackground"   : lightDark("#959da544", "#484F5844"),
-      "scrollbarSlider.activeBackground"  : lightDark("#959da588", "#484F5888"),
+      "scrollbar.shadow"                  : chroma(scale.gray[5]).alpha(0.2).hex(),
+      "scrollbarSlider.background"        : chroma(scale.gray[4]).alpha(0.2).hex(),
+      "scrollbarSlider.hoverBackground"   : chroma(scale.gray[4]).alpha(0.27).hex(),
+      "scrollbarSlider.activeBackground"  : chroma(scale.gray[4]).alpha(0.53).hex(),
       "editorOverviewRuler.border"        : lightDark(scale.white, scale.black),
 
       "panel.background"               : color.canvas.inset,
