@@ -1,5 +1,4 @@
 const fs = require("fs").promises;
-
 const getTheme = require("./theme");
 const getClassicTheme = require("./classic/theme");
 
