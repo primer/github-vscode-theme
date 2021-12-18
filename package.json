@@ -45,10 +45,10 @@
         "path": "./themes/light-high-contrast.json"
       },
       {
-				"label": "GitHub Light Colorblind (Beta)",
-				"uiTheme": "vs",
-				"path": "./themes/light-colorblind.json"
-			},
+        "label": "GitHub Light Colorblind (Beta)",
+        "uiTheme": "vs",
+        "path": "./themes/light-colorblind.json"
+      },
       {
         "label": "GitHub Dark Default",
         "uiTheme": "vs-dark",
