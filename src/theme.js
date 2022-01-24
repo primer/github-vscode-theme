@@ -157,7 +157,7 @@ function getTheme({ theme, name }) {
       "editor.foreground"                 : color.fg.default,
       "editor.background"                 : color.canvas.default,
       "editorWidget.background"           : color.canvas.overlay,
-      "editor.foldBackground"             : color.neutral.muted,
+      "editor.foldBackground"             : alpha(color.neutral.emphasis, 0.1),
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
       "editor.lineHighlightBorder"        : onlyDarkHighContrast(color.accent.fg),
       "editorLineNumber.foreground"       : color.codemirror.linenumberText,
@@ -167,7 +167,7 @@ function getTheme({ theme, name }) {
       "editorWhitespace.foreground"       : color.fg.subtle,
       "editorCursor.foreground"           : color.accent.fg,
 
-      "editor.findMatchBackground"            : color.attention.muted,
+      "editor.findMatchBackground"            : alpha(color.neutral.emphasis, 0.3),
       "editor.findMatchHighlightBackground"   : color.attention.subtle,
       "editor.linkedEditingBackground"        : color.accent.subtle,
       "editor.inactiveSelectionBackground"    : color.accent.subtle,
