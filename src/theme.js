@@ -178,6 +178,7 @@ function getTheme({ theme, name }) {
       "editor.wordHighlightStrongBackground"  : alpha(color.success.muted, 0.3),
       "editor.wordHighlightStrongBorder"      : color.success.subtle,
       "editorBracketMatch.background"         : color.success.subtle,
+      "editorBracketMatch.border"             : color.success.emphasis,
 
       "editorGutter.modifiedBackground": color.attention.muted,
       "editorGutter.addedBackground"   : color.success.muted,
