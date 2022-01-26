@@ -571,6 +571,12 @@ function getTheme({ theme, name }) {
           fontStyle: "underline",
         },
       },
+      {
+        scope: ["markup.underline"],
+        settings: {
+          fontStyle: "underline",
+        },
+      },
     ],
   };
 }
