@@ -9,17 +9,17 @@ const { getColors } = require("./colors");
 // 2. Color scale
 //    e.g. "textLink.foreground": scale.blue[5],
 // 3. Per theme. Useful when a certain theme needs an exception
-//    e.g. "textLink.foreground": themes({ light: scale.blue[5], light_high_contrast: scale.blue[5], light_colorblind: scale.blue[5], dark: scale.blue[2], dark_high_contrast: scale.blue[3], dark_colorblind: scale.blue[2], dimmed: scale.blue[3] }),
+//    e.g. "textLink.foreground": themes({ light: scale.blue[5], light_high_contrast: scale.blue[5], light_colorblind: scale.blue[5], dark: scale.blue[2], dark_high_contrast: scale.blue[3], dark_colorblind: scale.blue[2], dark_dimmed: scale.blue[3] }),
 
 function getTheme({ theme, name }) {
 
-  const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", light_high_contrast: "lightblue", light_colorblind: "lightblue", dark: "darkblue", dark_high_contrast: "darkblue", dark_colorblind: "darkblue", dimmed: "royalblue" })
+  const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", light_high_contrast: "lightblue", light_colorblind: "lightblue", dark: "darkblue", dark_high_contrast: "darkblue", dark_colorblind: "darkblue", dark_dimmed: "royalblue" })
   const rawColors = getColors(theme)
   const color = changeColorToHexAlphas(rawColors)
   const scale = color.scale; // Usage: scale.blue[6]
 
   const onlyDark = (color) => {
-    return themes({ dark: color, dark_high_contrast: color, dark_colorblind: color, dimmed: color })
+    return themes({ dark: color, dark_high_contrast: color, dark_colorblind: color, dark_dimmed: color })
   }
 
   const onlyDarkHighContrast = (color) => {
@@ -27,7 +27,7 @@ function getTheme({ theme, name }) {
   }
 
   const lightDark = (light, dark) => {
-    return themes({ light: light, light_high_contrast: light, light_colorblind: light, dark: dark, dark_high_contrast: dark, dark_colorblind: dark, dimmed: dark })
+    return themes({ light: light, light_high_contrast: light, light_colorblind: light, dark: dark, dark_high_contrast: dark, dark_colorblind: dark, dark_dimmed: dark })
   }
 
   const alpha = (color, alpha) => {
@@ -227,7 +227,7 @@ function getTheme({ theme, name }) {
       "gitDecoration.submoduleResourceForeground"  : color.fg.muted,
 
       "debugToolBar.background"                    : color.canvas.overlay,
-      "editor.stackFrameHighlightBackground"       : color.attention.muted,      
+      "editor.stackFrameHighlightBackground"       : color.attention.muted,
       "editor.focusedStackFrameHighlightBackground": color.success.muted,
 
       "peekViewEditor.matchHighlightBackground": onlyDark(color.attention.muted),
@@ -380,7 +380,7 @@ function getTheme({ theme, name }) {
         scope: "invalid.unimplemented",
         settings: {
           fontStyle: "italic",
-          foreground: lightDark(scale.red[7], scale.red[2]) 
+          foreground: lightDark(scale.red[7], scale.red[2])
         },
       },
       {
@@ -550,7 +550,7 @@ function getTheme({ theme, name }) {
       {
         scope: "meta.output",
         settings: {
-          foreground: lightDark(scale.blue[6], scale.blue[2])  
+          foreground: lightDark(scale.blue[6], scale.blue[2])
         },
       },
       {
@@ -563,7 +563,7 @@ function getTheme({ theme, name }) {
           "brackethighlighter.quote",
         ],
         settings: {
-          foreground: lightDark(scale.gray[6], scale.gray[3])          
+          foreground: lightDark(scale.gray[6], scale.gray[3])
         },
       },
       {
