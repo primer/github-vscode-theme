@@ -1,5 +1,11 @@
 # github-vscode-theme
 
+## 5.2.0
+
+### Minor Changes
+
+- [#240](https://github.com/primer/github-vscode-theme/pull/240) [`075feb5`](https://github.com/primer/github-vscode-theme/commit/075feb5c753b3ac3fc2029e98203be5134bcd8f7) Thanks [@maximedegreve](https://github.com/maximedegreve)! - Light High Contrast Theme
+
 ## 5.1.0
 
 ### Minor Changes

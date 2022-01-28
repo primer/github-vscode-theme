@@ -2,7 +2,7 @@
   "name": "github-vscode-theme",
   "displayName": "GitHub Theme",
   "description": "GitHub theme for VS Code",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "preview": true,
   "publisher": "GitHub",
   "license": "MIT",
@@ -45,10 +45,10 @@
         "path": "./themes/light-high-contrast.json"
       },
       {
-				"label": "GitHub Light Colorblind (Beta)",
-				"uiTheme": "vs",
-				"path": "./themes/light-colorblind.json"
-			},
+        "label": "GitHub Light Colorblind (Beta)",
+        "uiTheme": "vs",
+        "path": "./themes/light-colorblind.json"
+      },
       {
         "label": "GitHub Dark Default",
         "uiTheme": "vs-dark",
