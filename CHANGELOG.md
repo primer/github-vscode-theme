@@ -1,5 +1,17 @@
 # github-vscode-theme
 
+## 5.2.1
+
+### Patch Changes
+
+- [#256](https://github.com/primer/github-vscode-theme/pull/256) [`6549f32`](https://github.com/primer/github-vscode-theme/commit/6549f32ee5e97bb01655d4de47672c15e58e06c9) Thanks [@simurai](https://github.com/simurai)! - Fix Dark Dimmed from loosing syntax highlighting
+
+## 5.2.0
+
+### Minor Changes
+
+- [#240](https://github.com/primer/github-vscode-theme/pull/240) [`075feb5`](https://github.com/primer/github-vscode-theme/commit/075feb5c753b3ac3fc2029e98203be5134bcd8f7) Thanks [@maximedegreve](https://github.com/maximedegreve)! - Light High Contrast Theme
+
 ## 5.1.0
 
 ### Minor Changes
