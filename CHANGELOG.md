@@ -1,5 +1,11 @@
 # github-vscode-theme
 
+## 5.2.2
+
+### Patch Changes
+
+- [#244](https://github.com/primer/github-vscode-theme/pull/244) [`d318d0e`](https://github.com/primer/github-vscode-theme/commit/d318d0eb3aa3a48c0983c3cc7b245847643b046a) Thanks [@maximedegreve](https://github.com/maximedegreve)! - Easier code to manage + port values to new primitives
+
 ## 5.2.1
 
 ### Patch Changes
