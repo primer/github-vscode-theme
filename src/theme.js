@@ -253,6 +253,7 @@ function getTheme({ theme, name }) {
           "constant",
           "entity.name.constant",
           "variable.other.constant",
+          "variable.other.enummember",
           "variable.language",
           "entity",
         ],
@@ -483,6 +484,12 @@ function getTheme({ theme, name }) {
         settings: {
           fontStyle: "bold",
           foreground: color.fg.default,
+        },
+      },
+      {
+        scope: ["markup.underline"],
+        settings: {
+          fontStyle: "underline",
         },
       },
       {
