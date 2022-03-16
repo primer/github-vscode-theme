@@ -464,6 +464,12 @@ function getTheme({ style, name }) {
         },
       },
       {
+        scope: ["markup.underline"],
+        settings: {
+          fontStyle: "underline",
+        },
+      },
+      {
         scope: "markup.raw",
         settings: {
           foreground: primer.blue[6],
@@ -554,12 +560,6 @@ function getTheme({ style, name }) {
         scope: ["constant.other.reference.link", "string.other.link"],
         settings: {
           foreground: primer.blue[8],
-          fontStyle: "underline",
-        },
-      },
-      {
-        scope: ["markup.underline"],
-        settings: {
           fontStyle: "underline",
         },
       },
