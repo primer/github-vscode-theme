@@ -486,6 +486,12 @@ function getTheme({ theme, name }) {
         },
       },
       {
+        scope: ["markup.underline"],
+        settings: {
+          fontStyle: "underline",
+        },
+      },
+      {
         scope: "markup.raw",
         settings: {
           foreground: lightDark(scale.blue[6], scale.blue[2])
