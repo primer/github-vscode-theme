@@ -253,6 +253,7 @@ function getTheme({ style, name }) {
           "constant",
           "entity.name.constant",
           "variable.other.constant",
+          "variable.other.enummember",
           "variable.language",
         ],
         settings: {
