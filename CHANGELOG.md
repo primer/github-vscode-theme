@@ -1,5 +1,19 @@
 # github-vscode-theme
 
+## 6.1.0
+
+### Minor Changes
+
+- [#212](https://github.com/primer/github-vscode-theme/pull/212) [`f03ca46`](https://github.com/primer/github-vscode-theme/commit/f03ca46b7ace7d98f8e6761dca56083e1ba54c3c) Thanks [@akiirui](https://github.com/akiirui)! - fix: add missing scope variable.other.enummember
+
+* [#193](https://github.com/primer/github-vscode-theme/pull/193) [`8bb0bc8`](https://github.com/primer/github-vscode-theme/commit/8bb0bc8a2150515ec5c6d9467335b6b827870ec5) Thanks [@serpilacar](https://github.com/serpilacar)! - Update markdown inline code scope
+
+- [#252](https://github.com/primer/github-vscode-theme/pull/252) [`706236c`](https://github.com/primer/github-vscode-theme/commit/706236cfaa6bdeb7ba3942d63eb03a82097fcc04) Thanks [@magic-akari](https://github.com/magic-akari)! - feat: add underline support
+
+### Patch Changes
+
+- [#268](https://github.com/primer/github-vscode-theme/pull/268) [`6bc9e1a`](https://github.com/primer/github-vscode-theme/commit/6bc9e1a21f3251b1064683e8d8fce4172a56e2a5) Thanks [@simurai](https://github.com/simurai)! - Update remote statusbar item
+
 ## 6.0.0
 
 ### Major Changes
