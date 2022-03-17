@@ -132,6 +132,8 @@ function getTheme({ theme, name }) {
       "statusBar.debuggingBackground"    : color.danger.emphasis,
       "statusBar.debuggingForeground"    : color.fg.onEmphasis,
       "statusBarItem.prominentBackground": color.canvas.subtle,
+      "statusBarItem.remoteForeground"   : color.fg.muted,
+      "statusBarItem.remoteBackground"   : color.canvas.default,
 
       "editorGroupHeader.tabsBackground": color.canvas.inset,
       "editorGroupHeader.tabsBorder"    : color.border.default,
