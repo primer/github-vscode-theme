@@ -1,0 +1,98 @@
+# Posts a comment listing all the colors that changed in a PR
+name: Diff
+on:
+  pull_request:
+    branches-ignore:
+      - 'test/**'
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Create comment (if necessary)
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const fs = require('fs')
+            const body = fs.readFileSync('.github/diff_comment_template.md', 'utf8')
+            const result = await github.rest.issues.listComments({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            console.log(result.data)
+            const botComments = result.data.filter(c => c.user.login === 'github-actions[bot]')
+            if (!botComments.length) {
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body
+              })
+            }
+
+  diff:
+    needs: comment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Checkout base branch
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.base_ref }}
+          path: base
+
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Install dependencies (base)
+        run: pushd base; yarn; popd
+
+      - name: Build (base)
+        run: pushd base; yarn build; popd
+
+      - name: Diff
+        uses: primer/comment-token-update@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: github-actions[bot]
+        with:
+          # This action will find the first comment by `github-actions[bot]` and
+          # insert the diff data if `<!-- diff --><!-- /diff -->` is present in that comment.
+          # If there are multiple comments by `github-actions[bot]`
+          # or if `<!-- diff --><!-- /diff -->` is missing,
+          # this action may not work as expected.
+          comment-token: 'diff'
+          script: |
+            diff=$(for file in themes/*.json
+              do
+                diff -U 1 base/$file $file
+              done)
+
+            echo "\`\`\`diff"
+
+            if [[ $diff ]]
+            then
+              echo "$diff"
+            else
+              echo "No colors changed"
+            fi
+
+            echo "\`\`\`"
