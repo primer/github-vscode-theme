@@ -109,6 +109,8 @@ function getTheme({ style, name }) {
       "statusBar.debuggingBackground": auto("#f9826c"),
       "statusBar.debuggingForeground": pick({ light: primer.white, dark: primer.black }),
       "statusBarItem.prominentBackground": pick({ light: "#e8eaed", dark: "#282e34" }),
+      "statusBarItem.remoteForeground": primer.gray[6],
+      "statusBarItem.remoteBackground": pick({ light: primer.white, dark: primer.gray[0] }),
 
       "editorGroupHeader.tabsBackground": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editorGroupHeader.tabsBorder": pick({ light: primer.gray[2], dark: primer.white }),
@@ -253,6 +255,7 @@ function getTheme({ style, name }) {
           "constant",
           "entity.name.constant",
           "variable.other.constant",
+          "variable.other.enummember",
           "variable.language",
         ],
         settings: {
@@ -461,6 +464,12 @@ function getTheme({ style, name }) {
         settings: {
           fontStyle: "bold",
           foreground: editorForeground,
+        },
+      },
+      {
+        scope: ["markup.underline"],
+        settings: {
+          fontStyle: "underline",
         },
       },
       {

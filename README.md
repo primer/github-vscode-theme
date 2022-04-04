@@ -8,9 +8,12 @@
 2. Click on the "Install" button.
 3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme). The GitHub themes try to match the themes available in [github.com's settings](https://github.com/settings/appearance):
     - `GitHub Light Default`
+    - `GitHub Light High Contrast` ✨ new ✨
+    - `GitHub Light Colorblind` ✨ new ✨
     - `GitHub Dark Default`
+    - `GitHub Dark High Contrast`
+    - `GitHub Dark Colorblind` ✨ new ✨
     - `GitHub Dark Dimmed`
-    - `GitHub Dark High Contrast` ✨ new ✨
 
 Additionally, there are also two older themes. **Note**: They might not get updated frequently and are kept for legacy reasons:
 

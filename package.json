@@ -2,7 +2,7 @@
   "name": "github-vscode-theme",
   "displayName": "GitHub Theme",
   "description": "GitHub theme for VS Code",
-  "version": "5.0.3",
+  "version": "6.0.0",
   "preview": true,
   "publisher": "GitHub",
   "license": "MIT",
@@ -28,7 +28,9 @@
     "theme",
     "github",
     "light",
-    "dark"
+    "dark",
+    "protanopia",
+    "colorblind"
   ],
   "contributes": {
     "themes": [
@@ -38,19 +40,34 @@
         "path": "./themes/light-default.json"
       },
       {
+        "label": "GitHub Light High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/light-high-contrast.json"
+      },
+      {
+        "label": "GitHub Light Colorblind (Beta)",
+        "uiTheme": "vs",
+        "path": "./themes/light-colorblind.json"
+      },
+      {
         "label": "GitHub Dark Default",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
       },
       {
-        "label": "GitHub Dark Dimmed",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-dimmed.json"
-      },
-      {
         "label": "GitHub Dark High Contrast",
         "uiTheme": "hc-black",
         "path": "./themes/dark-high-contrast.json"
+      },
+      {
+        "label": "GitHub Dark Colorblind (Beta)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-colorblind.json"
+      },
+      {
+        "label": "GitHub Dark Dimmed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-dimmed.json"
       },
       {
         "label": "GitHub Light",
@@ -67,7 +84,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.1",
     "@changesets/cli": "^2.17.0",
-    "@primer/primitives": "4.7.1",
+    "@primer/primitives": "7.1.1",
     "chroma-js": "^2.1.2",
     "color": "^3.1.2",
     "nodemon": "^2.0.3",
