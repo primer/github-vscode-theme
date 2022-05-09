@@ -182,6 +182,13 @@ function getTheme({ theme, name }) {
       "editorBracketMatch.background"         : alpha(scale.green[3], 0.25),
       "editorBracketMatch.border"             : alpha(scale.green[3], 0.6),
 
+      "editorInlayHint.background": alpha(scale.gray[3], 0.2),
+      "editorInlayHint.foreground": color.fg.subtle,
+      "editorInlayHint.typeBackground": alpha(scale.gray[3], 0.2),
+      "editorInlayHint.typeForeground": color.fg.subtle,
+      "editorInlayHint.paramBackground": alpha(scale.gray[3], 0.2),
+      "editorInlayHint.paramForeground": color.fg.subtle,
+
       "editorGutter.modifiedBackground": color.attention.muted,
       "editorGutter.addedBackground"   : color.success.muted,
       "editorGutter.deletedBackground" : color.danger.muted,
