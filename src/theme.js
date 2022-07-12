@@ -50,6 +50,9 @@ function getTheme({ theme, name }) {
       "textPreformat.foreground" : color.fg.muted,
       "textSeparator.foreground" : color.border.muted,
 
+      "icon.foreground"           : color.fg.muted,
+      "keybindingLabel.foreground": color.fg.default,
+
       "button.background"     : color.btn.primary.bg,
       "button.foreground"     : color.btn.primary.text,
       "button.hoverBackground": color.btn.primary.hoverBg,
