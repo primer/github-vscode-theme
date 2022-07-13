@@ -213,10 +213,10 @@ function getTheme({ theme, name }) {
       "panelTitle.activeForeground"    : color.fg.default,
       "panelTitle.inactiveForeground"  : color.fg.muted,
       "panelInput.border"              : color.border.default,
-      
+
       "debugConsole.infoForeground": lightDark( scale.gray[6], scale.gray[3]),
       "debugConsole.warningForeground": lightDark( scale.yellow[6], scale.yellow[3]),
-      "debugConsole.errorForeground": lightDark( scale.red[5], scale.red[2]),      
+      "debugConsole.errorForeground": lightDark( scale.red[5], scale.red[2]),
       "debugConsole.sourceForeground": lightDark( scale.yellow[5], scale.yellow[2]),
       "debugConsoleInputIcon.foreground": lightDark( scale.purple[6], scale.purple[3]),
 
@@ -261,7 +261,7 @@ function getTheme({ theme, name }) {
       "symbolIcon.variableForeground": lightDark( scale.orange[6], scale.orange[3]),
       "symbolIcon.constantForeground": lightDark( scale.green[6], scale.green),
 
-      "terminal.foreground": color.fg.muted,
+      "terminal.foreground": color.fg.default,
       'terminal.ansiBlack': color.ansi.black,
       'terminal.ansiRed': color.ansi.red,
       'terminal.ansiGreen': color.ansi.green,
