@@ -109,6 +109,8 @@ function getTheme({ style, name }) {
       "statusBar.debuggingBackground": auto("#f9826c"),
       "statusBar.debuggingForeground": pick({ light: primer.white, dark: primer.black }),
       "statusBarItem.prominentBackground": pick({ light: "#e8eaed", dark: "#282e34" }),
+      "statusBarItem.remoteForeground": primer.gray[6],
+      "statusBarItem.remoteBackground": pick({ light: primer.white, dark: primer.gray[0] }),
 
       "editorGroupHeader.tabsBackground": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editorGroupHeader.tabsBorder": pick({ light: primer.gray[2], dark: primer.white }),
@@ -142,6 +144,8 @@ function getTheme({ style, name }) {
       "editorIndentGuide.activeBackground": pick({ light: "#d7dbe0", dark: primer.gray[2] }),
       "editorWhitespace.foreground": pick({ light: primer.gray[3], dark: primer.gray[2] }),
       "editorCursor.foreground": primer.blue[7],
+      "editorError.foreground": primer.red[6],
+      "editorWarning.foreground": primer.yellow[6],
 
       "editor.findMatchBackground": pick({ light: primer.yellow[4], dark: "#ffd33d44" }),
       "editor.findMatchHighlightBackground": pick({ light: "#ffdf5d66", dark: "#ffd33d22" }),
@@ -178,6 +182,43 @@ function getTheme({ style, name }) {
       "panelInput.border": pick({ light: primer.gray[2], dark: primer.gray[1] }),
 
       "terminal.foreground": primer.gray[6],
+      "terminal.tab.activeBorder": "#f9826c",
+      "terminalCursor.background": primer.gray[3],
+      "terminalCursor.foreground": primer.blue[6],
+
+      // Test ANSI colors with:
+      // echo -e "\033[0mNC (No color)"
+      // echo -e "\033[1;37mWHITE\t\033[0;30mBLACK"
+      // echo -e "\033[0;34mBLUE\t\033[1;34mLIGHT_BLUE"
+      // echo -e "\033[0;32mGREEN\t\033[1;32mLIGHT_GREEN"
+      // echo -e "\033[0;36mCYAN\t\033[1;36mLIGHT_CYAN"
+      // echo -e "\033[0;31mRED\t\033[1;31mLIGHT_RED"
+      // echo -e "\033[0;35mPURPLE\t\033[1;35mLIGHT_PURPLE"
+      // echo -e "\033[0;33mYELLOW\t\033[1;33mLIGHT_YELLOW"
+      // echo -e "\033[1;30mGRAY\t\033[0;37mLIGHT_GRAY"
+      "terminal.ansiBrightWhite": pick({ light: primer.gray[3], dark: primer.gray[9] }), // WHITE
+      "terminal.ansiWhite": pick({ light: primer.gray[5], dark: primer.gray[6] }),  // LIGHT_GRAY
+      "terminal.ansiBrightBlack": pick({ light: primer.gray[4], dark: primer.gray[5] }), // GRAY
+      "terminal.ansiBlack": pick({ light: primer.gray[9], dark: primer.gray[3] }), // BLACK
+      "terminal.ansiBlue": primer.blue[5],
+      "terminal.ansiBrightBlue": primer.blue[6],
+      "terminal.ansiGreen": primer.green[5],
+      "terminal.ansiBrightGreen": primer.green[6],
+      "terminal.ansiCyan": pick({ light: "#1b7c83", dark: "#39c5cf" }),
+      "terminal.ansiBrightCyan": pick({ light: "#3192aa", dark: "#56d4dd" }),
+      "terminal.ansiRed": primer.red[5],
+      "terminal.ansiBrightRed": primer.red[6],
+      "terminal.ansiMagenta": primer.purple[6],
+      "terminal.ansiBrightMagenta": primer.purple[6],
+      "terminal.ansiYellow": pick({ light: primer.yellow[7], dark: primer.yellow[6] }),
+      "terminal.ansiBrightYellow": pick({ light: primer.yellow[8], dark: primer.yellow[6] }),
+
+      "editorBracketHighlight.foreground1": primer.blue[6],
+      "editorBracketHighlight.foreground2": primer.orange[6],
+      "editorBracketHighlight.foreground3": primer.purple[6],
+      "editorBracketHighlight.foreground4": primer.blue[6],
+      "editorBracketHighlight.foreground5": primer.orange[6],
+      "editorBracketHighlight.foreground6": primer.purple[6],
 
       "gitDecoration.addedResourceForeground": primer.green[5],
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
@@ -214,6 +255,7 @@ function getTheme({ style, name }) {
           "constant",
           "entity.name.constant",
           "variable.other.constant",
+          "variable.other.enummember",
           "variable.language",
         ],
         settings: {
@@ -422,6 +464,12 @@ function getTheme({ style, name }) {
         settings: {
           fontStyle: "bold",
           foreground: editorForeground,
+        },
+      },
+      {
+        scope: ["markup.underline"],
+        settings: {
+          fontStyle: "underline",
         },
       },
       {
