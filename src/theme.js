@@ -571,6 +571,12 @@ function getTheme({ theme, name }) {
         },
       },
       {
+        scope: ["punctuation.section.embedded"],
+        settings: {
+          foreground: lightDark(scale.red[5], scale.red[3])
+        },
+      },
+      {
         scope: [
           "markup.inserted",
           "meta.diff.header.to-file",
