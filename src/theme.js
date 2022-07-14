@@ -221,11 +221,12 @@ function getTheme({ theme, name }) {
       'terminal.ansiBrightWhite': color.ansi.whiteBright,
 
       "editorBracketHighlight.foreground1": lightDark(scale.blue[5], scale.blue[2]),
-      "editorBracketHighlight.foreground2": lightDark(scale.orange[5], scale.orange[2]),
-      "editorBracketHighlight.foreground3": lightDark(scale.purple[5], scale.purple[2]),
-      "editorBracketHighlight.foreground4": lightDark(scale.blue[5], scale.blue[2]),
-      "editorBracketHighlight.foreground5": lightDark(scale.orange[5], scale.orange[2]),
+      "editorBracketHighlight.foreground2": lightDark(scale.green[5], scale.green[2]),
+      "editorBracketHighlight.foreground3": lightDark(scale.yellow[5], scale.yellow[2]),
+      "editorBracketHighlight.foreground4": lightDark(scale.red[5], scale.red[2]),
+      "editorBracketHighlight.foreground5": lightDark(scale.pink[5], scale.pink[2]),
       "editorBracketHighlight.foreground6": lightDark(scale.purple[5], scale.purple[2]),
+      "editorBracketHighlight.unexpectedBracket.foreground": color.fg.muted, // gray
 
       "gitDecoration.addedResourceForeground"      : color.success.fg,
       "gitDecoration.modifiedResourceForeground"   : color.attention.fg,
