@@ -473,7 +473,7 @@ function getTheme({ style, name }) {
         },
       },
       {
-        scope: "markup.raw",
+        scope: "markup.inline.raw",
         settings: {
           foreground: primer.blue[6],
         },
