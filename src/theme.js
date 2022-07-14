@@ -222,6 +222,8 @@ function getTheme({ theme, name }) {
       "panelTitle.inactiveForeground"  : color.fg.muted,
       "panelInput.border"              : color.border.default,
 
+      "debugIcon.breakpointForeground": color.danger.fg,
+
       "debugConsole.infoForeground": lightDark( scale.gray[6], scale.gray[3]),
       "debugConsole.warningForeground": lightDark( scale.yellow[6], scale.yellow[3]),
       "debugConsole.errorForeground": lightDark( scale.red[5], scale.red[2]),
