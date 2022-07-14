@@ -477,12 +477,6 @@ function getTheme({ theme, name }) {
         },
       },
       {
-        scope: "string source",
-        settings: {
-          foreground: color.fg.default,
-        },
-      },
-      {
         scope: "string variable",
         settings: {
           foreground: lightDark(scale.blue[6], scale.blue[2])
