@@ -473,6 +473,12 @@ function getTheme({ style, name }) {
         },
       },
       {
+        scope: ["markup.strikethrough"],
+        settings: {
+          fontStyle: "strikethrough",
+        },
+      },
+      {
         scope: "markup.inline.raw",
         settings: {
           foreground: primer.blue[6],
