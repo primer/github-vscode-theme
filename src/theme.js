@@ -22,6 +22,10 @@ function getTheme({ theme, name }) {
     return themes({ dark: color, dark_high_contrast: color, dark_colorblind: color, dark_dimmed: color })
   }
 
+  const onlyHighContrast = (color) => {
+    return themes({ light_high_contrast: color, dark_high_contrast: color })
+  }
+
   const onlyDarkHighContrast = (color) => {
     return themes({ dark_high_contrast: color })
   }
@@ -184,6 +188,10 @@ function getTheme({ theme, name }) {
       "editor.wordHighlightStrongBorder"      : alpha(color.neutral.muted, 0.6),
       "editorBracketMatch.background"         : alpha(scale.green[3], 0.25),
       "editorBracketMatch.border"             : alpha(scale.green[3], 0.6),
+      // text selection for High Contrast themes
+      "editor.selectionForeground"            : onlyHighContrast(color.fg.onEmphasis),
+      "editor.selectionBackground"            : onlyHighContrast(color.neutral.emphasisPlus),
+      "editor.inactiveSelectionBackground"    : onlyHighContrast(color.neutral.emphasis),
 
       "editorInlayHint.background": alpha(scale.gray[3], 0.2),
       "editorInlayHint.foreground": color.fg.muted,
