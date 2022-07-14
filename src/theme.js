@@ -169,7 +169,7 @@ function getTheme({ theme, name }) {
       "editor.foldBackground"             : alpha(color.neutral.emphasis, 0.1),
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
       "editor.lineHighlightBorder"        : onlyDarkHighContrast(color.accent.fg),
-      "editorLineNumber.foreground"       : color.codemirror.linenumberText,
+      "editorLineNumber.foreground"       : lightDark(scale.gray[4], scale.gray[4]),
       "editorLineNumber.activeForeground" : color.fg.default,
       "editorIndentGuide.background"      : color.border.muted,
       "editorIndentGuide.activeBackground": color.border.default,
