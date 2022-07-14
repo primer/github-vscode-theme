@@ -570,6 +570,12 @@ function getTheme({ theme, name }) {
         },
       },
       {
+        scope: ["markup.strikethrough"],
+        settings: {
+          fontStyle: "strikethrough",
+        },
+      },
+      {
         scope: "markup.inline.raw",
         settings: {
           foreground: lightDark(scale.blue[6], scale.blue[2])
