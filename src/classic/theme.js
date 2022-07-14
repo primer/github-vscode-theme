@@ -380,12 +380,6 @@ function getTheme({ style, name }) {
         },
       },
       {
-        scope: "string source",
-        settings: {
-          foreground: editorForeground,
-        },
-      },
-      {
         scope: "string variable",
         settings: {
           foreground: primer.blue[6],
