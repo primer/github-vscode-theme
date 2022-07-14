@@ -1,5 +1,25 @@
 # github-vscode-theme
 
+## 6.2.0
+
+### Minor Changes
+
+- [#287](https://github.com/primer/github-vscode-theme/pull/287) [`dd81ff1`](https://github.com/primer/github-vscode-theme/commit/dd81ff10180ecd76fd108defa7d2d61db9534462) Thanks [@simurai](https://github.com/simurai)! - Improve diff colors
+
+* [#274](https://github.com/primer/github-vscode-theme/pull/274) [`9b88e1c`](https://github.com/primer/github-vscode-theme/commit/9b88e1c652f649bf28bc149d681010c5fd8f22f1) Thanks [@BrunoCoimbra](https://github.com/BrunoCoimbra)! - Add bracket pair colorization
+
+- [#278](https://github.com/primer/github-vscode-theme/pull/278) [`a877e3f`](https://github.com/primer/github-vscode-theme/commit/a877e3f80496af89d000f5502764e0d579105325) Thanks [@clavin](https://github.com/clavin)! - Add inlay hint styles
+
+* [#184](https://github.com/primer/github-vscode-theme/pull/184) [`16d4682`](https://github.com/primer/github-vscode-theme/commit/16d468237346e27eafe265d8fad22ba918367b83) Thanks [@abeprincec](https://github.com/abeprincec)! - Add syntax highlight for puncation.section.embedded
+
+- [#239](https://github.com/primer/github-vscode-theme/pull/239) [`d1d663b`](https://github.com/primer/github-vscode-theme/commit/d1d663b5e5ee9c388c5ddad34bcf8798c59da6cf) Thanks [@jeffgennari](https://github.com/jeffgennari)! - Add debug and symbol icon colors
+
+### Patch Changes
+
+- [#285](https://github.com/primer/github-vscode-theme/pull/285) [`9eece4d`](https://github.com/primer/github-vscode-theme/commit/9eece4db938df76cad3e19f5a42ee8f0c2e5b762) Thanks [@simurai](https://github.com/simurai)! - Fix icons in high contrast themes
+
+* [#288](https://github.com/primer/github-vscode-theme/pull/288) [`74a48e5`](https://github.com/primer/github-vscode-theme/commit/74a48e5dde97f057e01f2956fb861a4b56692098) Thanks [@simurai](https://github.com/simurai)! - Increase contrast of the terminal
+
 ## 6.1.0
 
 ### Minor Changes
