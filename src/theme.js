@@ -404,7 +404,6 @@ function getTheme({ theme, name }) {
       {
         scope: [
           "string",
-          "punctuation.definition.string",
           "string punctuation.section.embedded source",
         ],
         settings: {
