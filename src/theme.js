@@ -171,8 +171,8 @@ function getTheme({ theme, name }) {
       "editor.lineHighlightBorder"        : onlyDarkHighContrast(color.accent.fg),
       "editorLineNumber.foreground"       : lightDark(scale.gray[4], scale.gray[4]),
       "editorLineNumber.activeForeground" : color.fg.default,
-      "editorIndentGuide.background"      : color.border.muted,
-      "editorIndentGuide.activeBackground": color.border.default,
+      "editorIndentGuide.background"      : alpha(color.fg.default, 0.12),
+      "editorIndentGuide.activeBackground": alpha(color.fg.default, 0.24),
       "editorWhitespace.foreground"       : lightDark( scale.gray[3], scale.gray[5]),
       "editorCursor.foreground"           : color.accent.fg,
 
