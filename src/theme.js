@@ -173,7 +173,7 @@ function getTheme({ theme, name }) {
       "editorLineNumber.activeForeground" : color.fg.default,
       "editorIndentGuide.background"      : color.border.muted,
       "editorIndentGuide.activeBackground": color.border.default,
-      "editorWhitespace.foreground"       : color.fg.subtle,
+      "editorWhitespace.foreground"       : lightDark( scale.gray[3], scale.gray[5]),
       "editorCursor.foreground"           : color.accent.fg,
 
       "editor.findMatchBackground"            : color.attention.emphasis,
