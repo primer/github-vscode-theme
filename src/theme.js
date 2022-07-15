@@ -521,6 +521,12 @@ function getTheme({ theme, name }) {
         },
       },
       {
+        scope: "support.type.property-name.json",
+        settings: {
+          foreground: lightDark(scale.green[6], scale.green[1])
+        },
+      },
+      {
         scope: "meta.module-reference",
         settings: {
           foreground: lightDark(scale.blue[6], scale.blue[2])
