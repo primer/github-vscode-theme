@@ -1,5 +1,15 @@
 # github-vscode-theme
 
+## 6.3.1
+
+### Patch Changes
+
+- [#311](https://github.com/primer/github-vscode-theme/pull/311) [`09968c2`](https://github.com/primer/github-vscode-theme/commit/09968c28ae3f773d70d619a03dee8eec776b403a) Thanks [@simurai](https://github.com/simurai)! - Remove `punctuation.definition.string`
+
+* [#312](https://github.com/primer/github-vscode-theme/pull/312) [`71c180a`](https://github.com/primer/github-vscode-theme/commit/71c180abfcd2ee037d61e90934131e8288435af9) Thanks [@simurai](https://github.com/simurai)! - Make `editorIndentGuide` semi-transparent
+
+- [#303](https://github.com/primer/github-vscode-theme/pull/303) [`735ec3c`](https://github.com/primer/github-vscode-theme/commit/735ec3c917e8d34da4bff3eaddb4f71e5aab74ae) Thanks [@simurai](https://github.com/simurai)! - Colorize JSON property-name
+
 ## 6.3.0
 
 ### Minor Changes
