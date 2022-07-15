@@ -1,5 +1,25 @@
 # github-vscode-theme
 
+## 6.3.0
+
+### Minor Changes
+
+- [#296](https://github.com/primer/github-vscode-theme/pull/296) [`4fe2d37`](https://github.com/primer/github-vscode-theme/commit/4fe2d37844eb2b600ca4295e5a7c9255ffe2ac0d) Thanks [@simurai](https://github.com/simurai)! - Add support for strikethrough
+
+### Patch Changes
+
+- [#299](https://github.com/primer/github-vscode-theme/pull/299) [`b0f4bd9`](https://github.com/primer/github-vscode-theme/commit/b0f4bd9df4807e908fd46fa2ea1cb964e42358fe) Thanks [@simurai](https://github.com/simurai)! - Improve breakpoint icon for colorblind themes
+
+* [#297](https://github.com/primer/github-vscode-theme/pull/297) [`328c05b`](https://github.com/primer/github-vscode-theme/commit/328c05ba05bc941c176681b49e2981fca36c0365) Thanks [@simurai](https://github.com/simurai)! - Remove `string source` scope
+
+- [#292](https://github.com/primer/github-vscode-theme/pull/292) [`6283960`](https://github.com/primer/github-vscode-theme/commit/628396061a306faa61d9c22cbb287bb79f02f5a3) Thanks [@simurai](https://github.com/simurai)! - Colorize inline code blocks for the classic themes
+
+* [#294](https://github.com/primer/github-vscode-theme/pull/294) [`5593a09`](https://github.com/primer/github-vscode-theme/commit/5593a096d817ae7d9e7a9234ec31034d3a042cce) Thanks [@simurai](https://github.com/simurai)! - Improve selection in High Contrast themes
+
+- [#302](https://github.com/primer/github-vscode-theme/pull/302) [`c08c420`](https://github.com/primer/github-vscode-theme/commit/c08c4202024ab8d0914bab6f62e873d734a3a5aa) Thanks [@simurai](https://github.com/simurai)! - Reduce contrast for whitespace characters
+
+* [#298](https://github.com/primer/github-vscode-theme/pull/298) [`130db93`](https://github.com/primer/github-vscode-theme/commit/130db93c39d565656ee886e352e9f7c4c2d05a9c) Thanks [@simurai](https://github.com/simurai)! - Reduce contrast for line numbers
+
 ## 6.2.0
 
 ### Minor Changes
