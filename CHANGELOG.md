@@ -1,5 +1,11 @@
 # github-vscode-theme
 
+## 6.3.2
+
+### Patch Changes
+
+- [#316](https://github.com/primer/github-vscode-theme/pull/316) [`50149a8`](https://github.com/primer/github-vscode-theme/commit/50149a863e7b402df07bd3ae8a6577adf91193a3) Thanks [@simurai](https://github.com/simurai)! - Differentiate remote status-bar item
+
 ## 6.3.1
 
 ### Patch Changes
