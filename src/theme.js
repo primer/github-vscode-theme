@@ -322,6 +322,8 @@ function getTheme({ theme, name }) {
       "settings.modifiedItemIndicator"   : color.attention.muted,
       "welcomePage.buttonBackground"     : color.btn.bg,
       "welcomePage.buttonHoverBackground": color.btn.hoverBg,
+
+      "editorStickyScroll.background": color.canvas.subtle,
     },
     semanticHighlighting: true,
     tokenColors: [
