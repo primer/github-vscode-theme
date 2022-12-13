@@ -333,6 +333,15 @@ function getTheme({ theme, name }) {
       },
       {
         scope: [
+          "constant.other.placeholder", 
+          "constant.character"
+        ],
+        settings: {
+          foreground: lightDark(scale.red[5], scale.red[3])
+        },
+      },
+      {
+        scope: [
           "constant",
           "entity.name.constant",
           "variable.other.constant",
