@@ -208,10 +208,10 @@ function getTheme({ theme, name }) {
       "editorGutter.addedBackground"   : color.success.muted,
       "editorGutter.deletedBackground" : color.danger.muted,
 
-      "diffEditor.insertedLineBackground": color.diffBlob.addition.lineBg,
-      "diffEditor.insertedTextBackground": color.diffBlob.addition.textBg,
-      "diffEditor.removedLineBackground" : color.diffBlob.deletion.lineBg,
-      "diffEditor.removedTextBackground" : color.diffBlob.deletion.textBg,
+      "diffEditor.insertedLineBackground": lightDark(alpha(scale.green[1], 0.3), alpha(scale.green[5], 0.15)),
+      "diffEditor.insertedTextBackground": lightDark(alpha(scale.green[2], 0.5), alpha(scale.green[3], 0.3)),
+      "diffEditor.removedLineBackground" : lightDark(alpha(scale.red[1], 0.3), alpha(scale.red[5], 0.15)),
+      "diffEditor.removedTextBackground" : lightDark(alpha(scale.red[3], 0.4), alpha(scale.red[3], 0.3)),
 
       "scrollbar.shadow"                  : alpha(scale.gray[5], 0.2),
       "scrollbarSlider.background"        : alpha(scale.gray[4], 0.2),
