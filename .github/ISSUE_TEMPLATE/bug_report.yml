@@ -13,7 +13,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "Tell us more about the problem that you're running into."
+      description: "Tell us more about the problem that you're running into. If possible attach a screenshot or video."
       placeholder: What did you see? What did you expect to see?
     validations:
       required: true
@@ -21,12 +21,12 @@ body:
     id: reproduce
     attributes:
       label: Steps to reproduce
-      description: 'How do we reproduce the error you described above?'
+      description: 'How do we reproduce the error you described above? Does an additional extension need to be installed? For issues with syntax highlighting, consider adding some example code and the language being used.'
       placeholder: |
         1. Go to '...'
         2. Click on '....'
         3. Scroll down to '....'
-        4. See error
+        4. Type '....'
     validations:
       required: true
   - type: input
@@ -47,7 +47,9 @@ body:
         - GitHub Light Default
         - GitHub Light High Contrast
         - GitHub Light Colorblind
+        - GitHub Light
         - GitHub Dark Default
         - GitHub Dark High Contrast
         - GitHub Dark Colorblind
         - GitHub Dark Dimmed
+        - GitHub Dark
