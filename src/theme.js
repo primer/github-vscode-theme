@@ -333,7 +333,7 @@ function getTheme({ theme, name }) {
       },
       {
         scope: [
-          "constant.other.placeholder", 
+          "constant.other.placeholder",
           "constant.character"
         ],
         settings: {
@@ -686,7 +686,6 @@ function getTheme({ theme, name }) {
         scope: ["constant.other.reference.link", "string.other.link"],
         settings: {
           foreground: lightDark(scale.blue[8], scale.blue[1]),
-          fontStyle: "underline",
         },
       },
     ],
