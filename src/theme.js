@@ -214,10 +214,14 @@ function getTheme({ theme, name }) {
       "diffEditor.removedTextBackground" : lightDark(alpha(scale.red[3], 0.4), alpha(scale.red[3], 0.3)),
 
       "scrollbar.shadow"                  : alpha(scale.gray[5], 0.2),
-      "scrollbarSlider.background"        : alpha(scale.gray[4], 0.2),
-      "scrollbarSlider.hoverBackground"   : alpha(scale.gray[4], 0.27),
-      "scrollbarSlider.activeBackground"  : alpha(scale.gray[4], 0.53),
+      "scrollbarSlider.background"        : lightDark(alpha(scale.gray[4], 0.2), alpha(scale.gray[3], 0.2)),
+      "scrollbarSlider.hoverBackground"   : lightDark(alpha(scale.gray[4], 0.24), alpha(scale.gray[3], 0.24)),
+      "scrollbarSlider.activeBackground"  : lightDark(alpha(scale.gray[4], 0.28), alpha(scale.gray[3], 0.28)),
       "editorOverviewRuler.border"        : lightDark(scale.white, scale.black),
+
+      "minimapSlider.background"          : lightDark(alpha(scale.gray[4], 0.2), alpha(scale.gray[3], 0.2)),
+      "minimapSlider.hoverBackground"     : lightDark(alpha(scale.gray[4], 0.24), alpha(scale.gray[3], 0.24)),
+      "minimapSlider.activeBackground"    : lightDark(alpha(scale.gray[4], 0.28), alpha(scale.gray[3], 0.28)),
 
       "panel.background"               : color.canvas.inset,
       "panel.border"                   : color.border.default,
@@ -333,7 +337,7 @@ function getTheme({ theme, name }) {
       },
       {
         scope: [
-          "constant.other.placeholder", 
+          "constant.other.placeholder",
           "constant.character"
         ],
         settings: {
