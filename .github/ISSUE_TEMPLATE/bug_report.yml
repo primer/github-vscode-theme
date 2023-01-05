@@ -1,0 +1,55 @@
+name: Bug report 🐛
+description: Something not working as expected? This is the place to report your issue.
+labels:
+  - 'bug'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Hi there! :wave:
+
+        Thanks for taking the time to fill out this bug report.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Tell us more about the problem that you're running into. If possible attach a screenshot or video."
+      placeholder: What did you see? What did you expect to see?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: 'How do we reproduce the error you described above? Does an additional extension need to be installed? For issues with syntax highlighting, consider adding some example code and the language being used.'
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. Type '....'
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: 'What version of `github-vscode-theme` are you using?'
+      placeholder: v6.3.2
+    validations:
+      required: true
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      description: In which themes(s) are you experiencing the issue?
+      multiple: true
+      options:
+        - GitHub Light Default
+        - GitHub Light High Contrast
+        - GitHub Light Colorblind
+        - GitHub Light
+        - GitHub Dark Default
+        - GitHub Dark High Contrast
+        - GitHub Dark Colorblind
+        - GitHub Dark Dimmed
+        - GitHub Dark
