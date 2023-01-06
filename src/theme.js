@@ -318,7 +318,7 @@ function getTheme({ theme, name }) {
       "peekViewEditor.background"              : onlyDark(color.neutral.subtle),
       "peekViewResult.background"              : onlyDark(scale.gray[9]),
 
-      "settings.headerForeground"        : color.fg.muted,
+      "settings.headerForeground"        : color.fg.default,
       "settings.modifiedItemIndicator"   : color.attention.muted,
       "welcomePage.buttonBackground"     : color.btn.bg,
       "welcomePage.buttonHoverBackground": color.btn.hoverBg,
