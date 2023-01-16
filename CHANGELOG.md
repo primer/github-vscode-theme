@@ -1,5 +1,25 @@
 # github-vscode-theme
 
+## 6.3.3
+
+### Patch Changes
+
+- [#342](https://github.com/primer/github-vscode-theme/pull/342) [`41b22cc`](https://github.com/primer/github-vscode-theme/commit/41b22cc830bfd59db96a5c663a697b9a4b46d2c8) Thanks [@simurai](https://github.com/simurai)! - Fix tab color for `GitHub Light High Contrast`
+
+* [#343](https://github.com/primer/github-vscode-theme/pull/343) [`89e26fc`](https://github.com/primer/github-vscode-theme/commit/89e26fcf5f1ca695dd1324321abad0b28d1f9c03) Thanks [@broccolinisoup](https://github.com/broccolinisoup)! - Add issue + PR templates
+
+- [#328](https://github.com/primer/github-vscode-theme/pull/328) [`ed605f6`](https://github.com/primer/github-vscode-theme/commit/ed605f65cf463145ea904c06dfe91206b3dacd65) Thanks [@Mekomancer](https://github.com/Mekomancer)! - Increase diff contrast
+
+* [#337](https://github.com/primer/github-vscode-theme/pull/337) [`60db748`](https://github.com/primer/github-vscode-theme/commit/60db74858150191403d3255e605115b9e38dca40) Thanks [@ShadiestGoat](https://github.com/ShadiestGoat)! - Add better placeholder colors for semantic highlighting
+
+- [#346](https://github.com/primer/github-vscode-theme/pull/346) [`2c27f5d`](https://github.com/primer/github-vscode-theme/commit/2c27f5d099dc623c5529af12ffb3809edaaa33c9) Thanks [@simurai](https://github.com/simurai)! - Improve minimap slider contrast
+
+* [#348](https://github.com/primer/github-vscode-theme/pull/348) [`67a22b1`](https://github.com/primer/github-vscode-theme/commit/67a22b109c96e65186918673cc7a091d8ea7622e) Thanks [@broccolinisoup](https://github.com/broccolinisoup)! - Update the color for the active header foreground
+
+- [#344](https://github.com/primer/github-vscode-theme/pull/344) [`19bf4a5`](https://github.com/primer/github-vscode-theme/commit/19bf4a599e6727ec8438d806af775096bda37108) Thanks [@simurai](https://github.com/simurai)! - Bump `primer/primitives` to `7.10.0`
+
+* [#347](https://github.com/primer/github-vscode-theme/pull/347) [`ed61642`](https://github.com/primer/github-vscode-theme/commit/ed61642babfb3beb27459f52f71ff0e171ce6890) Thanks [@simurai](https://github.com/simurai)! - Remove underline from link text
+
 ## 6.3.2
 
 ### Patch Changes
