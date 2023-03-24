@@ -11,8 +11,8 @@ function getColors(theme) {
   switch(theme) {
     case "light":
 
-      // Temp override until Primitives is updated
-      lightColors.success.emphasis = "#2c8747";
+      // Temp override until Primitives are updated
+      lightColors.success.emphasis = "#1f883d";
       lightColors.btn.primary.bg = lightColors.success.emphasis;
       lightColors.btn.primary.hoverBg = lightColors.scale.green[5];
       lightColors.fg.default = "#1f2328";
@@ -25,10 +25,10 @@ function getColors(theme) {
         return lightColorblindColors;
     case "dark":
 
-      // Temp override until Primitives is updated
-      darkColors.fg.default = "#e4e8ec";
-      darkColors.fg.muted = "#7a8490";
-      darkColors.accent.fg = "#3f84e4";
+      // Temp override until Primitives are updated
+      darkColors.fg.default = "#e6edf3";
+      darkColors.fg.muted = "#7d8590";
+      darkColors.accent.fg = "#2f81f7";
       darkColors.severe.subtle = "rgba(219, 109, 40, 0.1)";
       darkColors.danger.subtle = "rgba(248, 81, 73, 0.1)";
       darkColors.done.subtle = "rgba(163, 113, 247, 0.1)";
