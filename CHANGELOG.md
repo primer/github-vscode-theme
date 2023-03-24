@@ -1,5 +1,11 @@
 # github-vscode-theme
 
+## 6.3.4
+
+### Patch Changes
+
+- [#357](https://github.com/primer/github-vscode-theme/pull/357) [`c783d6c`](https://github.com/primer/github-vscode-theme/commit/c783d6c42a13de7e1dc533b4fa475001e02d32b8) Thanks [@simurai](https://github.com/simurai)! - Improve color contrast for default Light and Dark themes
+
 ## 6.3.3
 
 ### Patch Changes
