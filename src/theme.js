@@ -321,6 +321,7 @@ function getTheme({ theme, name }) {
       "peekViewResult.matchHighlightBackground": onlyDark(color.attention.muted),
       "peekViewEditor.background"              : onlyDark(color.neutral.subtle),
       "peekViewResult.background"              : onlyDark(scale.gray[9]),
+      "peekViewEditorStickyScroll.background"  : onlyDark(mixLayersOfColors([color.neutral.subtle, scale.gray[9]])),
 
       "settings.headerForeground"        : color.fg.default,
       "settings.modifiedItemIndicator"   : color.attention.muted,
@@ -694,6 +695,35 @@ function getTheme({ theme, name }) {
       },
     ],
   };
+}
+
+// Mixes multiple layers of colors by looking at their alpha values.
+
+function mixLayersOfColors(ColorArray) {
+  let r = 0;
+  let g = 0;
+  let b = 0;
+  for (let i = ColorArray.length - 1; i >= 0; i--) {
+      let color = hexToRGB(ColorArray[i]);
+      r = r * (1 - color[3] / 255) + (color[3] / 255) * color[0];
+      g = g * (1 - color[3] / 255) + (color[3] / 255) * color[1];
+      b = b * (1 - color[3] / 255) + (color[3] / 255) * color[2];
+  }
+
+  return `#${Math.round(r).toString(16)}${Math.round(g).toString(16)}${Math.round(b).toString(16)}`;
+
+  // Converts hexadecimal number to RGB.
+  function hexToRGB(hexaColor) {
+      if (hexaColor.length < 9) {
+          hexaColor += "FF"; // Non alpha color is by default opaque.
+      }
+      return [hexToDec(hexaColor.slice(1, 3)), hexToDec(hexaColor.slice(3, 5)), hexToDec(hexaColor.slice(5, 7)), hexToDec(hexaColor.slice(7))];
+
+      // Converts hexadecimal number to decimal.
+      function hexToDec(hex) {
+          return Number(parseInt(hex, 16));
+      }
+  }
 }
 
 // Convert to hex
