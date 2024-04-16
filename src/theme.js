@@ -382,7 +382,10 @@ function getTheme({ theme, name }) {
         },
       },
       {
-        "scope": "entity.name.function",
+        "scope": [
+          "entity.name.function",
+          "support.function",
+        ],
         "settings": {
           foreground: lightDark(scale.purple[5], scale.purple[2])
         }
@@ -690,6 +693,22 @@ function getTheme({ theme, name }) {
         scope: ["constant.other.reference.link", "string.other.link"],
         settings: {
           foreground: lightDark(scale.blue[8], scale.blue[1]),
+        },
+      },
+      {
+        scope: [
+          "support.constant.property-value.css",
+          "constant.other.color.rgb-value",
+          "support.constant.color",
+        ],
+        settings: {
+          foreground: color.fg.default,
+        },
+      },
+      {
+        scope: ["entity.name.tag.wildcard"],
+        settings: {
+          foreground: lightDark(scale.blue[6], scale.blue[2]),
         },
       },
     ],
