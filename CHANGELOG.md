@@ -1,5 +1,11 @@
 # github-vscode-theme
 
+## 6.3.5
+
+### Patch Changes
+
+- [#395](https://github.com/primer/github-vscode-theme/pull/395) [`b7991c4`](https://github.com/primer/github-vscode-theme/commit/b7991c42030126bdaf68f6cdeaefcee5a8d8d876) Thanks [@Damovisa](https://github.com/Damovisa)! - Fix inline code block contrast for High Contrast theme.
+
 ## 6.3.4
 
 ### Patch Changes
