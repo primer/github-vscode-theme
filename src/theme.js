@@ -52,6 +52,7 @@ function getTheme({ theme, name }) {
       "textBlockQuote.border"    : color.border.default,
       "textCodeBlock.background" : color.neutral.muted,
       "textPreformat.foreground" : color.fg.muted,
+      "textPreformat.background" : color.neutral.muted,
       "textSeparator.foreground" : color.border.muted,
 
       "icon.foreground"           : color.fg.muted,
