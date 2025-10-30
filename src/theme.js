@@ -1,11 +1,11 @@
-const chroma = require("chroma-js");
-const { getColors } = require("./colors");
+// const chroma = require("chroma-js");
+// const { getColors } = require("./colors");
 
 // Convert to hex
 // VS Code doesn't support other formats like hsl, rgba etc.
 
-function hex(color) {
-  return chroma(color).hex();
+// function hex(color) {
+//   return chroma(color).hex();
 }
 
 // Choosing colors from primer/primitives
@@ -20,18 +20,18 @@ function hex(color) {
 // 4. Per theme. Useful when a certain theme needs an exception
 //    e.g. "textLink.foreground": themes({ light: scale.blue[5], dark: scale.blue[2], dimmed: scale.blue[3], hc: scale.blue[3] }),
 
-function getTheme({ theme, name }) {
-  const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", dark: "darkblue", dimmed: "royalblue", hc: "blue" })
-  const color = getColors(theme); // Usage: color.fg.default
-  const scale = color.scale; // Usage: scale.blue[6]
+// function getTheme({ theme, name }) {
+ //  const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", dark: "darkblue", dimmed: "royalblue", hc: "blue" })
+ //  const color = getColors(theme); // Usage: color.fg.default
+ // const scale = color.scale; // Usage: scale.blue[6]
 
-  return {
-    name: name,
-    colors: {
-      focusBorder          : hex(color.accent.emphasis),
-      foreground           : hex(color.fg.default),
-      descriptionForeground: hex(color.fg.muted),
-      errorForeground      : hex(color.danger.fg),
+//  return {
+//    name: name,
+  //  colors: {
+ //     focusBorder          : hex(color.accent.emphasis),
+   //   foreground           : hex(color.fg.default),
+   //   descriptionForeground: hex(color.fg.muted),
+  //    errorForeground      : hex(color.danger.fg),
 
       "textLink.foreground"      : hex(color.accent.fg),
       "textLink.activeForeground": hex(color.accent.fg),
