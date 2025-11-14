@@ -361,7 +361,6 @@ function getTheme({ theme, name }) {
       {
         scope: [
           "entity.name",
-          "meta.export.default",
           "meta.definition.variable"
         ],
         settings: {
