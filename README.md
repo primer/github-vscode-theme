@@ -7,18 +7,18 @@
 1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme).
 2. Click on the "Install" button.
 3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme). The GitHub themes try to match the themes available in [github.com's settings](https://github.com/settings/appearance):
-    - `GitHub Light Default`
-    - `GitHub Light High Contrast` ✨ new ✨
-    - `GitHub Light Colorblind` ✨ new ✨
-    - `GitHub Dark Default`
-    - `GitHub Dark High Contrast`
-    - `GitHub Dark Colorblind` ✨ new ✨
-    - `GitHub Dark Dimmed`
+    - [GitHub Light Default](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Light%20Default)
+    - [GitHub Light High Contrast](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Light%20High%20Contrast) ✨ new ✨
+    - [GitHub Light Colorblind](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Light%20Colorblind%20(Beta)) ✨ new ✨
+    - [GitHub Dark Default](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Dark%20Default)
+    - [GitHub Dark High Contrast](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Dark%20High%20Contrast)
+    - [GitHub Dark Colorblind](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Dark%20Colorblind%20(Beta)) ✨ new ✨
+    - [GitHub Dark Dimmed](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Dark%20Dimmed)
 
 Additionally, there are also two older themes. **Note**: They might not get updated frequently and are kept for legacy reasons:
 
-- `GitHub Light` (legacy)
-- `GitHub Dark` (legacy)
+- [GitHub Light](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Light) (legacy)
+- [GitHub Dark](https://vscode.dev/editor/theme/github.github-vscode-theme/GitHub%20Dark) (legacy)
 
 ## Override this theme
 
