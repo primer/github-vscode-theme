@@ -1,51 +1,40 @@
-const lightColors = require("@primer/primitives/dist/json/colors/light.json");
-const lightHighContrastColors = require("@primer/primitives/dist/json/colors/light_high_contrast.json");
-const lightColorblindColors = require("@primer/primitives/dist/json/colors/light_colorblind.json");
-const darkColors = require("@primer/primitives/dist/json/colors/dark.json");
-const darkHighContrastColors = require("@primer/primitives/dist/json/colors/dark_high_contrast.json");
-const darkColorblindColors = require("@primer/primitives/dist/json/colors/dark_colorblind.json");
-const dimmedColors = require("@primer/primitives/dist/json/colors/dark_dimmed.json");
+const path = "@primer/primitives/dist/json/colors/";
 
+/**
+ * Returns a theme object based on the provided theme name.
+ * @param {string} theme - The name of the theme to retrieve.
+ * @returns {Object} - The theme object.
+ * @throws Will throw an error if the given theme is not a valid option.
+ */
 function getColors(theme) {
-
-  switch(theme) {
+  switch (theme) {
     case "light":
-
-      // Temp override until Primitives are updated
-      lightColors.success.emphasis = "#1f883d";
-      lightColors.btn.primary.bg = lightColors.success.emphasis;
-      lightColors.btn.primary.hoverBg = lightColors.scale.green[5];
-      lightColors.fg.default = "#1f2328";
-      lightColors.fg.muted = "#656d76";
-
-      return lightColors;
+      return require(`${path}light.json`);
     case "light_high_contrast":
-      return lightHighContrastColors;
+      return require(`${path}light_high_contrast.json`);
     case "light_colorblind":
-        return lightColorblindColors;
+      return require(`${path}light_colorblind.json`);
     case "dark":
-
-      // Temp override until Primitives are updated
-      darkColors.fg.default = "#e6edf3";
-      darkColors.fg.muted = "#7d8590";
-      darkColors.accent.fg = "#2f81f7";
-      darkColors.severe.subtle = "rgba(219, 109, 40, 0.1)";
-      darkColors.danger.subtle = "rgba(248, 81, 73, 0.1)";
-      darkColors.done.subtle = "rgba(163, 113, 247, 0.1)";
-      darkColors.sponsors.subtle = "rgba(219, 97, 162, 0.1)";
-
-      return darkColors;
+      return require(`${path}dark.json`);
     case "dark_high_contrast":
-      return darkHighContrastColors;
+      return require(`${path}dark_high_contrast.json`);
     case "dark_colorblind":
-      return darkColorblindColors;
+      return require(`${path}dark_colorblind.json`);
     case "dark_dimmed":
-      return dimmedColors;
+      return require(`${path}dark_dimmed.json`);
     default:
       throw new Error(`Colors are missing for value: ${theme}`);
   }
 }
 
+// Exports the `getColors` function
 module.exports = {
   getColors,
 };
+
+// IIFE to prevent global scope pollution
+(() => {
+  // Example usage
+  const lightColors = getColors("light");
+  console.log(lightColors);
+})();
