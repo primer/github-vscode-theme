@@ -73,11 +73,19 @@ function getColors(theme) {
 }
 
 // Transform new flat structure (e.g., "fgColor-default") to old nested structure (e.g., fg.default)
+// The new primitives use a flat key structure with hyphenated names, where each value is an object
+// with a `.value` property. This function transforms that to the old nested object structure
+// for backward compatibility with the existing theme.js code.
+//
+// Input format: { "fgColor-default": { value: "#1f2328", ... }, ... }
+// Output format: { fg: { default: "#1f2328" }, ... }
 function transformToNestedStructure(flatColors) {
   const nested = {
     scale: {
-      black: '#1f2328',
-      white: '#ffffff',
+      // Note: black and white are not in the scale arrays in new primitives,
+      // so we extract them from the flat structure if available, or use fallback values
+      black: flatColors['bgColor-black']?.value || '#1f2328',
+      white: flatColors['bgColor-white']?.value || '#ffffff',
       gray: [],
       blue: [],
       green: [],
@@ -174,8 +182,27 @@ function transformToNestedStructure(flatColors) {
       else if (prop === 'onEmphasis') nested.fg.onEmphasis = val;
     }
     
+    // Helper to check if a key should be mapped to canvas
+    const isCanvasBgColor = (key) => {
+      return key.startsWith('bgColor-') && 
+             !key.startsWith('bgColor-accent-') && 
+             !key.startsWith('bgColor-danger-') && 
+             !key.startsWith('bgColor-attention-') && 
+             !key.startsWith('bgColor-success-') && 
+             !key.startsWith('bgColor-neutral-');
+    };
+    
+    // Helper to check if a key should be mapped to border
+    const isBorderColor = (key) => {
+      return key.startsWith('borderColor-') && 
+             !key.startsWith('borderColor-accent-') && 
+             !key.startsWith('borderColor-danger-') && 
+             !key.startsWith('borderColor-attention-') && 
+             !key.startsWith('borderColor-success-');
+    };
+    
     // Map bgColor-* to canvas.*
-    else if (key.startsWith('bgColor-') && !key.startsWith('bgColor-accent-') && !key.startsWith('bgColor-danger-') && !key.startsWith('bgColor-attention-') && !key.startsWith('bgColor-success-') && !key.startsWith('bgColor-neutral-')) {
+    if (isCanvasBgColor(key)) {
       if (key === 'bgColor-default') nested.canvas.default = val;
       else if (key === 'bgColor-overlay') nested.canvas.overlay = val;
       else if (key === 'bgColor-inset') nested.canvas.inset = val;
@@ -183,7 +210,7 @@ function transformToNestedStructure(flatColors) {
     }
     
     // Map borderColor-* to border.*
-    else if (key.startsWith('borderColor-') && !key.startsWith('borderColor-accent-') && !key.startsWith('borderColor-danger-') && !key.startsWith('borderColor-attention-') && !key.startsWith('borderColor-success-')) {
+    else if (isBorderColor(key)) {
       if (key === 'borderColor-default') nested.border.default = val;
       else if (key === 'borderColor-muted') nested.border.muted = val;
     }
@@ -241,16 +268,19 @@ function transformToNestedStructure(flatColors) {
       else if (ansiColor === 'cyan-bright') nested.ansi.cyanBright = val;
     }
     
-    // Map display scale colors
+    // Map display scale colors (e.g., display-blue-scale-6)
+    // Expected format: "display-{color}-scale-{index}"
     else if (key.startsWith('display-') && key.includes('-scale-')) {
       const parts = key.split('-');
-      const color = parts[1]; // e.g., "blue"
-      const index = parseInt(parts[3]); // e.g., "6"
-      
-      if (!nested.scale[color]) {
-        nested.scale[color] = [];
+      if (parts.length >= 4 && parts[0] === 'display' && parts[2] === 'scale') {
+        const color = parts[1]; // e.g., "blue"
+        const indexStr = parts[3]; // e.g., "6"
+        const index = parseInt(indexStr, 10);
+        
+        if (!isNaN(index) && nested.scale[color]) {
+          nested.scale[color][index] = val;
+        }
       }
-      nested.scale[color][index] = val;
     }
     
     // Map codemirror activelineBg
