@@ -49,6 +49,21 @@
         "path": "./themes/light-colorblind.json"
       },
       {
+        "label": "GitHub Light Colorblind High Contrast (Beta)",
+        "uiTheme": "hc-light",
+        "path": "./themes/light-colorblind-high-contrast.json"
+      },
+      {
+        "label": "GitHub Light Tritanopia (Beta)",
+        "uiTheme": "vs",
+        "path": "./themes/light-tritanopia.json"
+      },
+      {
+        "label": "GitHub Light Tritanopia High Contrast (Beta)",
+        "uiTheme": "hc-light",
+        "path": "./themes/light-tritanopia-high-contrast.json"
+      },
+      {
         "label": "GitHub Dark Default",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
@@ -64,9 +79,29 @@
         "path": "./themes/dark-colorblind.json"
       },
       {
+        "label": "GitHub Dark Colorblind High Contrast (Beta)",
+        "uiTheme": "hc-black",
+        "path": "./themes/dark-colorblind-high-contrast.json"
+      },
+      {
+        "label": "GitHub Dark Tritanopia (Beta)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-tritanopia.json"
+      },
+      {
+        "label": "GitHub Dark Tritanopia High Contrast (Beta)",
+        "uiTheme": "hc-black",
+        "path": "./themes/dark-tritanopia-high-contrast.json"
+      },
+      {
         "label": "GitHub Dark Dimmed",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-dimmed.json"
+      },
+      {
+        "label": "GitHub Dark Dimmed High Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/dark-dimmed-high-contrast.json"
       },
       {
         "label": "GitHub Light",
@@ -83,7 +118,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.1",
     "@changesets/cli": "^2.17.0",
-    "@primer/primitives": "7.10.0",
+    "@primer/primitives": "11.3.2",
     "chroma-js": "^2.1.2",
     "color": "^3.1.2",
     "nodemon": "^2.0.3",
