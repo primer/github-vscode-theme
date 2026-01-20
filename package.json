@@ -18,7 +18,7 @@
     "url": "https://github.com/primer/github-vscode-theme/issues"
   },
   "engines": {
-    "vscode": "^1.43.0"
+    "vscode": "^1.108.1"
   },
   "categories": [
     "Themes"
