@@ -303,30 +303,8 @@ function transformToNestedStructure(flatColors) {
 }
 
 function applyThemeOverrides(colors, theme) {
-  switch(theme) {
-    case "light":
-      // Temp override until Primitives are updated
-      if (colors.success) colors.success.emphasis = "#1f883d";
-      if (colors.btn.primary) {
-        colors.btn.primary.bg = colors.success.emphasis;
-        if (colors.scale.green && colors.scale.green[5]) {
-          colors.btn.primary.hoverBg = colors.scale.green[5];
-        }
-      }
-      colors.fg.default = "#1f2328";
-      colors.fg.muted = "#656d76";
-      break;
-    case "dark":
-      // Temp override until Primitives are updated
-      colors.fg.default = "#e6edf3";
-      colors.fg.muted = "#7d8590";
-      colors.accent.fg = "#2f81f7";
-      colors.severe.subtle = "rgba(219, 109, 40, 0.1)";
-      colors.danger.subtle = "rgba(248, 81, 73, 0.1)";
-      colors.done.subtle = "rgba(163, 113, 247, 0.1)";
-      colors.sponsors.subtle = "rgba(219, 97, 162, 0.1)";
-      break;
-  }
+  // Overrides removed - now using values directly from @primer/primitives v11.3.2
+  // The temporary overrides from v7.10.0 are no longer needed
 }
 
 module.exports = {
