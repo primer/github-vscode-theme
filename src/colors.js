@@ -40,6 +40,9 @@ function getColors(theme) {
     case "dark_colorblind":
       return darkColorblindColors;
     case "dark_dimmed":
+      // Temp override until Primitives are updated
+      dimmedColors.fg.default = "#cbd1d6";
+
       return dimmedColors;
     default:
       throw new Error(`Colors are missing for value: ${theme}`);
