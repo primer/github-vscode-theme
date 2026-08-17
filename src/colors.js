@@ -41,7 +41,7 @@ function getColors(theme) {
       return darkColorblindColors;
     case "dark_dimmed":
       // Temp override until Primitives are updated
-      dimmedColors.fg.default = "#cbd1d6";
+      dimmedColors.fg.default = "#d1d7e0";
 
       return dimmedColors;
     default:
