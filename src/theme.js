@@ -693,6 +693,30 @@ function getTheme({ theme, name }) {
           foreground: lightDark(scale.blue[8], scale.blue[1]),
         },
       },
+      {
+        scope: ["log.debug"],
+        settings: {
+          foreground: lightDark(scale.blue[6], scale.blue[2]),
+        },
+      },
+      {
+        scope: ["log.info"],
+        settings: {
+          foreground: color.fg.default,
+        },
+      },
+      {
+        scope: ["log.warning"],
+        settings: {
+          foreground: lightDark(scale.orange[6], scale.orange[2]),
+        },
+      },
+      {
+        scope: ["log.error"],
+        settings: {
+          foreground: lightDark(scale.red[7], scale.red[2]),
+        },
+      },
     ],
   };
 }
